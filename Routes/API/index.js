@@ -1,17 +1,17 @@
 
 const router = require("express").Router();
-const activityRoutes = require('./activities');
-const destinationRoutes = require('./destinations');
+const actRoutes = require('./activities');
+const destRoutes = require('./destinations');
 
 // Activity routes
-router.use("/activities", activityRoutes);
+router.use("/activities", actRoutes);
 
 // Park routes
-router.use("/destinations", destinationRoutes);
-router.use("/destinations/parks", destinationRoutes);
-router.use("/destinations/parks/county", destinationRoutes);
-router.use("/destinations/parks/state", destinationRoutes);
-router.use("/destinations/attractions", destinationRoutes);
+router.use("/destinations", destRoutes);
+router.use("/destinations/parks", destRoutes);
+router.use("/destinations/parks/county", destRoutes);
+router.use("/destinations/parks/state", destRoutes);
+router.use("/destinations/attractions", destRoutes);
 
 
 module.exports = router;
