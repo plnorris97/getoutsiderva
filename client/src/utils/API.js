@@ -2,13 +2,19 @@ import axios from "axios";
 
 export default {
 
-  getActivity: function(id) {
-    return axios.get("/api/activities/" + id)
+  getActivity: function(name) {
+    return axios.get("/api/activities/" + name)
   },
   // Gets the book with the given id
   getActivities: function() {
     return axios.get("/api/activities");
+  },
+  getCountyParks: function() {
+      return axios.get("/api/parks/county");
   }
+//   getStateParks: function() {
+//       return axios.get("/api/parks/state");
+//   }
 
 //   // Deletes the book with the given id
 //   deleteBook: function(id) {

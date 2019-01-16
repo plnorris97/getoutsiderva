@@ -1,17 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import bike from "../images/biking1.jpg";
-import run from "../images/running1.jpg";
-import hike from "../images/hiking1.jpg";
-import kayak from "../images/kayaking1.jpg";
+import bike from '../../images/biking1.jpg';
+import run from "../../images/running1.jpg";
+import hike from "../../images/hiking1.jpg";
+import kayak from "../../images/kayaking1.jpg";
 import "./style.css";
 
 export default class Example extends React.Component {
   render() {
     return (
       <Container>
-
-
           <Row>
             <Col id="Image1">
               <img alt="Bike" src={bike} rounded />

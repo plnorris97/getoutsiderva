@@ -1,34 +1,59 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import { Container, Row, Col } from 'reactstrap';
+import SearchBtn from "../SearchBtn/SearchBtn"
 
-
-
-class Activity extends Component {
+class Detail extends Component {
     state = {
-      activities: []
+      // Search button holds the query parameters
+      SearchBtn: "",
+      results: []
     }
     componentDidMount() {
         // look up activities when the page loads
-        this.lookUpActivities();
+        this.loadActivities();
     }
 
     // Look up activities
-    lookUpActivities() {
+    loadActivities() {
         API.getActivities()
             .then(res => console.log(res))
             .catch(err => console.log(err))
-    }   
+    }  
+    searchDB = event => {
+      event.preventDefault();
+      const query = this.state.search.replace(/ /g, "+");
+      let path = "/parks/county?q=" + query
+      console.log(path);
+      API.getCountyParks({
+        name: this.state.name,
+        address: this.state.address,
+        county: this.state.county,
+        description: this.state.description,
+        activities: this.state.activities,
+        amenities: this.state.amenities
+      })
+        .then(res => {
+        console.log(res);
+          // console.log(res.data.items.element.volumeInfo);
+          this.saveResults(res.data.items);
+        })
+    }
 
   render() {
     return (
       <Container>
         <Row>
-          <Col>.col</Col>
+          <Col>Biking in RVA</Col>
         </Row>
         <Row>
           <Col>.col</Col>
-          <Col>.col</Col>
+          <Col>
+            <SearchBtn onClick={(activities) => this.searchDB(activities)}>
+              Find parks
+            </SearchBtn>
+          </Col>
+      
           <Col>.col</Col>
           <Col>.col</Col>
         </Row>
@@ -100,4 +125,4 @@ class Activity extends Component {
         );
     }
 }
-export default Activity;
+export default Detail;
