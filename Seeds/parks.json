@@ -14,9 +14,7 @@
     "address": "3800 James River Rd., Midlothian, VA 23113",
     "county": "Chesterfield",
     "description": "Robious Landing Park provides easy access to the James River for kayaking, canoeing, rowing, and fishing. The 102-acre site also houses 3.4 miles of trails, playgrounds, picnic shelters, and sand volleyball.",
-    "activities": 
-        [
-          "Exercise Trail", "Hiking", "Nature", "Running", "Biking", "Fishing", "Geocaching", "Birding/Wildlife"],
-    "amenities": ["Parking Lot", "Playground", "Restrooms", "Shelter/Picnic Areas", "River/Lake", "Boat Ramp",] 
+    "activities": ["Exercise Trail", "Hiking", "Nature", "Running", "Biking", "Fishing", "Geocaching", "Birding/Wildlife"],
+    "amenities": ["Parking Lot", "Playground", "Restrooms", "Shelter/Picnic Areas", "River/Lake", "Boat Ramp"] 
   }
 ]

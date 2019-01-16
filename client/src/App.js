@@ -1,21 +1,41 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import Nav from './Nav/Nav';
-import Carousel from './Carousel/Carousel';
-import Input from './Input box/Input';
-import ColGallery from './ColGallery/ColGallery';
+import Nav from './Components/Nav/Nav';
+import Home from './Pages/Home';
+// this is the activity landing page with hard coded info
+// import Activities from './Pages/Activities';
+// this is the detail page for both activity or county park location (pulls from the db)
+import Detail from './Pages/Detail';
+// this is the static destination landing page with hard coded info
+// import Destinations from './Pages/Destinations';
+// this is the static county parks landing page with hard coded info
+// import countyParks from './Pages/countyParks';
+// this is a static state parks landing page with hard coded info
+// import stateParks from './Pages/stateParks';
+// import NoMatch from './Pages/NoMatch';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Nav />
-        <Carousel />
-        <br />
-        <Input />
-        <br />
-        <ColGallery />
-      </div>
+      <Router>
+        <div className="App">
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            {/* <Route exact path="/activities" component={Activities} /> */}
+            <Route exact path="/activities/:name" component={Detail} />
+            {/* <Route exact path="/destinations" component={Destinations} /> */}
+            {/* <Route exact path="/destinations/parks/county" component={countyParks} /> */}
+            {/* <Route exact path="/destinations/parks/state" component={stateParks} /> */}
+            {/* <Route component={NoMatch} /> */}
+          </Switch>
+        </div>
+      </Router>
+
+
+      
     );
   }
 }
