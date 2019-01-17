@@ -8,10 +8,6 @@ router.use("/activities", actRoutes);
 
 // Park routes
 router.use("/destinations", destRoutes);
-router.use("/destinations/parks", destRoutes);
-router.use("/destinations/parks/county", destRoutes);
-router.use("/destinations/parks/state", destRoutes);
-router.use("/destinations/attractions", destRoutes);
 
 
 module.exports = router;

@@ -1,55 +1,47 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import { Container, Row, Col } from 'reactstrap';
-import SearchBtn from "../SearchBtn/SearchBtn"
+import SearchBtn from "../Components/SearchBtn/SearchBtn"
+import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
 
 class Detail extends Component {
     state = {
       // Search button holds the query parameters
-      SearchBtn: "",
       results: []
     }
     componentDidMount() {
-        // look up activities when the page loads
-        this.loadActivities();
+        // look up parks when the page loads
+        this.loadParks();
     }
 
-    // Look up activities
-    loadActivities() {
-        API.getActivities()
+    // Look up parks
+    loadParks() {
+        API.getCountyParks()
             .then(res => console.log(res))
             .catch(err => console.log(err))
     }  
+    
     searchDB = event => {
       event.preventDefault();
-      const query = this.state.search.replace(/ /g, "+");
-      let path = "/parks/county?q=" + query
-      console.log(path);
-      API.getCountyParks({
-        name: this.state.name,
-        address: this.state.address,
-        county: this.state.county,
-        description: this.state.description,
-        activities: this.state.activities,
-        amenities: this.state.amenities
-      })
+      // const query = this.state.search.replace(/ /g, "+");
+      // let path = "/parks/county?q=" + query
+      // console.log(path);
+      API.getCountyParks()
         .then(res => {
         console.log(res);
-          // console.log(res.data.items.element.volumeInfo);
-          this.saveResults(res.data.items);
-        })
+      })
     }
 
   render() {
     return (
       <Container>
         <Row>
-          <Col>Biking in RVA</Col>
+          <Col>in RVA</Col>
         </Row>
         <Row>
           <Col>.col</Col>
           <Col>
-            <SearchBtn onClick={(activities) => this.searchDB(activities)}>
+            <SearchBtn onClick={this.searchDB}>
               Find parks
             </SearchBtn>
           </Col>
@@ -58,9 +50,17 @@ class Detail extends Component {
           <Col>.col</Col>
         </Row>
         <Row>
-          <Col xs="3">.col-3</Col>
-          <Col xs="auto">.col-auto - variable width content</Col>
-          <Col xs="3">.col-3</Col>
+            {this.state.results.length ? (
+              this.state.results.map(parks => (
+                <ResultsWrapper className="card-result"
+                parks = {parks}
+                />
+            ))
+          ):(
+            <Col className="results" sm="12" md={{size:6, offset:3}}>
+            <h3>You should see results here.</h3>
+            </Col>
+          )}
         </Row>
         <Row>
           <Col xs="6">.col-6</Col>

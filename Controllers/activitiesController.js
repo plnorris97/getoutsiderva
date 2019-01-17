@@ -3,15 +3,14 @@ const db = require("../models");
 // Defining methods for the booksController
 module.exports = {
   findAll: function(req, res) {
-    db.Activity
-      .find(req.query)
-      .sort({ date: -1 })
+    db.Activities
+      .find({})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   findByName: function(req, res) {
-    db.Activity
-      .findByName(req.params.name)
+    db.Activities
+      .find({ name })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
