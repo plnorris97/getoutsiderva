@@ -1,107 +1,45 @@
-import React, { Component } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
+import React, { Component } from "react";
+import { Carousel, CarouselCaption, CarouselInner, CarouselItem, View, Mask } from "mdbreact";
 
-const items = [
-  {
-    id: 1,
-    altText: 'Slide 1',
-    caption: 'Welcome to Richmond!'
-  },
-  {
-    id: 2,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    id: 3,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  }
-];
-
-class Example extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeIndex: 0 };
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
-    this.goToIndex = this.goToIndex.bind(this);
-    this.onExiting = this.onExiting.bind(this);
-    this.onExited = this.onExited.bind(this);
-  }
-
-  onExiting() {
-    this.animating = true;
-  }
-
-  onExited() {
-    this.animating = false;
-  }
-
-  next() {
-    if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
-    this.setState({ activeIndex: nextIndex });
-  }
-
-  previous() {
-    if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
-    this.setState({ activeIndex: nextIndex });
-  }
-
-  goToIndex(newIndex) {
-    if (this.animating) return;
-    this.setState({ activeIndex: newIndex });
-  }
-
+class CarouselPage extends Component {
   render() {
-    const { activeIndex } = this.state;
-
-    const slides = items.map((item) => {
-      return (
-        <CarouselItem
-          className="custom-tag"
-          tag="div"
-          key={item.id}
-          onExiting={this.onExiting}
-          onExited={this.onExited}
-        >
-          <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
-        </CarouselItem>
-      );
-    });
-
     return (
-      <div>
-        <style>
-          {
-            `.custom-tag {
-                max-width: 100%;
-                height: 500px;
-                background: black;
-              }`
-          }
-        </style>
-        <Carousel
-          activeIndex={activeIndex}
-          next={this.next}
-          previous={this.previous}
-        >
-          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-          {slides}
-          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-        </Carousel>
-      </div>
+      <Carousel style={{height: "60vh"}} activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+        <CarouselInner>
+          <CarouselItem itemId="1">
+            <View>
+              <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" />
+              <Mask overlay="black-light" />
+            </View>
+            <CarouselCaption>
+              <h3 className="h3-responsive">Welcome to Richmond VA!</h3>
+              <p>First text</p>
+            </CarouselCaption>
+          </CarouselItem>
+          <CarouselItem itemId="2">
+            <View>
+              <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg" alt="First slide" />
+              <Mask overlay="black-light" />
+            </View>
+            <CarouselCaption>
+              <h3 className="h3-responsive">Let's Explore!</h3>
+              <p>First text</p>
+            </CarouselCaption>
+          </CarouselItem> 
+          <CarouselItem itemId="3">
+            <View>
+              <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg" alt="First slide" />
+              <Mask overlay="black-light" />
+            </View>
+            <CarouselCaption>
+              <h3 className="h3-responsive">Welcome to Richmond RVA</h3>
+              <p>First text</p>
+            </CarouselCaption>
+          </CarouselItem>  
+        </CarouselInner>
+      </Carousel>
     );
   }
 }
 
-export default Example;
+export default CarouselPage;
