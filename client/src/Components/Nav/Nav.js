@@ -21,6 +21,7 @@ class FixedNavbarExample extends React.Component {
   render() {
     return (
       <div>
+<<<<<<< HEAD:client/src/Nav/Nav.js
         <header>
           <Router>
             <MDBNavbar color="bg-warning" fixed="top" dark expand="md" >
@@ -31,10 +32,10 @@ class FixedNavbarExample extends React.Component {
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav left>
                   <MDBNavItem active>
-                    <MDBNavLink to="#">Home</MDBNavLink>
+                    <MDBNavLink to="/">Home</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#"><MDBIcon icon="bicycle" />Activities</MDBNavLink>
+                    <MDBNavLink to="/activities"><MDBIcon icon="bicycle" />Activities</MDBNavLink>
                   </MDBNavItem>
                   <NavItem>
                 <Dropdown>

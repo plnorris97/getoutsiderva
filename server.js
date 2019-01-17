@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
 const routes = require('./Routes');
+const mongojs = require('mongojs');
 
 // Add path to routes file ./routes/api/...
 // const items = require('')
@@ -13,6 +14,17 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/public"));
 }
+
+// Database configuration
+const databaseUrl = "getoutsiderva";
+const collections = ["activities", "destinations"];
+
+// Hook mongojs config to db variables
+const db = mongojs(databaseUrl, collections);
+
+db.on("error", function(error) {
+  console.log("Database error:", error);
+})
 
 // Add routes
 app.use(routes);
