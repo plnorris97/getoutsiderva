@@ -4,6 +4,9 @@ import React, { Component } from 'react';
 import Carousel from '../Components/Carousel/Carousel';
 import Input from '../Components/InputBox/Input';
 import ColGallery from '../Components/ColGallery/ColGallery';
+import Jumbotron from '../Components/Jumbotron/Jumbotron';
+import Video from '../Components/Video/Video';
+
 
 class Home extends Component {
     state = {
@@ -23,7 +26,11 @@ class Home extends Component {
             <Input />
             <br />
             <ColGallery />
-        </div>
+            <Video />
+            <br />
+            <Jumbotron />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div>
         )
     }
 }

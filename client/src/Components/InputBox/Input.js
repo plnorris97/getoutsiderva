@@ -1,64 +1,38 @@
-import React from 'react';
-import {
-  InputGroup,
-  InputGroupAddon,
-  Input,
-  Button,
-  Col,
-  Row,
- } from 'reactstrap';
-
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggleDropDown = this.toggleDropDown.bind(this);
-    this.toggleSplit = this.toggleSplit.bind(this);
-    this.state = {
-      dropdownOpen: false,
-      splitButtonOpen: false
-    };
-  }
-
-  toggleDropDown() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
-    });
-  }
-
-  toggleSplit() {
-    this.setState({
-      splitButtonOpen: !this.state.splitButtonOpen
-    });
-  }
+import React from "react";
+import { Animation, MDBCol, FormInline, Button, Container } from "mdbreact";
 
 
+class SearchPage extends React.Component {
   render() {
     return (
-      <div>
-        <style>
-        {
-            `.InputGroup, Input {
-                margin-left: 1rem;
-            }
-            Button {
-                margin-left: 1rem;
-            }`
+      <Container>
+      <MDBCol md="8" className="ml-md-auto">
+        <FormInline className="md-form">
+          <input
+           style={{width: "15rem"}}
+            className="form-control"
+            type="text"
+            placeholder="How do YOU do RVA?!"
+            aria-label="Search"
+            text-align="center"
+          />
+          <Button
+            gradient="sunny-morning"
+            rounded
+            size="sm"
+            type="submit"
+            className="mr-auto"
+          >
+          <Animation type="bounce" infinite>
+           <h6> Let's Go! </h6>
+           </Animation>
+          </Button>
 
-        }
-        </style>
-
-        <Row>
-            <Col sm="12" md={{ size: 6, offset: 3 }}>        
-                <InputGroup>
-                <Input placeholder="How do YOU do RVA?" />
-                <InputGroupAddon addonType="append"><Button className="rounded mb-0" color="warning">Let's GO!</Button></InputGroupAddon>
-                </InputGroup>
-            </Col>
-        </Row>
-
-      </div>
+        </FormInline>
+      </MDBCol>
+      </Container>
     );
   }
 }
 
+export default SearchPage;

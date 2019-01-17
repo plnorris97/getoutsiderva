@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { Component } from 'react';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
 import './App.css';
 import Nav from './Components/Nav/Nav';
+import Footer from './Components/Footer/Footer';
+
 import Home from './Pages/Home';
 // this is the activity landing page with hard coded info
 // import Activities from './Pages/Activities';
@@ -19,6 +24,7 @@ import Detail from './Pages/Detail';
 class App extends Component {
   render() {
     return (
+
       <Router>
         <div className="App">
           <Nav />
@@ -31,11 +37,11 @@ class App extends Component {
             {/* <Route exact path="/destinations/parks/state" component={stateParks} /> */}
             {/* <Route component={NoMatch} /> */}
           </Switch>
+          <Footer />
         </div>
       </Router>
 
 
-      
     );
   }
 }
