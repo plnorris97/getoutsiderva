@@ -27,6 +27,7 @@
     "express": "^4.16.4",
     "install": "^0.12.2",
     "mongoimport": "^1.0.6",
+    "mongojs": "^2.6.0",
     "mongoose": "^5.4.2",
     "npm": "^6.6.0-next.1",
     "react-router-dom": "^4.3.1",

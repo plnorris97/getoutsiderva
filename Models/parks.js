@@ -29,6 +29,6 @@ const parkSchema = new Schema({
   
 });
 
-const Park = mongoose.model("Park", parkSchema);
+const Parks = mongoose.model("Parks", parkSchema);
 
-module.exports = Park;
+module.exports = Parks;

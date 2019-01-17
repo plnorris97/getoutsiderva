@@ -3,9 +3,9 @@ import React from "react";
 
 function SearchBtn(props) {
     return(
-        <span className="search-btn" {...props} role="button" tabIndex="0">
-        Button
-        </span>
+    <button {...props} className="btn btn-success">
+        {props.children}
+    </button>
     );
 }
 

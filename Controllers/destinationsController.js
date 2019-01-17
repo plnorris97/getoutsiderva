@@ -2,16 +2,15 @@ const db = require("../models");
 
 // Defining methods for the parksController
 module.exports = {
-  findAll: function(req, res) {
-    db.Destinations
-      .find(req.query)
-      .sort({ date: -1 })
+  findAll: (req, res) => {
+    db.Parks
+      .find(req)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findById: function(req, res) {
-    db.Destinations
-      .findById(req.params.id)
+  findByName: (req, res) => {
+    db.Parks
+      .findByName(req.params.name)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
