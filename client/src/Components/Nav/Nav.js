@@ -21,7 +21,6 @@ class FixedNavbarExample extends React.Component {
   render() {
     return (
       <div>
-<<<<<<< HEAD:client/src/Nav/Nav.js
         <header>
           <Router>
             <MDBNavbar color="bg-warning" fixed="top" dark expand="md" >
