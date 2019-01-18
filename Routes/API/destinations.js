@@ -1,43 +1,53 @@
 const router = require("express").Router();
 const destinationsController = require("../../Controllers/destinationsController");
 
-// Matches with "/api/parks"
+// Matches with "/api/destinations"
 router.route("/")
-  .get(destinationsController.findAll)
+  .get((req, res) => {
+    console.log('we\'re here')
+    destinationsController.findAll(req, res)
+    // .then((results) => {
+    //   console.log(results);
+    //   res.json(results);
+    // })
+    // .catch((err)=> res.status(404).json(err))
+  });
 
-// Matches with "/api/parks/:id"
+// Matches with "/api/parks/:name"
 router
   .route("/:name")
-  .get(destinationsController.findByName)
+  .get((req, res) => {
+    destinationsController.findName(req, res)
+  });
   // .then(() => res.json({ success: true}))
   // .catch(err => res.status(404).json({ success: false}))
 
-// Looks up the parks landing page 
+// Looks up the parks landing page; displays all counties
 router
-  .route("/parks")
-  .get(destinationsController.findByName)
+  .route("/parks/:county")
+  .get ((req, res) => {
+    destinationsController.findCounty(req, res)
+});
+
+// get all county parks using the category data field
+router
+  .route("/county-parks")
+  .get((req, res) => {
+    destinationsController.findParks(req, res)
+  })
+// Looks up the specific county park landing page :county = county name in db
+// router
+//   .route("/parks/county/:county")
+//   .get((req, res) => {
+//     destinationsController.findCounty(req, res)
+//   });
   // .then(() => res.json({ success: true}))
   // .catch(err => res.status(404).json({ success: false}))
 
-// Looks up the county parks landing page
 router
-  .route("/parks/county")
-  .get(destinationsController.findAll)
-  // .then(() => res.json({ success: true}))
-  // .catch(err => res.status(404).json({ success: false}))
-
-// Looks up the parks state page
-router
-  .route("/parks/state")
-  .get(destinationsController.findAll)
-  // .then(() => res.json({ success: true}))
-  // .catch(err => res.status(404).json({ success: false}))
-
-// Looks up the attractions landing page
-router
-  .route("/attractions")
-  .get(destinationsController.findAll)  
-  // .then(() => res.json({ success: true}))
-  // .catch(err => res.status(404).json({ success: false}))
+  .route("/parks/county/:name")
+  .get((req, res) => {
+    destinationsController.findName(req, res)
+  });
 
 module.exports = router;

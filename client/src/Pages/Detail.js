@@ -6,20 +6,32 @@ import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
 
 class Detail extends Component {
     state = {
-      // Search button holds the query parameters
+      id: "",
       results: []
     }
+
+
+
     componentDidMount() {
-        // look up parks when the page loads
-        this.loadParks();
+        // shows activity name in banner image
+        this.showName();
     }
 
+    showName = name => {
+      API.getActivity(name)
+      .then(res =>
+        this.setState(res.params.id)
+      )
+      .catch(err => console.log(err))
+    }
+  
+
     // Look up parks
-    loadParks() {
-        API.getCountyParks()
-            .then(res => console.log(res))
-            .catch(err => console.log(err))
-    }  
+    // loadParks() {
+    //     API.getCountyParks()
+    //     .then(res => console.log(res))
+    //     .catch(err => console.log(err))
+    // }  
     
     searchDB = event => {
       event.preventDefault();
@@ -33,10 +45,20 @@ class Detail extends Component {
     }
 
   render() {
+    // const data = [{name: ""}];
+    // const showName = data.map((data) => <p key={data.name}>{data.name}</p>);
+
     return (
       <Container>
         <Row>
-          <Col>in RVA</Col>
+          <br />
+          <br />
+          <br />
+          <br />
+        </Row>
+        <Row>
+          {/* <Col>{showName}</Col> */}
+          <Col>{this.showName}</Col>
         </Row>
         <Row>
           <Col>.col</Col>

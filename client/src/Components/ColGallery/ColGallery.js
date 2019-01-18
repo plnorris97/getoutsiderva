@@ -1,10 +1,10 @@
 import React from "react";
 import { MDBMask, MDBView, MDBRow, MDBCol } from "mdbreact";
 // import { Container, Row, Col } from 'reactstrap';
-import bike from '../../images/biking1.jpg';
-import run from "../../images/running1.jpg";
-import hike from "../../images/hiking1.jpg";
-import kayak from "../../images/kayaking1.jpg";
+// import bike from '../../images/biking1.jpg';
+// import run from "../../images/running1.jpg";
+// import hike from "../../images/hiking1.jpg";
+// import kayak from "../../images/kayaking1.jpg";
 // import "./style.css";
 
 class HoverPage extends React.Component {
