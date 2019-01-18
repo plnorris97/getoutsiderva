@@ -2,16 +2,22 @@ import axios from "axios";
 
 export default {
 
-  getActivity: function(name) {
-    return axios.get("/api/activities/" + name)
+  getActivity: function() {
+    return axios.get("/api/activities/:name")
   },
   // Gets the book with the given id
   getActivities: function() {
     return axios.get("/api/activities");
   },
   getCountyParks: function() {
-      return axios.get("/api/parks/county");
+      return axios.get("/api/destinations/parks");
+  },
+  getSearch: function () {
+    return axios.get("/advanced-search");
   }
+  // doAdvancedSearch: function() {
+  //   return axios.get("")
+  // }
 //   getStateParks: function() {
 //       return axios.get("/api/parks/state");
 //   }

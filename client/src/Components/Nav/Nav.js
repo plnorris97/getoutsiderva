@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBNavbar, MDBIcon, Dropdown, NavItem, DropdownToggle, DropdownMenu, DropdownItem, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-class FixedNavbarExample extends React.Component {
+class FixedNavbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,11 +42,18 @@ class FixedNavbarExample extends React.Component {
                     <div className="d-none d-md-inline"><MDBIcon icon="tree" />Destinations</div>
                   </DropdownToggle>
                   <DropdownMenu right>
-                    <DropdownItem href="#!">County Parks</DropdownItem>
-                    <DropdownItem href="#!">State Parks</DropdownItem>
+                    <DropdownItem href="/destinations/parks/county">County Parks</DropdownItem>
+                    <DropdownItem href="/destinations/parks/state">State Parks</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
+                </MDBNavbarNav>
+                <MDBNavbarNav right>
+                  <NavItem>
+                    <MDBNavItem active>
+                        <MDBNavLink to="/advanced-search">Search</MDBNavLink>
+                    </MDBNavItem>
+                  </NavItem>
                 </MDBNavbarNav>
               </MDBCollapse>
             </MDBNavbar>
@@ -73,4 +80,4 @@ class FixedNavbarExample extends React.Component {
   }
 }
 
-export default FixedNavbarExample;
+export default FixedNavbar;
