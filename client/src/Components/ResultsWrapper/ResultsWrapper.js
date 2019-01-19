@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardHeader, CardText, CardBody, CardTitle,} from 'reactstrap';
 import "../ResultsWrapper/ResultsWrapper.css";
 import "../../Pages/Detail.js"
   
@@ -8,8 +8,8 @@ function ResultsWrapper(props){
     <Card>
       <CardBody key={props.parks.id}>
         {/* <CardImg src={props.parks.image} alt="nothing"></CardImg> */}
-        <CardTitle>{props.parks.name}</CardTitle>
-        <CardSubtitle>by {props.parks.county}</CardSubtitle>
+        <CardHeader>{props.parks.name}</CardHeader>
+        <CardTitle>by {props.parks.county}</CardTitle>
         <CardText>{props.parks.address}</CardText>
         <CardText>{props.parks.description}</CardText>
         <CardText>{props.parks.activities}</CardText>

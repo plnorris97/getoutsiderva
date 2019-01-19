@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import './App.css';
 import Carousel from '../Components/Carousel/Carousel';
 import Input from '../Components/InputBox/Input';
-import ColGallery from '../Components/ColGallery/ColGallery';
+import Gallery from '../Components/Gallery/Gallery';
 // import Jumbotron from '../Components/Jumbotron/Jumbotron';
 import Video from '../Components/Video/Video';
 
@@ -25,7 +25,7 @@ class Home extends Component {
             <br />
             <Input />
             <br />
-            <ColGallery />
+            <Gallery />
             <br />
             <Video />
             <br />
