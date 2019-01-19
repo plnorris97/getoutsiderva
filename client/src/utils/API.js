@@ -10,7 +10,13 @@ export default {
     return axios.get("/api/activities");
   },
   getCountyParks: function() {
-      return axios.get("/api/destinations/parks");
+      return axios.get("/api/destinations/county-parks");
+  },
+  getStateParks: function() {
+    return axios.get("/api/destinations/state-parks")
+  },
+  getParks: function() {
+    return axios.get("/api/destinations/")
   },
   getSearch: function () {
     return axios.get("/advanced-search");

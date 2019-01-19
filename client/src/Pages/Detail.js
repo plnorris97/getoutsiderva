@@ -6,7 +6,7 @@ import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
 
 class Detail extends Component {
     state = {
-      id: "",
+      // id: "",
       results: []
     }
 
@@ -17,10 +17,10 @@ class Detail extends Component {
         this.showName();
     }
 
-    showName = name => {
-      API.getActivity(name)
+    showName = () => {
+      API.getActivity()
       .then(res =>
-        this.setState(res.params.id)
+        this.setState({results: res.data})
       )
       .catch(err => console.log(err))
     }

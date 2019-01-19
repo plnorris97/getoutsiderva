@@ -23,9 +23,11 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   // find all in a category - find all truly finds all
-  findParks: (req, res) => {
+  findCategory: (req, res) => {
+    console.log(req.params.category)
+    const parsedName = parseStr(req.params.category)
     db.Parks
-    .find(req.params.county)
+    .find({category:parsedName})
     .then(dbModel => res.json(dbModel))
     .catch(err => res.status(422).json(err));
   },
