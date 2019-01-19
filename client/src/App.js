@@ -19,6 +19,8 @@ import Detail from './Pages/Detail';
 // this is a static state parks landing page with hard coded info
 // import stateParks from './Pages/stateParks';
 // import NoMatch from './Pages/NoMatch';
+import Search from './Pages/AdvancedSearch';
+
 
 
 class App extends Component {
@@ -35,6 +37,7 @@ class App extends Component {
             {/* <Route exact path="/destinations" component={Destinations} /> */}
             {/* <Route exact path="/destinations/parks/county" component={countyParks} /> */}
             {/* <Route exact path="/destinations/parks/state" component={stateParks} /> */}
+            <Route exact path="/advanced-search" component={Search} />
             {/* <Route component={NoMatch} /> */}
           </Switch>
           <Footer />
