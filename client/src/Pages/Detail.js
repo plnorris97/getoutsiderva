@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, } from "react-router-dom";
 import React, { Component } from "react";
 import API from "../utils/API";
 import SearchBtn from "../Components/SearchBtn/SearchBtn"
