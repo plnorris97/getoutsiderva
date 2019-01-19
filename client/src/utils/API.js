@@ -2,8 +2,8 @@ import axios from "axios";
 
 export default {
 
-  getActivity: function() {
-    return axios.get("/api/activities/:name")
+  getActivity: function(name) {
+    return axios.get("/api/activities/" + name)
   },
   // Gets the book with the given id
   getActivities: function() {

@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../../Pages/AdvancedSearch";
+import SearchForm from "../../Pages/AdvancedSearch";
 
 // This file exports the Input, TextArea, and FormBtn components
 class SearchForm extends React.Component {

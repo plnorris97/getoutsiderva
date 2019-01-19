@@ -3,22 +3,21 @@ import API from "../utils/API";
 import { Container, Row, Col } from 'reactstrap';
 import SearchBtn from "../Components/SearchBtn/SearchBtn"
 import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
+import { readSync } from "fs";
 
 class Detail extends Component {
     state = {
-      // id: "",
-      results: []
+      name: "",
+      park: []
     }
 
-
-
-    componentDidMount() {
+    componentDidMount(name) {
         // shows activity name in banner image
-        this.showName();
+        this.showName(name);
     }
 
-    showName = () => {
-      API.getActivity()
+    showName = (name) => {
+      API.getActivity(name)
       .then(res =>
         this.setState({results: res.data})
       )
@@ -38,10 +37,10 @@ class Detail extends Component {
       // const query = this.state.search.replace(/ /g, "+");
       // let path = "/parks/county?q=" + query
       // console.log(path);
-      API.getCountyParks()
-        .then(res => {
-        console.log(res);
-      })
+      API.getParks(this.props.match.params.name)
+      .then(res =>
+        this.setState({park: res.data})
+      )
     }
 
   render() {
@@ -58,7 +57,7 @@ class Detail extends Component {
         </Row>
         <Row>
           {/* <Col>{showName}</Col> */}
-          <Col>{this.showName}</Col>
+          <Col>{this.showName()}</Col>
         </Row>
         <Row>
           <Col>.col</Col>
@@ -72,10 +71,10 @@ class Detail extends Component {
           <Col>.col</Col>
         </Row>
         <Row>
-            {this.state.results.length ? (
-              this.state.results.map(parks => (
+            {this.state.park.length ? (
+              this.state.park.map(park => (
                 <ResultsWrapper className="card-result"
-                parks = {parks}
+                park = {park}
                 />
             ))
           ):(

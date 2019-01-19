@@ -20,6 +20,7 @@ import Detail from './Pages/Detail';
 // import stateParks from './Pages/stateParks';
 // import NoMatch from './Pages/NoMatch';
 import Search from './Pages/AdvancedSearch';
+import ActivitiesLP from "./Pages/Activities";
 
 
 
@@ -33,6 +34,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             {/* <Route exact path="/activities" component={Activities} /> */}
+            <Route exact path="/activities" component={ActivitiesLP} />
             <Route exact path="/activities/:name" component={Detail} />
             {/* <Route exact path="/destinations" component={Destinations} /> */}
             {/* <Route exact path="/destinations/parks/county" component={countyParks} /> */}
