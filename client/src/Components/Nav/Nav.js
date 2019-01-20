@@ -34,7 +34,7 @@ class FixedNavbar extends React.Component {
                     <MDBNavLink to="/"><MDBIcon icon="home" />Home</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/activities"><MDBIcon icon="bicycle" />Activities</MDBNavLink>
+                    <MDBNavLink to="/activities/"><MDBIcon icon="bicycle" />Activities</MDBNavLink>
                   </MDBNavItem>
                   <NavItem>
                 <Dropdown>
@@ -42,8 +42,8 @@ class FixedNavbar extends React.Component {
                     <div className="d-none d-md-inline"><MDBIcon icon="tree" />Destinations</div>
                   </DropdownToggle>
                   <DropdownMenu right>
-                    <DropdownItem href="/destinations/parks/county">County Parks</DropdownItem>
-                    <DropdownItem href="/destinations/parks/state">State Parks</DropdownItem>
+                    <DropdownItem href="/destinations/parks/county">Parks</DropdownItem>
+                    <DropdownItem href="/destinations/parks/state">Attractions</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>

@@ -33,17 +33,10 @@ router
 router
   .route("/county-parks")
   .get((req, res) => {
-    destinationsController.findParks(req, res)
+    destinationsController.findCategory(req, res)
   })
-// Looks up the specific county park landing page :county = county name in db
-// router
-//   .route("/parks/county/:county")
-//   .get((req, res) => {
-//     destinationsController.findCounty(req, res)
-//   });
-  // .then(() => res.json({ success: true}))
-  // .catch(err => res.status(404).json({ success: false}))
 
+// finds a specific park
 router
   .route("/parks/county/:name")
   .get((req, res) => {
