@@ -16,14 +16,9 @@ class SearchPage extends React.Component {
             aria-label="Search"
             text-align="center"
           />
-          <Button
-            gradient="sunny-morning"
-            rounded
-            size="sm"
-            type="submit"
-            className="mr-auto"
+          <Button outline color="warning"
           >
-          <Animation type="bounce" infinite>
+          <Animation type="wobble" infinite>
            <h6> Let's Go! </h6>
            </Animation>
           </Button>

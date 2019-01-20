@@ -1,13 +1,18 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
 import API from "../utils/API";
-import { Container, Row, Col } from 'reactstrap';
 import SearchBtn from "../Components/SearchBtn/SearchBtn"
+<<<<<<< HEAD:client/src/Pages/ActivityDetail.js
 import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
 import { readSync } from "fs";
 // import BannerImage from '../Components/BannerImage/BannerImage'
+=======
+import Cards from '../Components/Cards/Cards'
+>>>>>>> master:client/src/Pages/Detail.js
 
 class ActivityDetail extends Component {
     state = {
+<<<<<<< HEAD:client/src/Pages/ActivityDetail.js
       name: "",
       park: []
     }
@@ -23,15 +28,22 @@ class ActivityDetail extends Component {
         this.setState({results: res.data})
       )
       .catch(err => console.log(err))
+=======
+      // Search button holds the query parameters
+      results: []
     }
-  
+    componentDidMount() {
+        // look up parks when the page loads
+        this.loadParks();
+>>>>>>> master:client/src/Pages/Detail.js
+    }
 
     // Look up parks
-    // loadParks() {
-    //     API.getCountyParks()
-    //     .then(res => console.log(res))
-    //     .catch(err => console.log(err))
-    // }  
+    loadParks() {
+        API.getCountyParks()
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
+    }  
     
     searchDB = event => {
       event.preventDefault();
@@ -44,6 +56,7 @@ class ActivityDetail extends Component {
       )
     }
 
+<<<<<<< HEAD:client/src/Pages/ActivityDetail.js
   render(props) {
     return (
       <Container>
@@ -80,46 +93,22 @@ class ActivityDetail extends Component {
           )}
         </Row>
       </Container>
+=======
+  render() {
+    return (
 
-      // <Container fluid>
-      //   <Row>
-      //     <Col size="lg-12">
-      //       <Jumbotron>
-      //         <h1>My Book Search</h1>
-      //       </Jumbotron>
-      //     </Col>
-      //   </Row>
-      //   <Row>
-      //     <Col size="lg-12">
-      //       <form>
-      //         <Input
-      //           value={this.state.search}
-      //           onChange={this.searchInput}
-      //           name="search"
-      //           placeholder="Search Book"
-      //         />
-      //         <FormBtn
-      //           onClick={this.searchAPI}
-      //         >
-      //           Search
-      //             </FormBtn>
-      //       </form>
-      //     </Col>
-      //   </Row>
-      //   <Row>
-      //         {this.state.results.length ? (
-      //           this.state.results.map(book => (
-      //             <BookWrapper className="card-result"
-      //               book = {book}
-      //             />
-      //           ))
-      //         ):(
-      //           <Col className="results" sm="12" md={{size:6, offset:3}}>
-      //           <h3>Enter a book title to get some results.</h3>
-      //           </Col>
-      //         )}
-      //       </Row> 
-      //     </Container>
+      <Router>
+        <div className="Detail">
+        <SearchBtn onClick={this.searchDB}>
+              Find parks
+        </SearchBtn>
+      
+      <Cards />
+        </div>
+      </Router>
+
+>>>>>>> master:client/src/Pages/Detail.js
+
         );
     }
 }
