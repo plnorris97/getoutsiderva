@@ -3,7 +3,7 @@ import API from "../utils/API";
 import { Container, Row, Col } from 'reactstrap';
 import SearchBtn from "../Components/SearchBtn/SearchBtn"
 import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
-import { readSync } from "fs";
+// import { readSync } from "fs";
 import BannerImage from '../Components/BannerImage/BannerImage'
 
 class ParkDetail extends Component {

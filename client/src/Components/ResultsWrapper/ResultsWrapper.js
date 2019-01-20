@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardText, CardBody, CardTitle,} from 'reactstrap';
+import { Card, CardHeader, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import "../ResultsWrapper/ResultsWrapper.css";
 // import "../../Pages/Detail.js"
   
@@ -8,7 +8,6 @@ function ResultsWrapper(props){
     <Card>
       <CardBody key={props.park.id}>
         {/* <CardImg src={props.parks.image} alt="nothing"></CardImg> */}
-<<<<<<< HEAD
         <CardTitle>{props.park.name}</CardTitle>
         <CardSubtitle>{props.park.county}</CardSubtitle>
         <CardText>{props.park.address}</CardText>
@@ -16,7 +15,6 @@ function ResultsWrapper(props){
         <CardText>{props.park.activities}</CardText>
         <CardText>{props.park.amenities}</CardText>
         {/* <Button id={props.book.id} className="view-btn">View</Button> */}
-=======
         <CardHeader>{props.parks.name}</CardHeader>
         <CardTitle>by {props.parks.county}</CardTitle>
         <CardText>{props.parks.address}</CardText>
@@ -24,7 +22,6 @@ function ResultsWrapper(props){
         <CardText>{props.parks.activities}</CardText>
         <CardText>{props.parks.amenities}</CardText>
         {/* <Button id={props.book.id} className="view-btn">View</Button> */} */}
->>>>>>> master
       </CardBody>
     </Card>
   )

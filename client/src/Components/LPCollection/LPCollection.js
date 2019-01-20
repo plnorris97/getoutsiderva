@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardImg, CardBody,
-    CardTitle, Button } from 'reactstrap';
+// import { Card, CardImg, CardBody,
+//     CardTitle, Button } from 'reactstrap';
 import LPCard from './LPCard';
 // import { PromiseProvider } from "mongoose";
 // import { Jumbotron, MDBContainer, View, Mask } from "mdbreact";

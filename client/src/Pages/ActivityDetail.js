@@ -1,18 +1,15 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
 import API from "../utils/API";
 import SearchBtn from "../Components/SearchBtn/SearchBtn"
-<<<<<<< HEAD:client/src/Pages/ActivityDetail.js
 import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
 import { readSync } from "fs";
 // import BannerImage from '../Components/BannerImage/BannerImage'
-=======
 import Cards from '../Components/Cards/Cards'
->>>>>>> master:client/src/Pages/Detail.js
+import {Container, Row, Col} from 'reactstrap';
 
 class ActivityDetail extends Component {
     state = {
-<<<<<<< HEAD:client/src/Pages/ActivityDetail.js
       name: "",
       park: []
     }
@@ -28,14 +25,6 @@ class ActivityDetail extends Component {
         this.setState({results: res.data})
       )
       .catch(err => console.log(err))
-=======
-      // Search button holds the query parameters
-      results: []
-    }
-    componentDidMount() {
-        // look up parks when the page loads
-        this.loadParks();
->>>>>>> master:client/src/Pages/Detail.js
     }
 
     // Look up parks
@@ -56,7 +45,6 @@ class ActivityDetail extends Component {
       )
     }
 
-<<<<<<< HEAD:client/src/Pages/ActivityDetail.js
   render(props) {
     return (
       <Container>
@@ -76,8 +64,6 @@ class ActivityDetail extends Component {
               Find parks
             </SearchBtn>
           </Col>
-          {/* <Col>.col</Col>
-          <Col>.col</Col> */}
         </Row>
         <Row>
             {this.state.park.length ? (
@@ -93,21 +79,6 @@ class ActivityDetail extends Component {
           )}
         </Row>
       </Container>
-=======
-  render() {
-    return (
-
-      <Router>
-        <div className="Detail">
-        <SearchBtn onClick={this.searchDB}>
-              Find parks
-        </SearchBtn>
-      
-      <Cards />
-        </div>
-      </Router>
-
->>>>>>> master:client/src/Pages/Detail.js
 
         );
     }
