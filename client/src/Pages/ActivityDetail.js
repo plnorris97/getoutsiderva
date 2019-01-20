@@ -4,8 +4,9 @@ import { Container, Row, Col } from 'reactstrap';
 import SearchBtn from "../Components/SearchBtn/SearchBtn"
 import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
 import { readSync } from "fs";
+// import BannerImage from '../Components/BannerImage/BannerImage'
 
-class Detail extends Component {
+class ActivityDetail extends Component {
     state = {
       name: "",
       park: []
@@ -13,7 +14,7 @@ class Detail extends Component {
 
     componentDidMount(name) {
         // shows activity name in banner image
-        this.showName(name);
+        // this.searchDB() pass in name to call to db ; werite a query to call all of the info
     }
 
     showName = (name) => {
@@ -43,32 +44,27 @@ class Detail extends Component {
       )
     }
 
-  render() {
-    // const data = [{name: ""}];
-    // const showName = data.map((data) => <p key={data.name}>{data.name}</p>);
-
+  render(props) {
     return (
       <Container>
         <Row>
-          <br />
-          <br />
-          <br />
-          <br />
+        {/* <BannerImage path={this.props.match.params.name} />         */}
         </Row>
         <Row>
-          {/* <Col>{showName}</Col> */}
+          <Col></Col>
+        </Row>
+        <Row>
           <Col>{this.showName()}</Col>
         </Row>
         <Row>
-          <Col>.col</Col>
+          {/* <Col>.col</Col> */}
           <Col>
             <SearchBtn onClick={this.searchDB}>
               Find parks
             </SearchBtn>
           </Col>
-      
-          <Col>.col</Col>
-          <Col>.col</Col>
+          {/* <Col>.col</Col>
+          <Col>.col</Col> */}
         </Row>
         <Row>
             {this.state.park.length ? (
@@ -82,25 +78,6 @@ class Detail extends Component {
             <h3>You should see results here.</h3>
             </Col>
           )}
-        </Row>
-        <Row>
-          <Col xs="6">.col-6</Col>
-          <Col xs="6">.col-6</Col>
-        </Row>
-        <Row>
-          <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-          <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-          <Col sm="4">.col-sm-4</Col>
-        </Row>
-        <Row>
-          <Col sm={{ size: 6, order: 2, offset: 1 }}>.col-sm-6 .order-sm-2 .offset-sm-1</Col>
-        </Row>
-        <Row>
-          <Col sm="12" md={{ size: 6, offset: 3 }}>.col-sm-12 .col-md-6 .offset-md-3</Col>
-        </Row>
-        <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>.col-sm-auto .offset-sm-1</Col>
-          <Col sm={{ size: 'auto', offset: 1 }}>.col-sm-auto .offset-sm-1</Col>
         </Row>
       </Container>
 
@@ -146,4 +123,4 @@ class Detail extends Component {
         );
     }
 }
-export default Detail;
+export default ActivityDetail;

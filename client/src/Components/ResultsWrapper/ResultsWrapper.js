@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import "../ResultsWrapper/ResultsWrapper.css";
-import "../../Pages/Detail.js"
+// import "../../Pages/Detail.js"
   
 function ResultsWrapper(props){
   return(
