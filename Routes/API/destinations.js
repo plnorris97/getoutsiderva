@@ -4,7 +4,6 @@ const destinationsController = require("../../Controllers/destinationsController
 // Matches with "/api/destinations"
 router.route("/")
   .get((req, res) => {
-    console.log('we\'re here')
     destinationsController.findAll(req, res)
     // .then((results) => {
     //   console.log(results);

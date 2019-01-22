@@ -23,14 +23,14 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   // find all in a category - find all truly finds all
-  findCategory: (req, res) => {
-    console.log(req.params.category)
-    const parsedName = parseStr(req.params.category)
-    db.Parks
-    .find({category:parsedName})
-    .then(dbModel => res.json(dbModel))
-    .catch(err => res.status(422).json(err));
-  },
+  // findCategory: (req, res) => {
+  //   console.log(req.params.category)
+  //   const parsedName = parseStr(req.params.category)
+  //   db.Parks
+  //   .find({category:parsedName})
+  //   .then(dbModel => res.json(dbModel))
+  //   .catch(err => res.status(422).json(err));
+  // },
   findName: (req, res) => {
     console.log(req.params.name)
     const parsedName = parseStr(req.params.name)
@@ -38,15 +38,15 @@ module.exports = {
       .find({name:parsedName})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  },
-  findCounty: (req, res) => {
-    console.log(req.params.county)
-    const parsedName = parseStr(req.params.county)
-    db.Parks
-      .find({county:parsedName})
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
   }
+  // findCounty: (req, res) => {
+  //   console.log(req.params.county)
+  //   const parsedName = parseStr(req.params.county)
+  //   db.Parks
+  //     .find({county:parsedName})
+  //     .then(dbModel => res.json(dbModel))
+  //     .catch(err => res.status(422).json(err));
+  // }
   // create: function(req, res) {
   //   db.Book
   //     .create(req.body)
