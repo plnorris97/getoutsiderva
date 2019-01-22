@@ -10,4 +10,8 @@ router
   .route("/:name")
   .get(activityController.findByName)
 
+router
+  .route("/activities")
+  .get(activityController.findAll)
+
 module.exports = router;

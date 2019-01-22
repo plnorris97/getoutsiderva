@@ -2,10 +2,9 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import SearchBtn from "../Components/SearchBtn/SearchBtn"
-import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper"
-import { readSync } from "fs";
-// import BannerImage from '../Components/BannerImage/BannerImage'
-import Cards from '../Components/Cards/Cards'
+import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper";
+// import Cards from '../Components/Cards/Cards'
+import Hero from '../Components/Hero/Hero';
 import {Container, Row, Col} from 'reactstrap';
 
 class ActivityDetail extends Component {
@@ -14,9 +13,10 @@ class ActivityDetail extends Component {
       park: []
     }
 
-    componentDidMount(name) {
+    componentDidMount() {
         // shows activity name in banner image
         // this.searchDB() pass in name to call to db ; werite a query to call all of the info
+        this.loadParks();
     }
 
     showName = (name) => {
@@ -49,34 +49,21 @@ class ActivityDetail extends Component {
     return (
       <Container>
         <Row>
-        {/* <BannerImage path={this.props.match.params.name} />         */}
+        <Hero />
+          
         </Row>
         <Row>
           <Col></Col>
         </Row>
         <Row>
-          <Col>{this.showName()}</Col>
-        </Row>
-        <Row>
-          {/* <Col>.col</Col> */}
-          <Col>
+            <Col>
             <SearchBtn onClick={this.searchDB}>
               Find parks
             </SearchBtn>
           </Col>
         </Row>
         <Row>
-            {this.state.park.length ? (
-              this.state.park.map(park => (
-                <ResultsWrapper className="card-result"
-                park = {park}
-                />
-            ))
-          ):(
-            <Col className="results" sm="12" md={{size:6, offset:3}}>
-            <h3>You should see results here.</h3>
-            </Col>
-          )}
+      
         </Row>
       </Container>
 
