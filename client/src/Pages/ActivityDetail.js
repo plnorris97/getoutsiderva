@@ -6,6 +6,7 @@ import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper";
 // import Cards from '../Components/Cards/Cards'
 import Hero from '../Components/Hero/Hero';
 import {Container, Row, Col} from 'reactstrap';
+import Cards from '../Components/Cards/Cards';
 
 class ActivityDetail extends Component {
     state = {
@@ -47,25 +48,19 @@ class ActivityDetail extends Component {
 
   render(props) {
     return (
-      <Container>
-        <Row>
+      <div>
         <Hero />
-          
-        </Row>
-        <Row>
-          <Col></Col>
-        </Row>
-        <Row>
-            <Col>
+
+       
             <SearchBtn onClick={this.searchDB}>
               Find parks
             </SearchBtn>
-          </Col>
-        </Row>
-        <Row>
-      
-        </Row>
-      </Container>
+         
+       
+
+      <Cards />
+       </div>
+    
 
         );
     }
