@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Col, Row, } from 'mdbreact';
 
-class CardExample extends React.Component {
+class Cards extends React.Component {
   render() {
     return (
 
@@ -118,4 +118,4 @@ class CardExample extends React.Component {
   }
 }
 
-export default CardExample;
+export default Cards;

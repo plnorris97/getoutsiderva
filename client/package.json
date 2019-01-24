@@ -4,9 +4,11 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "@material-ui/styles": "^3.0.0-alpha.8",
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "jquery": "^1.9.1",
+    "mdbreact": "^4.9.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-lazy-hero": "^2.0.0",

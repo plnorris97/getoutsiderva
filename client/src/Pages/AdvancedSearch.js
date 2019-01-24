@@ -62,9 +62,7 @@ class Search extends Component {
             <Row>
               <hr />
             </Row>
-            <Row>
-                This is a row
-            </Row>
+
             <Row>
                 <Col>
                 <form on submit={this.handleFormSubmit}>
@@ -81,6 +79,8 @@ class Search extends Component {
                 <form on submit={this.handleSelectorSubmit}>
                 <label>
                     What do you want to do?
+                    <p>Select multiple activities using the Ctrl key.</p>
+
                     <select multiple={true} value2={this.state.value} onChange={this.handleChange}>
                         <option value="biking">Biking</option>
                         <option value="birding/wildlife">Birding/Wildlife</option>
@@ -97,12 +97,9 @@ class Search extends Component {
                     </select>
                 </label>
                 </form>
-                <Row>
-                    <p>Select multiple activities using the Ctrl key.</p>
-                </Row>
+
                 </Col>
-            </Row>
-            <Row>
+
                 <Col xs="6" sm="4"><form on submit={this.handleCheckedSubmit}>
                 <label>
                 What amenities do you need?
@@ -184,12 +181,9 @@ class Search extends Component {
                 </form>
                 </Col>
             </Row>
-            <Row>
-                <Col sm={{ size: 6, order: 2, offset: 1 }}>.col-sm-6 .order-sm-2 .offset-sm-1</Col>
-            </Row>
-            <Row>
-                <Col sm={{ size: 'auto', offset: 1 }}>.col-sm-auto .offset-sm-1</Col>
-            </Row>
+
+         
+
             </Container>
         );
     }

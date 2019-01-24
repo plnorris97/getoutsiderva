@@ -17,6 +17,7 @@ import ParkDetail from './Pages/ParkDetail';
 // import NoMatch from './Pages/NoMatch';
 import Search from './Pages/AdvancedSearch';
 import ActivitiesLP from "./Pages/ActivitiesLP";
+import Practice from "./Pages/Practice";
 
 class App extends Component {
   render() {
@@ -33,6 +34,8 @@ class App extends Component {
             {/* <Route exact path="/destinations/parks/state" component={stateParks} /> */}
             <Route exact path="/advanced-search" component={Search} />
             {/* <Route component={NoMatch} /> */}
+            <Route exact path="/Practice" component={Practice} />
+
           </Switch>
           <Footer />
         </div>
