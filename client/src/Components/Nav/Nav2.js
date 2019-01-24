@@ -6,7 +6,11 @@ export default class Navbar extends React.Component {
     return (
       <div>
         <Nav>
-          <NavLink href="/">Home</NavLink> <NavLink href="/activities">Activities</NavLink> <NavLink href="/destinations">Parks</NavLink> <NavLink href="/advanced-search">Search</NavLink> 
+          <NavLink href="/">Home</NavLink> 
+          <NavLink href="/activities">Activities</NavLink> 
+          <NavLink href="/destinations">Parks</NavLink> 
+          <NavLink href="/advanced-search">Search</NavLink> 
+          <NavLink href="/auth">Log In/Sign Up</NavLink>
         </Nav>
       </div>
     );

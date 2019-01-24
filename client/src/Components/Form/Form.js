@@ -1,5 +1,5 @@
 import React from "react";
-import SearchForm from "../../Pages/AdvancedSearch";
+// import SearchForm from "../../Pages/AdvancedSearch";
 
 // This file exports the Input, TextArea, and FormBtn components
 class SearchForm extends React.Component {
@@ -31,4 +31,4 @@ export function FormBtn(props) {
  );
 }
 
-export default SearchForm
+export default SearchForm;
