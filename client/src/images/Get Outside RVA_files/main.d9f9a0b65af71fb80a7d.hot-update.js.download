@@ -1,0 +1,164 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var font_awesome_css_font_awesome_min_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! font-awesome/css/font-awesome.min.css */ "../node_modules/font-awesome/css/font-awesome.min.css");
+/* harmony import */ var font_awesome_css_font_awesome_min_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(font_awesome_css_font_awesome_min_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var bootstrap_css_only_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bootstrap-css-only/css/bootstrap.min.css */ "../node_modules/bootstrap-css-only/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_css_only_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(bootstrap_css_only_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var mdbreact_dist_css_mdb_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! mdbreact/dist/css/mdb.css */ "../node_modules/mdbreact/dist/css/mdb.css");
+/* harmony import */ var mdbreact_dist_css_mdb_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(mdbreact_dist_css_mdb_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _Components_Nav_Nav2__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Components/Nav/Nav2 */ "./src/Components/Nav/Nav2.js");
+/* harmony import */ var _Components_Footer_Footer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Components/Footer/Footer */ "./src/Components/Footer/Footer.js");
+/* harmony import */ var _Pages_Home__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Pages/Home */ "./src/Pages/Home.js");
+/* harmony import */ var _Pages_ActivityDetail__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Pages/ActivityDetail */ "./src/Pages/ActivityDetail.js");
+/* harmony import */ var _Pages_ParksLP__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./Pages/ParksLP */ "./src/Pages/ParksLP.js");
+/* harmony import */ var _Pages_ParkDetail__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./Pages/ParkDetail */ "./src/Pages/ParkDetail.js");
+/* harmony import */ var _Pages_AdvancedSearch__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./Pages/AdvancedSearch */ "./src/Pages/AdvancedSearch.js");
+/* harmony import */ var _Pages_ActivitiesLP__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./Pages/ActivitiesLP */ "./src/Pages/ActivitiesLP.js");
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Andrea\\Desktop\\Bootcamp\\getoutsiderva\\client\\src\\App.js";
+
+
+
+
+
+
+ // import Nav from './Components/Nav/Nav';
+
+
+
+
+
+ // import NoMatch from './Pages/NoMatch';
+
+
+
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(App, _Component);
+
+  function App() {
+    Object(C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, App);
+
+    return Object(C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(App).apply(this, arguments));
+  }
+
+  Object(C_Users_Andrea_Desktop_Bootcamp_getoutsiderva_client_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(App, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "App",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Components_Nav_Nav2__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Switch"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+        exact: true,
+        path: "/",
+        component: _Pages_Home__WEBPACK_IMPORTED_MODULE_13__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+        exact: true,
+        path: "/activities",
+        component: _Pages_ActivitiesLP__WEBPACK_IMPORTED_MODULE_18__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+        exact: true,
+        path: "/activities/:name",
+        component: _Pages_ActivityDetail__WEBPACK_IMPORTED_MODULE_14__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+        exact: true,
+        path: "/destinations",
+        component: _Pages_ParksLP__WEBPACK_IMPORTED_MODULE_15__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+        exact: true,
+        path: "/parks/:name",
+        component: _Pages_ParkDetail__WEBPACK_IMPORTED_MODULE_16__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Route"], {
+        exact: true,
+        path: "/advanced-search",
+        component: _Pages_AdvancedSearch__WEBPACK_IMPORTED_MODULE_17__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Components_Footer_Footer__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }));
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.d9f9a0b65af71fb80a7d.hot-update.js.map

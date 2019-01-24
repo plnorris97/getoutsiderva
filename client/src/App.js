@@ -8,15 +8,15 @@ import Navbar from './Components/Nav/Nav2'
 // import Nav from './Components/Nav/Nav';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
-// this is the detail page for both activity or county park location (pulls from the db)
+import ActivitiesLP from "./Pages/ActivitiesLP";
 import ActivityDetail from './Pages/ActivityDetail';
-// this is the static destination landing page with hard coded info
 import ParksLP from './Pages/ParksLP';
-// this is the static county parks landing page with hard coded info
 import ParkDetail from './Pages/ParkDetail';
 // import NoMatch from './Pages/NoMatch';
 import Search from './Pages/AdvancedSearch';
-import ActivitiesLP from "./Pages/ActivitiesLP";
+import HomeAuth from './Components/Auth/Home';
+import Signin from './Components/Auth/Signin'
+
 
 class App extends Component {
   render() {
@@ -29,9 +29,9 @@ class App extends Component {
             <Route exact path="/activities/:name" component={ActivityDetail} />
             <Route exact path="/destinations" component={ParksLP} />
             <Route exact path="/parks/:name" component={ParkDetail} />
-            {/* <Route exact path="/destinations/parks/county" component={countyParks} /> */}
-            {/* <Route exact path="/destinations/parks/state" component={stateParks} /> */}
             <Route exact path="/advanced-search" component={Search} />
+            <Route exact path="/auth" component={HomeAuth} />
+            <Route exact path="/auth/signin" component={Signin} />
             {/* <Route component={NoMatch} /> */}
           </Switch>
           <Footer />

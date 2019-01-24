@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 // import './App.css';
-import { Link } from 'react-router-dom';
 import API from '../utils/API';
 import { Container, Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
@@ -32,7 +31,6 @@ class ActivitiesLP extends Component {
     render() {
         return (
             <div>
-                {/* <LazyHero img src={require(`../../images${this.props.path}.jpg`)} alt="nothing">{this.props.name}</LazyHero> */}
             <Hero />
             <Container>
                 <Row>  

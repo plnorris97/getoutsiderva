@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import { Container, Row, Col } from 'reactstrap';
-// import { DropDown, FormBtn } from "../Components/Form/Form";
+import { DropDown, FormBtn } from "../Components/Form/Form";
 
 
 class Search extends Component {
@@ -56,14 +56,10 @@ class Search extends Component {
     render() {
         return (
             <Container>
-            <Row>
-                <Col>Advanced Search</Col>
+                <Row>
+                    <Col>Advanced Search</Col>
             </Row>
             <Row>
-              <hr />
-            </Row>
-            <Row>
-                This is a row
             </Row>
             <Row>
                 <Col>
@@ -83,7 +79,7 @@ class Search extends Component {
                     What do you want to do?
                     <select multiple={true} value2={this.state.value} onChange={this.handleChange}>
                         <option value="biking">Biking</option>
-                        <option value="birding/wildlife">Birding/Wildlife</option>
+                        <option value="birding-wildlife">Birding/Wildlife</option>
                         <option value="camping">Camping</option>
                         <option value="disc-golf">disc-golf</option>
                         <option value="exercise-trail">Exercise Trail</option>
@@ -97,9 +93,6 @@ class Search extends Component {
                     </select>
                 </label>
                 </form>
-                <Row>
-                    <p>Select multiple activities using the Ctrl key.</p>
-                </Row>
                 </Col>
             </Row>
             <Row>
@@ -121,55 +114,55 @@ class Search extends Component {
                 <input
                     name="boat-ramp"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.boatRamp}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="history"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.history}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="nature/visitor-center"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.visitorCenter}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="parking-lot"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.parkingLot}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="playground"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.playground}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="restrooms"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.restrooms}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="river/lake"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.riverLake}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="shelters/picnic-area"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.shelterPicnicArea}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
-                    name="swimming"
+                    name="swimming-pool"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.swimmingPool}
                     onChange={this.handleInputChange} />
                 <br />
                 </label>

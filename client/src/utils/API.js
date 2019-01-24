@@ -20,7 +20,10 @@ export default {
   },
   getSearch: function () {
     return axios.get("/advanced-search");
-  }
+  },
+  getAuth: function () {
+    return axios.get("/auth");
+  },
   // doAdvancedSearch: function() {
   //   return axios.get("")
   // }
