@@ -2,6 +2,9 @@
   "name": "get-outside",
   "version": "1.0.0",
   "description": "A full stack MERN application connecting activities, places and crowd sourced information",
+  "engines": {
+    "node": "10.15.0"
+  },
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:server || npm run dev",
