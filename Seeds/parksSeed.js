@@ -457,9 +457,9 @@ const parksSeed = [
     "Image": ""
   }
 ];
-db.activities
+db.Parks
  .remove({})
- .then(() => db.activities.collection.insertMany(activitiesSeed))
+ .then(() => db.Parks.collection.insertMany(parksSeed))
  .then(data => {
    console.log(data.result.n + " records inserted!");
    process.exit(0);
