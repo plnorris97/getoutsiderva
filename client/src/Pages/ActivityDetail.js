@@ -5,7 +5,7 @@ import API from "../utils/API";
 // import Cards from '../Components/Cards/Cards'
 import Hero from '../Components/Hero/Hero';
 import {Container, Row, Col} from 'reactstrap';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText} from 'reactstrap';
+import { Card, CardBody, CardTitle, CardText} from 'reactstrap';
 
 const parseStr = (str) => {
   let newStr = str.replace(/-/g, ' ')

@@ -1,4 +1,13 @@
-[
+const mongoose = require("mongoose");
+const db = require("../Models");
+
+
+mongoose.connect(
+ process.env.MONGODB_URI ||
+ "mongodb://localhost/getoutsiderva"
+);
+
+const parksSeed = [
   {
     "id_destinations": 1,
     "Name": "Dutch Gap Conservation Area",
@@ -447,4 +456,15 @@
     "Activities": ["Birding/Wildlife", "Hiking", "Biking", "Geocaching", "Running"],
     "Image": ""
   }
-]
+];
+db.Parks
+ .remove({})
+ .then(() => db.Parks.collection.insertMany(parksSeed))
+ .then(data => {
+   console.log(data.result.n + " records inserted!");
+   process.exit(0);
+ })
+ .catch(err => {
+   console.error(err);
+   process.exit(1);
+ });

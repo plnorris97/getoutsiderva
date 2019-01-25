@@ -1,4 +1,6 @@
-const db = require("../models");
+// const db = require("../models");
+const db = mongoose.model('Activity');
+
 
 // Defining methods for the booksController
 module.exports = {

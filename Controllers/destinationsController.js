@@ -1,4 +1,5 @@
-const db = require("../models");
+const db = require("../Models");
+
 
 // this function removes the hyphen and replaces it with a space so it matches the db
 const parseStr = (str) => {
@@ -22,15 +23,7 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  // find all in a category - find all truly finds all
-  // findCategory: (req, res) => {
-  //   console.log(req.params.category)
-  //   const parsedName = parseStr(req.params.category)
-  //   db.Parks
-  //   .find({category:parsedName})
-  //   .then(dbModel => res.json(dbModel))
-  //   .catch(err => res.status(422).json(err));
-  // },
+
   findName: (req, res) => {
     console.log(req.params.name)
     const parsedName = parseStr(req.params.name)

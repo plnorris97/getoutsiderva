@@ -4,11 +4,15 @@
   "description": "A full stack MERN application connecting activities, places and crowd sourced information",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "if-env NODE_ENV=production && npm run start:server || npm run dev",
+   "start:server": "node server.js",
+   "server": "nodemon server.js",
+   "dev": "concurrently \"npm run server\" \"npm run client\"",
+   "client": "cd client && npm run start",
+   "seed": "node Seeds/activitiesSeed.js && node Seeds/parksSeed.js",
+   "install": "cd client && npm install",
+   "build": "cd client && npm run build",
+   "heroku-postbuild": "npm run build && npm run seed"
   },
   "repository": {
     "type": "git",
