@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LazyHero from 'react-lazy-hero';
 
 class Hero extends Component {
-    render() {
+    render(props) {
         return (
             <div>
                 <LazyHero opacity={0.2} minHeight="80vh" isCentered={true} imageSrc="http://orogoldstorelocator.com/wp-content/uploads/2016/08/OROGOLD-Popular-German-Outdoor-Activities-Cycling.jpg" parallaxOffset={2} >
@@ -15,6 +15,8 @@ class Hero extends Component {
             </div>
         )}
 }
+
+// {require(`../../images/${this.props.name}.jpg`)}
 export default Hero;
 
 

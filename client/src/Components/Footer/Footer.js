@@ -9,26 +9,25 @@ return (
   <Container fluid className="text-center text-md-left">
     <Row>
       <Col md="6">
-      <h5 className="title">Footer Content</h5>
+      <h5 className="title">Get Outside RVA</h5>
       <p>
-        Here you can use rows and columns here to organize your footer
-        content.
+      Get Outside RVA is a movement focused on getting RVA and visitors OUTSIDE. The river city is full of outdoor opportunities and we want to connect everyone to these opportunities.
       </p>
       </Col>
       <Col md="6">
-      <h5 className="title">Links</h5>
+      <h5 className="title">About</h5>
       <ul>
         <li className="list-unstyled">
-          <a href="#!">Link 1</a>
+          <a href="#!">About</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Link 2</a>
+          <a href="#!">Partners</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Link 3</a>
+          <a href="#!">Resources</a>
         </li>
         <li className="list-unstyled">
-          <a href="#!">Link 4</a>
+          <a href="#!">Contact</a>
         </li>
       </ul>
       </Col>
@@ -37,7 +36,7 @@ return (
   <div className="footer-copyright text-center py-3">
     <Container fluid>
       &copy; {new Date().getFullYear()} Copyright:{" "}
-      <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+      <a href="https://www.getoutsiderva.com"> GetOutsideRVA.com </a>
     </Container>
   </div>
 </Footer>
