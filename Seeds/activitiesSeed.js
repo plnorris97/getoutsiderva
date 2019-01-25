@@ -1,4 +1,13 @@
-[
+const mongoose = require("mongoose");
+const db = require("../models");
+
+
+mongoose.connect(
+ process.env.MONGODB_URI ||
+ "mongodb://localhost/getoutsiderva"
+);
+
+const activitiesSeed =[
     {
         "id": "1",
         "name": "Paddle Sports",
@@ -65,4 +74,16 @@
          "description": ["Richmond has a great running scene, with lots of spots. The most popular runs are along the James River waterfront park, which includes scenic Belle Isle. Pretty historic and residential runs include Monument Ave and Grove Ave, or the campus of the University of Richmond. A number of local parks, including Byrd Park, Maymont, and Bryan Park, also have short but pleasant designated running paths. Distance runners often prefer to do their mileage on the Virginia Capital “Cap” Trail, which is accessible via the lovely Canal Walk, while trail runners can travel a short distance outside the city to beautiful Pocahontas State Park."],
          "parks": ["Dutch Gap Conservation Area", "Henricus Historical Park", "Huguenot Park", "Harry G Daniel Park at Iron Bridge", "Pocahontas State Park", "R. Garland Dodd Park At Point Of Rocks", "Robious Landing Park", "Rockwood Park", "Cheswick Park", "Deep Bottom Park & Four Mile Creek", "Deep Run Park & Recreation Center", "Dorey Park and Recreation Center", "Dunncroft/Castle Point Park", "Echo Lake Park", "Meadow Farm Museum at Crump Park", "Pouncey Tract Park", "Short Pump Park", "Springfield Park", "Three Lakes Park & Nature Center", "Tuckahoe Creek Park", "Twin Hickory Park & Recreation Center", "Belle Isle", "Bryan Park", "Byrd Park", "Great Shiplock Park/Chapel Island", "Northbank Trail and Texas Beach"]
      }
- ]
+ ];
+
+ db.activities
+ .remove({})
+ .then(() => db.activities.collection.insertMany(activitiesSeed))
+ .then(data => {
+   console.log(data.result.n + " records inserted!");
+   process.exit(0);
+ })
+ .catch(err => {
+   console.error(err);
+   process.exit(1);
+ });
