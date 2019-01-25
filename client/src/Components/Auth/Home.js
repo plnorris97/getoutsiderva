@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import LoginForm from './Signin';
 import Signup from './Signup';
+import './style.css';
 
 class HomeAuth extends Component {
     
@@ -15,14 +16,14 @@ class HomeAuth extends Component {
                 <p>Share your stories and your experiences and find like-minded activity seekers to get outside and have fun.</p>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col className="login-col">
                         {/* <img src='https://s3.amazonaws.com/cdn.ideastations.org/radio-images/article-width/captrail_main.jpg' alt="Log In" /> */}
-                        <h3>Login to your account and start sharing!</h3>
+                        <h4>Login to your account and start sharing!</h4>
                         <LoginForm />
                         </Col>
-                        <Col>
+                        <Col className="signup-col">
                         {/* <img src='https://i0.wp.com/seekthegreatness.com/wp-content/uploads/2018/09/092718_STG_lazyman.jpg?w=612&ssl=1'alt="Sign Up"/> */}
-                        <h3>Don't have an account? Create one!</h3>
+                        <h4>Don't have an account? Create one!</h4>
                         <Signup />
                         </Col>
                     </Row>

@@ -1,6 +1,6 @@
-const db = require("../models");
-const User = require("../models/User")
-const UserSession = require("../models/UserSession")
+const db = require("../Models");
+const User = require("../Models/User")
+const UserSession = require("../Models/UserSession")
 
 // Defining methods for the loginController
 module.exports = {
@@ -19,9 +19,6 @@ module.exports = {
       password
     } = body;
     let { email } = body;
-
-
-
 
     if (!firstName) {
       return res.send({

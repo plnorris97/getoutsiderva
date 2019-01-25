@@ -3,14 +3,14 @@ import axios from "axios";
 export default {
 
    // Search the database 
-  getUser: (query) => {
-    return axios.post("/api/signin", query);
+  getUser: function(res) {
+    return axios.post("/api/signin/", res);
   },
-  createUser: (query) => {
-    return axios.post("/api/signup", query);
+  createUser: function(res) {
+    return axios.post("/api/signup/", res);
   },
-  checkAuth: function(query) {
-    console.log("Quer in API = " + JSON.stringify(query));
-    return axios.post("/api/verify", query);
+  checkAuth: function(res) {
+    console.log("Query in API = " + JSON.stringify(res));
+    return axios.post("/api/verify/", res);
   }
 };
