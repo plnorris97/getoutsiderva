@@ -39,9 +39,7 @@ class Search extends Component {
             //   need to define PARKS & ATTRACTIONS
             //  need to define ACTIVITIES
             name: this.state.name
-            // name: this.state.title,
-            // author: this.state.author,
-            // synopsis: this.state.synopsis
+            
           })
             .then(res => this.loadBooks())
             .catch(err => console.log(err));
@@ -96,25 +94,26 @@ class Search extends Component {
                 </Col>
             </Row>
             <Row>
+                
                 <Col xs="6" sm="4"><form on submit={this.handleCheckedSubmit}>
                 <label>
                 What amenities do you need?
                 <input
                     name="amphitheatre"
                     type="checkbox"
-                    checked={this.state.amphitheatre}
+                    checked={this.state.isChecked}
                     onChange={this.handleInputChange} />
                 <br />    
                 <input
                     name="ball-fields"
                     type="checkbox"
-                    checked={this.state.ballFields}
+                    checked={this.state.isChecked}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="boat-ramp"
                     type="checkbox"
-                    checked={this.state.boatRamp}
+                    checked={this.state.isChecked}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
@@ -166,14 +165,6 @@ class Search extends Component {
                     onChange={this.handleInputChange} />
                 <br />
                 </label>
-                {/* <label>
-                Number of guests:
-                <input
-                    name="numberOfGuests"
-                    type="number"
-                    value={this.state.numberOfGuests}
-                    onChange={this.handleInputChange} />
-                </label> */}
                 </form>
                 </Col>
             </Row>
