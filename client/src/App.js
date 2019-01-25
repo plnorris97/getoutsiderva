@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import React, { Component } from 'react';
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
 import './App.css';
