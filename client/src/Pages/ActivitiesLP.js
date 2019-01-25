@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 // import './App.css';
 import { Link } from 'react-router-dom';
 import API from '../utils/API';
-import { Container, Row, Col } from 'reactstrap';
+import {  Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
+import Cards from '../Components/Cards/Cards';
 
 class ActivitiesLP extends Component {
     state = {
@@ -30,13 +31,15 @@ class ActivitiesLP extends Component {
 
 
     render() {
+     
+
         return (
             <div>
                 {/* <LazyHero img src={require(`../../images${this.props.path}.jpg`)} alt="nothing">{this.props.name}</LazyHero> */}
             <Hero />
-            <Container>
-                <Row>  
-                    <Col>
+
+            {
+                /* 
                     {this.state.activities.length ? (
                         <Card>
                             {this.state.activities.map(activities => (
@@ -48,11 +51,31 @@ class ActivitiesLP extends Component {
                             ))}
                         </Card>
                     ) : (
-                        <p>Activities should render here as cards.</p>   
+                        <Cards />  
+                    )}
+ */
+            }
+          
+                <Row className="mt-3">  
+                    <Col md="3">
+                    {this.state.activities.length ? (
+                        
+                            this.state.activities.map(activities => (
+                                <Cards 
+                                    key={activities._id}
+                                    name={activities.name}
+                                    description={activities.description}
+                                    parks={activities.parks}
+                                /> 
+                            ))
+                        
+                    ) : (
+                    <p>no data</p>   
                     )}
                     </Col> 
+                    
                 </Row>
-            </Container>
+        
             </div>
         )
     };
