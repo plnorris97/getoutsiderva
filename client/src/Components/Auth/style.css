@@ -1,0 +1,10 @@
+#login-col {
+    width: 150px;
+ 
+    /* padding-right: 10px; */
+}
+
+#signup-col {
+    width: 100px;
+    background-color: orangered;
+}
