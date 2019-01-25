@@ -1,5 +1,5 @@
 module.exports = {
-  Activity: require("./activities"),
+  Activities: require("./activities"),
   Parks: require("./parks"),
   Attractions: require("./attractions")
 };
