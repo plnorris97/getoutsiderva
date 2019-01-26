@@ -14,6 +14,7 @@ import ParksLP from './Pages/ParksLP';
 import ParkDetail from './Pages/ParkDetail';
 // import NoMatch from './Pages/NoMatch';
 import Search from './Pages/AdvancedSearch';
+import Practice from "./Pages/Practice";
 import HomeAuth from './Components/Auth/Home';
 import Signin from './Components/Auth/Signin'
 
@@ -33,6 +34,8 @@ class App extends Component {
             <Route exact path="/auth" component={HomeAuth} />
             <Route exact path="/auth/signin" component={Signin} />
             {/* <Route component={NoMatch} /> */}
+            <Route exact path="/Practice" component={Practice} />
+
           </Switch>
           <Footer />
         </div>
