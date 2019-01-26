@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBNavbar, MDBIcon, Dropdown, NavItem, DropdownToggle, DropdownMenu, DropdownItem, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, } from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 class FixedNavbar extends React.Component {
   constructor(props) {
@@ -31,10 +31,10 @@ class FixedNavbar extends React.Component {
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav left>
                   <MDBNavItem active>
-                    <MDBNavLink to="/"><MDBIcon icon="home" />Home</MDBNavLink>
+                    {/* <MDBNavLink to="/"><MDBIcon icon="home" />Home</MDBNavLink> */}
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/activities/"><MDBIcon icon="bicycle" />Activities</MDBNavLink>
+                    <Link to="/activities/"><MDBIcon icon="bicycle" />Activities</Link>
                   </MDBNavItem>
                   <NavItem>
                 <Dropdown>
@@ -51,7 +51,7 @@ class FixedNavbar extends React.Component {
                 <MDBNavbarNav right>
                   <NavItem>
                     <MDBNavItem active>
-                        <MDBNavLink to="/advanced-search">Search</MDBNavLink>
+                        {/* <MDBNavLink to="/advanced-search">Search</MDBNavLink> */}
                     </MDBNavItem>
                   </NavItem>
                 </MDBNavbarNav>

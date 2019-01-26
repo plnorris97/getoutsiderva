@@ -5,6 +5,7 @@ import API from "../utils/API";
 // import Cards from '../Components/Cards/Cards'
 import Hero from '../Components/Hero/Hero';
 import {Container, Row, Col} from 'reactstrap';
+import Cards from '../Components/Cards/Cards';
 import { Card, CardBody, CardTitle, CardText} from 'reactstrap';
 
 const parseStr = (str) => {
@@ -77,10 +78,9 @@ class ActivityDetail extends Component {
 
   render(props) {
     return (
-      <Container>
-        <Row>
+      <div>
         <Hero />
-        </Row>
+       
         <Row>
           <Col></Col>
         </Row>
@@ -101,10 +101,7 @@ class ActivityDetail extends Component {
             )}
             </Col> 
         </Row>
-        <Row>
-      
-        </Row>
-      </Container>
+      </div>
 
         );
     }
