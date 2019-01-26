@@ -1,12 +1,14 @@
 // import './App.css';
 // import { Card, CardImg, CardText, CardBody,
 //     CardTitle, CardSubtitle, Button } from 'reactstrap';
+// import {  Row, Col } from 'reactstrap';
 
 import React, { Component } from 'react';
 import API from '../utils/API';
-import {  Row, Col } from 'reactstrap';
+import { MDBMask, MDBRow, MDBCol } from "mdbreact";
+
 import Hero from '../Components/Hero/Hero';
-import Cards from '../Components/Cards/Cards';
+import ActivityParkGallery from '../Components/Gallery/ActivityParkGallery';
 
 class ActivitiesLP extends Component {
     state = {
@@ -33,22 +35,22 @@ class ActivitiesLP extends Component {
         return (
             <div>
             <Hero />
-                <Row className="mt-3">  
+                <MDBRow lg="3" md="6" className="mt-3">  
                     {this.state.activities.length ? (
                             this.state.activities.map(activities => (
-                                <Col md="3">
-                                <Cards 
+                                <MDBCol md="3">
+                                <ActivityParkGallery 
                                     key={activities._id}
                                     img={activities.img}
                                     name={activities.name}
                                     // parks={activities.parks}
                                 /> 
-                                </Col> 
+                                </MDBCol> 
                             ))    
                     ) : (
                     <p>no data</p>   
                     )}                    
-                </Row>
+                </MDBRow>
             </div>
         )
     };
