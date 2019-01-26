@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const app = express();
 const routes = require('./Routes');
-const mongojs = require('mongojs');
+// const mongojs = require('mongojs');
 
 // Add path to routes file ./routes/api/...
 // const items = require('')
