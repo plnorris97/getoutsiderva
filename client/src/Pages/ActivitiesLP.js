@@ -57,22 +57,24 @@ class ActivitiesLP extends Component {
             }
           
                 <Row className="mt-3">  
-                    <Col md="3">
+                    
                     {this.state.activities.length ? (
                         
                             this.state.activities.map(activities => (
+                                <Col md="3">
                                 <Cards 
                                     key={activities._id}
                                     name={activities.name}
                                     description={activities.description}
                                     parks={activities.parks}
                                 /> 
+                                </Col> 
                             ))
                         
                     ) : (
                     <p>no data</p>   
                     )}
-                    </Col> 
+                    
                     
                 </Row>
         

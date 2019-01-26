@@ -18,9 +18,7 @@ class SearchPage extends React.Component {
           />
           <Button outline color="warning"
           >
-          <Animation type="wobble" infinite>
            <h6> Let's Go! </h6>
-           </Animation>
           </Button>
 
         </FormInline>
