@@ -4,8 +4,6 @@ import React, { Component } from 'react';
 import API from '../utils/API';
 import {  Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
-// import { Card, CardImg, CardText, CardBody,
-//     CardTitle, CardSubtitle, Button } from 'reactstrap';
 import Cards from '../Components/Cards/Cards';
 
 class ActivitiesLP extends Component {
@@ -30,34 +28,11 @@ class ActivitiesLP extends Component {
 
 
     render() {
-     
-
         return (
             <div>
             <Hero />
-
-            {
-                /* 
-                    {this.state.activities.length ? (
-                        <Card>
-                            {this.state.activities.map(activities => (
-                            <CardBody key={activities._id}>
-                                <CardTitle>{activities.name}</CardTitle>
-                                <CardText>{activities.description}</CardText>
-                                <CardText>{activities.parks}</CardText>
-                            </CardBody>
-                            ))}
-                        </Card>
-                    ) : (
-                        <Cards />  
-                    )}
- */
-            }
-          
                 <Row className="mt-3">  
-                    
                     {this.state.activities.length ? (
-                        
                             this.state.activities.map(activities => (
                                 <Col md="3">
                                 <Cards 
@@ -66,15 +41,11 @@ class ActivitiesLP extends Component {
                                     // parks={activities.parks}
                                 /> 
                                 </Col> 
-                            ))
-                        
+                            ))    
                     ) : (
                     <p>no data</p>   
-                    )}
-                    
-                    
+                    )}                    
                 </Row>
-        
             </div>
         )
     };

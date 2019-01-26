@@ -31,7 +31,6 @@ class ParksLP extends Component {
     render() {
         return (
             <div>
-                {/* <LazyHero img src={require(`../../images${this.props.path}.jpg`)} alt="nothing">{this.props.name}</LazyHero> */}
             <Hero />
             <Container>
                 <Row>  

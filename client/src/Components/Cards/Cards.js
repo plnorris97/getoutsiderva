@@ -4,15 +4,18 @@ import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Co
 
 class Cards extends React.Component {
     // renderSwitch(path) {
-    //     let path=window.location.pathname
     //     switch(path) {
     //         case '/activities/paddle-sports': return 'paddle-sports.jpg';
     //         default: return 'image.jpg';
     //     }
     // }
 
+
   render() {
-      const  { name, description, parks}= this.props
+
+    // console.log(window.location.pathname);
+
+    const  { name, description, parks}= this.props
     return (
 
         <Row className="mt-3">
