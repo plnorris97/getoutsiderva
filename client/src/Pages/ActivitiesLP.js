@@ -63,8 +63,7 @@ class ActivitiesLP extends Component {
                                 <Cards 
                                     key={activities._id}
                                     name={activities.name}
-                                    description={activities.description}
-                                    parks={activities.parks}
+                                    // parks={activities.parks}
                                 /> 
                                 </Col> 
                             ))
