@@ -1,6 +1,8 @@
+// import './App.css';
+// import { Card, CardImg, CardText, CardBody,
+//     CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 import React, { Component } from 'react';
-// import './App.css';
 import API from '../utils/API';
 import {  Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
@@ -37,6 +39,7 @@ class ActivitiesLP extends Component {
                                 <Col md="3">
                                 <Cards 
                                     key={activities._id}
+                                    img={activities.img}
                                     name={activities.name}
                                     // parks={activities.parks}
                                 /> 

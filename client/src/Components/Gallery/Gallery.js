@@ -1,11 +1,11 @@
 import React from "react";
 import { MDBMask, MDBView, MDBRow, MDBCol } from "mdbreact";
-// import { Container, Row, Col } from 'reactstrap';
-// import bike from '../../images/biking1.jpg';
-// import run from "../../images/running1.jpg";
-// import hike from "../../images/hiking1.jpg";
-// import kayak from "../../images/kayaking1.jpg";
-// import "./style.css";
+import BikeImg from '../../images/biking.jpg';
+import RunImg from '../../images/running.jpg';
+import KayakImg from '../../images/paddleSports.jpeg';
+import HikingImg from '../../images/hiking.jpg';
+
+import "./style.css";
 
 class HoverPage extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class HoverPage extends React.Component {
           <MDBCol md="3">
             <MDBView hover zoom>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/img%20(131)-mini.jpg"
+                src= {BikeImg}
                 className="img-fluid"
                 alt=""
               />
@@ -27,7 +27,7 @@ class HoverPage extends React.Component {
           <MDBCol md="3">
             <MDBView hover zoom>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/img%20(131)-mini.jpg"
+                src = {RunImg}
                 className="img-fluid"
                 alt=""
               />
@@ -39,7 +39,7 @@ class HoverPage extends React.Component {
           <MDBCol md="3">
             <MDBView hover zoom>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/img%20(131)-mini.jpg"
+                src= {KayakImg}
                 className="img-fluid"
                 alt=""
               />
@@ -51,7 +51,7 @@ class HoverPage extends React.Component {
           <MDBCol md="3">
             <MDBView hover zoom>
               <img
-                src="https://mdbootstrap.com/img/Others/documentation/img%20(131)-mini.jpg"
+                src= {HikingImg}
                 className="img-fluid"
                 alt=""
               />
