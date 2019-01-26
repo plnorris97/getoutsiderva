@@ -107,3 +107,24 @@ class ActivityDetail extends Component {
     }
 }
 export default ActivityDetail;
+
+
+{/* <div>
+<Hero />
+    <Row className="mt-3">  
+        {this.state.activities.length ? (
+                this.state.activities.map(activities => (
+                    <Col md="3">
+                    <Cards 
+                        key={activities._id}
+                        img={activities.img}
+                        name={activities.name}
+                        // parks={activities.parks}
+                    /> 
+                    </Col> 
+                ))    
+        ) : (
+        <p>no data</p>   
+        )}                    
+    </Row>
+</div> */}

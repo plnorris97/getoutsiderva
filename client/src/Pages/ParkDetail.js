@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 // import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper";
-// import Cards from '../Components/Cards/Cards'
+import Cards from '../Components/Cards/Cards'
 import Hero from '../Components/Hero/Hero';
 import {Container, Row, Col} from 'reactstrap';
 import { Card, CardBody, CardTitle } from 'reactstrap';
@@ -83,14 +83,14 @@ class ParkDetail extends Component {
         <Row>
         <Col>
             {this.state.activities.length ? (
-                <Card>
+                <Cards>
                     {this.state.activities.map(activity => (
                     <CardBody key={activity._id}>
                         <CardTitle>{activity.name}</CardTitle>
                         {/* <CardText>{activity.parks}</CardText> */}
                     </CardBody>
                     ))}
-                </Card>
+                </Cards>
             ) : (
                 <p>There aren't any current activities available at this park.</p>   
             )}

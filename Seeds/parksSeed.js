@@ -17,7 +17,7 @@ const parksSeed = [
     "City": "Chester",
     "State": "VA",
     "Zip": 23836,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Nature/Visitor Center", "Birding/Wildlife"], 
     "Activities": ["Fishing", "Hiking", "Paddle Sports", "Running"],
     "Image": "https://www.findyourchesapeake.com/globalimages/places_large/dutchgap.jpg"
@@ -31,7 +31,7 @@ const parksSeed = [
     "City": "Chester",
     "State": "VA",
     "Zip": 23836,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["History", "Parking Lot", "Restrooms", "Shelter/Picnic Areas", "River/Lake"],
     "Activities": ["Hiking", "Running"],
     "Image": "https://colonialghosts.com/site/templates/img/uploads/2015/09/Parks-Rocke-Hall.jpg"
@@ -45,7 +45,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23235,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Parking Lot", "Playground", "Restrooms", "Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Exercise Trail", "Hiking", "Biking", "Geocaching", "Running"],
     "Image": "https://www.chesterfield.gov/ImageRepository/Document?documentID=3933"
@@ -59,7 +59,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23237,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Parking Lot", "Playground", "Restrooms", "Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Exercise Trail", "Fishing",	"Biking", "Geocaching", "Running"],
     "Image": "https://www.richmondoutside.com/wp-content/uploads/2012/02/harry_large.jpg"
@@ -73,7 +73,7 @@ const parksSeed = [
     "City": "Chesterfield",
     "State": "VA",
     "Zip": 23832,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Nature/Visitor Center", "Parking Lot", "Playground", "Restrooms", "Shelters/Picnic Areas", "Swimming Pool", "River/Lake", "Amphitheatre", "Boat Ramp"],
     "Activities": ["Swimming", "Camping", "Birding/Wildlife", "Fishing", "Hiking", "Biking", "Paddle Sports", "Geocaching", "Running"],
     "Image": "https://res.cloudinary.com/simpleview/image/upload/crm/richmond/pocahontasspring0_abb0ad04-5056-a36a-090c0bd3f60a0b77.jpg"
@@ -87,7 +87,7 @@ const parksSeed = [
     "City": "Chester",
     "State": "VA",
     "Zip": 23836,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Nature/Visitor Center", "Parking Lot", "Playground", "Restrooms", "Ball Fields", "Shelters/Picnic Areas", "River/Lake"],
     "Activities": ["Birding/Wildlife", "Hiking", "Geocaching", "Running"],
     "Image": "https://www.richmondoutside.com/wp-content/uploads/2011/07/point_large.jpg"
@@ -101,7 +101,7 @@ const parksSeed = [
     "City": "Chester",
     "State": "VA",
     "Zip": "23836�",
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Nature/Visitor Center", "Parking Lot"],
     "Activities": ["Birding/Wildlife", "Fishing", "Paddle Sports", "Geocaching"],
     "Image": "https://www.fws.gov/uploadedImages/Region_5/NWRS/South_Zone/Eastern_Virginia_Rivers_Complex/Presquile/Images/StationPhoto2.jpg"
@@ -115,7 +115,7 @@ const parksSeed = [
     "City": "Midlothian",
     "State": "VA",
     "Zip": 23113,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Shelters/Picnic Areas", "River/Lake", "Boat Ramp"],
     "Activities": ["Birding/Wildlife", "Fishing", "Hiking", "Biking", "Paddle Sports", "Geocaching", "Running"],
     "Image": ""
@@ -129,7 +129,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23236,
-    "County/Area": "Chesterfield",
+    "CountyArea": "Chesterfield",
     "Amenities": ["Nature/Visitor Center", "Parking Lot", "Playground",	"Restrooms", "Ball Fields", "River/Lake"],
     "Activities": ["Exercise Trail", "Biking", "Biking", "Geocaching", "Running"],
     "Image": ""
@@ -143,7 +143,7 @@ const parksSeed = [
     "City": "Henrico",
     "State": "VA",
     "Zip": 23229,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms", "Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Exercise Trail", "Hiking", "Geocaching", "Running"],
     "Image": "https://henrico.us/assets/Cheswick_Park_Playground.jpg"
@@ -157,7 +157,7 @@ const parksSeed = [
     "City": "Henrico",
     "State": "VA",
     "Zip": 23231,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Restrooms", "Shelters/Picnic Areas", "River/Lake", "Boat Ramp"],
     "Activities": ["Birding/Wildlife", "Fishing", "Paddle Sports", "Geocaching", "Running"],
     "Image": "https://henrico.us/assets/Deep-Bottom-Boat-Launch.jpg"
@@ -171,7 +171,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23233,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Nature/Visitor Center", "Parking Lot", "Playground", "Restrooms", "Ball Fields", "Shelters/Picnic Areas", "River/Lake", "Boat Ramp"],
     "Activities": ["Exercise Trail", "Birding/Wildlife", "Fishing", "Hiking", "Biking", "Geocaching", "Running"],
     "Image": "https://res.cloudinary.com/simpleview/image/upload/crm/richmond/Deep-Run-Park0_ab44c691-5056-a36a-095d1027440cc7fa.jpg"
@@ -185,7 +185,7 @@ const parksSeed = [
     "City": "Henrico",
     "State": "VA",
     "Zip": 23231,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Nature/Visitor Center", "Parking Lot", "Playground",	"Restrooms", "Ball Fields",	"Shelters/Picnic Areas", "River/Lake"],
     "Activities": ["Disc Golf", "Exercise Trail", "Birding/Wildlife", "Fishing", "Hiking", "Biking", "Geocaching", "Running"],
     "Image": "https://res.cloudinary.com/simpleview/image/upload/crm/richmond/Dorey-Park-Varina_abb0ece5-5056-a36a-09024233c4702d45.jpg"
@@ -199,7 +199,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Disc Golf", "Hiking", "Geocaching",	"Running"],
     "Image": "https://henrico.us/assets/dunncrodt_disc_golf.jpg"
@@ -213,7 +213,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Shelters/Picnic Areas", "River/Lake"],
     "Activities": ["Birding/Wildlife", "Fishing", "Hiking",	"Biking", "Geocaching", "Running"],
     "Image": "https://henrico.us/assets/Echo-Lake-Bridge1.jpg"
@@ -227,7 +227,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms", "Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Geocaching"],
     "Image": "https://henrico.us/assets/Hunton-Community-Center.jpg"
@@ -241,7 +241,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Skateboarding/Freestyle", "Geocaching"],
     "Image": "https://henrico.us/assets/Laurel-Skatepark.jpg"
@@ -255,7 +255,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["History", "Nature/Visitor Center", "Parking Lot", "Playground", "Restrooms", "Shelters/Picnic Areas", "River/Lake"],
     "Activities": ["Birding/Wildlife", "Fishing", "Hiking", "Biking", "Geocaching",	"Running"],
     "Image": "https://henrico.us/assets/Meadow-Farm-House.jpg"
@@ -269,7 +269,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23231,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms", "Shelters/Picnic Areas", "River/Lake", "Boat Ramp", "Swimming"],
     "Activities": ["Fishing", "Hiking",	"Paddle Sports", "Geocaching"],
     "Image": "https://henrico.us/assets/Osborne_Landings.jpg"
@@ -283,7 +283,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23059,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Nature/Visitor Center", "Parking Lot", "Playground", "Restrooms", "Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Hiking", "Geocaching", "Running"],
     "Image": "https://henrico.us/assets/Poucey-Tract-Playground.jpg"
@@ -297,7 +297,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Geocaching"],
     "Image": "https://henrico.us/assets/RFP-Park-w-Stadium.jpg"
@@ -311,7 +311,7 @@ const parksSeed = [
     "City": "Henrico",
     "State": "VA",
     "Zip": 23233,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["History", "Nature/Visitor Center", "Parking Lot", "Playground", "Restrooms",	"Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Geocaching", "Running"],
     "Image": "https://henrico.us/assets/short-pump-1.jpg"
@@ -325,7 +325,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Shelters/Picnic Areas"],
     "Activities": ["Hiking", "Geocaching", "Running"],
     "Image": "https://henrico.us/assets/springfield-park-2.jpg"
@@ -339,7 +339,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23227,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Nature/Visitor Center", "Parking Lot", "Playground",	"Restrooms", "Shelters/Picnic Areas", "River/Lake"],
     "Activities": ["Birding/Wildlife", "Fishing", "Hiking",	"Biking", "Geocaching",	"Running"],
     "Image": "https://henrico.us/assets/Three-Lakes-Nature-Center.jpg"
@@ -353,7 +353,7 @@ const parksSeed = [
     "City": "Henrico",
     "State": "VA",
     "Zip": 23238,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "River/Lake"],
     "Activities": ["Birding/Wildlife", "Fishing", "Hiking",	"Geocaching", "Running"],
     "Image": "https://henrico.us/assets/TuckahoeCreek_feature.jpg"
@@ -367,7 +367,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23059,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Shelters/Picnic Areas"],
     "Activities": ["Geocaching"],
     "Image": "https://henrico.us/assets/twin_hickory_tree.jpg"
@@ -381,7 +381,7 @@ const parksSeed = [
     "City": "Glen Allen",
     "State": "VA",
     "Zip": 23060,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Playground",	"Restrooms", "Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Hiking", "Geocaching", "Running"],
     "Image": "https://henrico.us/assets/Virginia-Randolph-Lacrosse.jpg"
@@ -395,7 +395,7 @@ const parksSeed = [
     "City": "Henrico",
     "State": "VA",
     "Zip": 23231,
-    "County/Area": "Henrico",
+    "CountyArea": "Henrico",
     "Amenities": ["Parking Lot", "Playground", "Restrooms",	"Ball Fields", "Shelters/Picnic Areas"],
     "Activities": ["Geocaching"],
     "Image": "https://henrico.us/assets/Varina_Rec_1.jpg"
@@ -409,7 +409,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23219,
-    "County/Area": "City of Richmond",
+    "CountyArea": "City of Richmond",
     "Amenities": ["Parking Lot", "River/Lake", "Boat Ramp"],
     "Activities": ["Swimming", "Fishing", "Paddle Sports", "Geocaching"],
     "Image": "https://jamesriverpark.org/wp-content/uploads/2017/11/tredegar-putin2.jpg"
@@ -423,7 +423,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23219,
-    "County/Area": "City of Richmond",
+    "CountyArea": "City of Richmond",
     "Amenities": ["Parking Lot", "River/Lake", "Boat Ramp"],
     "Activities": ["Fishing", "Paddle Sports", "Geocaching"],
     "Image": "https://jamesriverpark.org/wp-content/uploads/2017/11/14th-takeout.jpg"
@@ -437,7 +437,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23219,
-    "County/Area": "City of Richmond",
+    "CountyArea": "City of Richmond",
     "Amenities": ["Parking Lot", "Restrooms", "River/Lake"],
     "Activities": ["Swimming", "Birding/Wildlife", "Fishing", "Hiking", "Biking", "Paddle Sports", "Geocaching", "Running"],
     "Image": "https://res.cloudinary.com/simpleview/image/upload/crm/richmond/Belle-Isle_ab46ff50-5056-a36a-09b1f29ea3c0d5dd.jpg"
@@ -451,7 +451,7 @@ const parksSeed = [
     "City": "Richmond",
     "State": "VA",
     "Zip": 23219,
-    "County/Area": "City of Richmond",
+    "CountyArea": "City of Richmond",
     "Amenities": ["History", "Parking Lot", "Restrooms", "River/Lake", "Amphitheatre"],
     "Activities": ["Birding/Wildlife", "Hiking", "Biking", "Geocaching", "Running"],
     "Image": ""

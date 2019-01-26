@@ -1,13 +1,15 @@
 // import './App.css';
 // import { Link } from 'react-router-dom';
-// import { Card, CardText, CardBody,
-//     CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardText, CardBody,
+    CardTitle, CardSubtitle } from 'reactstrap';
 
 import React, { Component } from 'react';
 import API from '../utils/API';
 import Hero from '../Components/Hero/Hero';
 import { Row, Col } from 'reactstrap';
-import Cards from '../Components/Cards/Cards';
+import { MDBMask, MDBRow, MDBCol } from "mdbreact";
+import ActivityParkGallery from '../Components/Gallery/ActivityParkGallery';
+
 
 
 class ParksLP extends Component {
@@ -34,7 +36,7 @@ class ParksLP extends Component {
         return (
             <div>
             <Hero />
-            {/*  <Row>  
+             {/* <Row>  
                     <Col>
                     {this.state.parks.length ? (
                         <Card>
@@ -55,23 +57,21 @@ class ParksLP extends Component {
                     </Col> 
                 </Row> */}
 
-                <Row className="mt-3">
-
+                <MDBRow lg="3" md="6" className="mt-3">  
                     {this.state.parks.length ? ( 
-                        
                         this.state.parks.map(park => (
-                            <Col md="3">
-                                <Cards 
+                            <MDBCol md="3">
+                                <ActivityParkGallery 
                                 key={park._id}
                                 img={park.img}
-                                address={park.address}
+                                name={park.Name}
                                 />
-                            </Col>
+                                </MDBCol>
                         ))
                     ) : (     
                         <p>no data</p>
                     )}
-                </Row>
+                </MDBRow>
             </div>
         )
     };
