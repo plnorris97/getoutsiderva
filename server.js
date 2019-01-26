@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const app = express();
 const routes = require('./Routes');
-const mongojs = require('mongojs');
+// const mongojs = require('mongojs');
 
 // Add path to routes file ./routes/api/...
 // const items = require('')
@@ -12,25 +12,25 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/public"));
+  app.use(express.static("client/build"));
 }
 
 // Database configuration
-const databaseUrl = "getoutsiderva";
-const collections = ["activities", "destinations"];
+// const databaseUrl = "getoutsiderva";
+// const collections = ["activities", "destinations"];
 
-// Hook mongojs config to db variables
-const db = mongojs(databaseUrl, collections);
+// // Hook mongojs config to db variables
+// const db = mongojs(databaseUrl, collections);
 
-db.on("error", function(error) {
-  console.log("Database error:", error);
-})
+// db.on("error", function(error) {
+//   console.log("Database error:", error);
+// })
 
 // Add routes
 app.use(routes);
 
 //Bodyparser middleware
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 // Connect to MongoDB
 mongoose

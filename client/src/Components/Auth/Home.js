@@ -3,12 +3,14 @@ import { Container, Col, Row } from 'reactstrap';
 import LoginForm from './Signin';
 import Signup from './Signup';
 import './style.css';
+import Hero from '../Hero/Hero';
 
 class HomeAuth extends Component {
     
     render() {
         return (
             <div>
+                <Hero />
                 <Container>
                     <Row>
                 <h2>Login to your account or join the Get Outside RVA family and create your profile!</h2>
