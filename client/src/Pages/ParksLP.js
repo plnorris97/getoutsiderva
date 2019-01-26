@@ -8,7 +8,7 @@ import API from '../utils/API';
 import Hero from '../Components/Hero/Hero';
 import { Row, Col } from 'reactstrap';
 import { MDBMask, MDBRow, MDBCol } from "mdbreact";
-import ActivityParkGallery from '../Components/Gallery/ActivityParkGallery';
+import ParkGallery from '../Components/Gallery/ParkGallery';
 
 
 
@@ -61,10 +61,11 @@ class ParksLP extends Component {
                     {this.state.parks.length ? ( 
                         this.state.parks.map(park => (
                             <MDBCol md="3">
-                                <ActivityParkGallery 
+                                <ParkGallery 
                                 key={park._id}
                                 img={park.img}
                                 name={park.Name}
+                                park={park.Name.split(" ").join("-")}
                                 />
                                 </MDBCol>
                         ))

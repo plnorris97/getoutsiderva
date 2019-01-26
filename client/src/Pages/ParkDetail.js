@@ -1,21 +1,14 @@
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
 import API from "../utils/API";
-// import ResultsWrapper from "../Components/ResultsWrapper/ResultsWrapper";
-import Cards from '../Components/Cards/Cards'
 import Hero from '../Components/Hero/Hero';
-import {Container, Row, Col} from 'reactstrap';
-import { Card, CardBody, CardTitle } from 'reactstrap';
+import { Row, Col} from 'reactstrap';
+import Cards from '../Components/Cards/ParkCards'
 
 const parseStr = (str) => {
-  let newStr = str.replace(/-/g, ' ')
-  let strArr = newStr.split(' ');
-  let newArr = []
-  for (let i = 0; i < strArr.length; i++) {
-    newArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
-  }
-  let finishedStr = newArr.join(' ');
-  return finishedStr;
+  let newStr=str.split("-").join(" ");
+  return newStr;
+  
 }
 
 class ParkDetail extends Component {
@@ -29,7 +22,7 @@ class ParkDetail extends Component {
     componentDidMount() {
         // this.showName();
         const parsedName = parseStr(this.props.match.params.name)
-        console.log(parsedName);
+        console.log("parsedName" + parsedName);
         this.lookUpActivities(parsedName);
     }
 
@@ -54,54 +47,65 @@ class ParkDetail extends Component {
               myActivities.push(activity)
             }
           });
+          console.log("myActivities");
           console.log(myActivities);
           this.setState({ activities: myActivities })
       })
       .catch(err => console.log(err))
    }  
 
-    // Look up parks
-    // lookUpActivities() {
-    //     API.getActivities()
-    //       // if parks have activities = path grab them
-    //       .then(res => {
-    //         console.log(res);
-    //         this.setState({ activities: res.data })
-    //     })
-    //     .catch(err => console.log(err))
-    //  }  
+    // searchDB = event => {
+    //   event.preventDefault();
+    //   API.getActivities(this.props.match.params.name)
+    //   .then(res =>
+    //     this.setState({activities: res.data})
+    //     )
+    // }
 
   render(props) {
     return (
-      <Container>
-        <Row>
+  
+    <div>
         <Hero />
-        </Row>
-        <Row>
-          <Col></Col>
-        </Row>
-        <Row>
-        <Col>
-            {this.state.activities.length ? (
-                <Cards>
-                    {this.state.activities.map(activity => (
-                    <CardBody key={activity._id}>
-                        <CardTitle>{activity.name}</CardTitle>
-                        {/* <CardText>{activity.parks}</CardText> */}
-                    </CardBody>
-                    ))}
-                </Cards>
-            ) : (
-                <p>There aren't any current activities available at this park.</p>   
-            )}
-            </Col> 
-        </Row>
-        <Row>
-      
-        </Row>
-      </Container>
+        <Row className="mt-6">  
+        {this.state.activities.length ? (
+                this.state.activities.map(activities => (
+                  
+                    <Cards 
+                        key={activities._id}
+                        img={activities.img}
+                        name={activities.name}
+                        description={activities.description}
+                    /> 
+                  
+                ))    
+        ) : (
+        <p>no data</p>   
+        )}                    
+    </Row>
+   
+
+
+    </div>
 
         );
     }
 }
 export default ParkDetail;
+
+{/* <Row>
+<Col>
+    {this.state.activities.length ? (
+        <Card>
+            {this.state.activities.map(activity => (
+            <CardBody key={activity._id}>
+                <CardTitle>{activity.name}</CardTitle>
+                <CardText>{activity.parks}</CardText>
+            </CardBody>
+            ))}
+        </Card>
+    ) : (
+        <p>There aren't any current activities available at this park.</p>   
+    )}
+    </Col> 
+</Row> */}
