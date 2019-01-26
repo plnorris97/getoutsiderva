@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
 // import './App.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import API from '../utils/API';
 import { Container, Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
-import { Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardText, CardBody,
+    CardTitle, CardSubtitle } from 'reactstrap';
 
 class ParksLP extends Component {
     state = {

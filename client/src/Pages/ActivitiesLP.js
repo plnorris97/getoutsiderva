@@ -1,12 +1,11 @@
 
 import React, { Component } from 'react';
 // import './App.css';
-import { Link } from 'react-router-dom';
 import API from '../utils/API';
 import {  Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
-import { Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button } from 'reactstrap';
+// import { Card, CardImg, CardText, CardBody,
+//     CardTitle, CardSubtitle, Button } from 'reactstrap';
 import Cards from '../Components/Cards/Cards';
 
 class ActivitiesLP extends Component {
@@ -35,7 +34,6 @@ class ActivitiesLP extends Component {
 
         return (
             <div>
-                {/* <LazyHero img src={require(`../../images${this.props.path}.jpg`)} alt="nothing">{this.props.name}</LazyHero> */}
             <Hero />
 
             {

@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("../Models");
 
 
 // this function removes the hyphen and replaces it with a space so it matches the db
@@ -13,9 +13,10 @@ const parseStr = (str) => {
   return finishedStr;
 }
 
-// Defining methods for the booksController
+// Defining methods
 module.exports = {
   findAll: function(req, res) {
+    console.log('destination find all')
     db.Activities
       .find({})
       .then(dbModel => res.json(dbModel))

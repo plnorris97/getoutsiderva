@@ -39,9 +39,7 @@ class Search extends Component {
             //   need to define PARKS & ATTRACTIONS
             //  need to define ACTIVITIES
             name: this.state.name
-            // name: this.state.title,
-            // author: this.state.author,
-            // synopsis: this.state.synopsis
+            
           })
             .then(res => this.loadBooks())
             .catch(err => console.log(err));
@@ -56,13 +54,9 @@ class Search extends Component {
     render() {
         return (
             <Container>
-            <Row>
-                <Col>Advanced Search</Col>
+                <Row>
+                    <Col>Advanced Search</Col>
             </Row>
-            <Row>
-              <hr />
-            </Row>
-
             <Row>
                 <Col>
                 <form on submit={this.handleFormSubmit}>
@@ -83,7 +77,7 @@ class Search extends Component {
 
                     <select multiple={true} value2={this.state.value} onChange={this.handleChange}>
                         <option value="biking">Biking</option>
-                        <option value="birding/wildlife">Birding/Wildlife</option>
+                        <option value="birding-wildlife">Birding/Wildlife</option>
                         <option value="camping">Camping</option>
                         <option value="disc-golf">disc-golf</option>
                         <option value="exercise-trail">Exercise Trail</option>
@@ -106,78 +100,70 @@ class Search extends Component {
                 <input
                     name="amphitheatre"
                     type="checkbox"
-                    checked={this.state.amphitheatre}
+                    checked={this.state.isChecked}
                     onChange={this.handleInputChange} />
                 <br />    
                 <input
                     name="ball-fields"
                     type="checkbox"
-                    checked={this.state.ballFields}
+                    checked={this.state.isChecked}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="boat-ramp"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.isChecked}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="history"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.history}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="nature/visitor-center"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.visitorCenter}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="parking-lot"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.parkingLot}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="playground"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.playground}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="restrooms"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.restrooms}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="river/lake"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.riverLake}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
                     name="shelters/picnic-area"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.shelterPicnicArea}
                     onChange={this.handleInputChange} />
                 <br />
                 <input
-                    name="swimming"
+                    name="swimming-pool"
                     type="checkbox"
-                    checked={this.state.isGoing}
+                    checked={this.state.swimmingPool}
                     onChange={this.handleInputChange} />
                 <br />
                 </label>
-                {/* <label>
-                Number of guests:
-                <input
-                    name="numberOfGuests"
-                    type="number"
-                    value={this.state.numberOfGuests}
-                    onChange={this.handleInputChange} />
-                </label> */}
                 </form>
                 </Col>
             </Row>
