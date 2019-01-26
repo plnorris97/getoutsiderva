@@ -1,19 +1,32 @@
 import React from 'react';
 import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Col, Row, } from 'mdbreact';
+// import './style..css';
 
 class Cards extends React.Component {
+    // renderSwitch(path) {
+    //     let path=window.location.pathname
+    //     switch(path) {
+    //         case '/activities/paddle-sports': return 'paddle-sports.jpg';
+    //         default: return 'image.jpg';
+    //     }
+    // }
+
   render() {
       const  { name, description, parks}= this.props
     return (
 
         <Row className="mt-3">
             <Col md="3">
-                <Card style={{ width: "25rem", marginLeft: "2rem" }}>
+                <Card style={{ width: "15rem", marginLeft: "4rem", marginRight: "4rem", padding: "1rem" }}>
+                
                 <CardImage
                     className="img-fluid"
-                    src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-                    waves
+                    
+                    // {this.renderSwitch(path)}
+                    // src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                    waves   
                 />
+
                 <CardBody>
                     <CardHeader style={{ backgroundColor: "white" }}><h4> {name} </h4></CardHeader>
                     <CardTitle style={{ color: "#3F729B" }}></CardTitle>
