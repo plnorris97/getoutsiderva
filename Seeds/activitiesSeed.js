@@ -10,6 +10,7 @@ mongoose.connect(
 const activitiesSeed =[
     {
         "id": "1",
+        "img": "../../images/paddleSports.jpeg",
         "name": "Paddle Sports",
         "description": "Paddle sports are watersports that require a paddle to propel and steer a vessel through and across the water. Canoeing and kayaking are the original proverbial paddle sports, however, other sports have now joined the category. River rafting, white water rafting, and stand up paddleboarding are also paddle sports Richmonders love to do.",
         "parks": ["Belle Isle", "Dutch Gap Conservation Area", "Pocahontas State Park", "Presquile National Widlelife Refuge", "Robious Landing Park", "Osbourne Park & Boat Landing", "Tredegar Street Put-in", "14th Street Take-out"]

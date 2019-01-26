@@ -55,6 +55,7 @@
     left: 0;
     margin: auto;
     max-width: none;
+    max-height: none;
     -ms-content-zooming: none;
     -ms-user-select: none;
     -ms-touch-select: none;
@@ -404,4 +405,8 @@
       left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
+    }
+    
+  .img-fluid {
+    min-height: 25rem;
     }

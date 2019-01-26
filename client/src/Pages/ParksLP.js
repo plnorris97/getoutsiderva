@@ -1,12 +1,14 @@
-
-import React, { Component } from 'react';
 // import './App.css';
 // import { Link } from 'react-router-dom';
+// import { Card, CardText, CardBody,
+//     CardTitle, CardSubtitle } from 'reactstrap';
+
+import React, { Component } from 'react';
 import API from '../utils/API';
-import { Container, Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
-import { Card, CardText, CardBody,
-    CardTitle, CardSubtitle } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
+import Cards from '../Components/Cards/Cards';
+
 
 class ParksLP extends Component {
     state = {
@@ -31,10 +33,8 @@ class ParksLP extends Component {
     render() {
         return (
             <div>
-                {/* <LazyHero img src={require(`../../images${this.props.path}.jpg`)} alt="nothing">{this.props.name}</LazyHero> */}
             <Hero />
-            <Container>
-                <Row>  
+            {/*  <Row>  
                     <Col>
                     {this.state.parks.length ? (
                         <Card>
@@ -53,8 +53,25 @@ class ParksLP extends Component {
                         <p>Parks should render here as cards.</p>   
                     )}
                     </Col> 
+                </Row> */}
+
+                <Row className="mt-3">
+
+                    {this.state.parks.length ? ( 
+                        
+                        this.state.parks.map(park => (
+                            <Col md="3">
+                                <Cards 
+                                key={park._id}
+                                img={park.img}
+                                address={park.address}
+                                />
+                            </Col>
+                        ))
+                    ) : (     
+                        <p>no data</p>
+                    )}
                 </Row>
-            </Container>
             </div>
         )
     };

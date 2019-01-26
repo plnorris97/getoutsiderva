@@ -3,7 +3,7 @@ import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Co
 
 class Cards extends React.Component {
   render() {
-      const  { name, description, parks}= this.props
+      const  { name, description, parks, img, address }= this.props
     return (
 
         <Row className="mt-3">
@@ -11,21 +11,22 @@ class Cards extends React.Component {
                 <Card style={{ width: "25rem", marginLeft: "2rem" }}>
                 <CardImage
                     className="img-fluid"
-                    src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                    src= {img}
                     waves
                 />
                 <CardBody>
                     <CardHeader style={{ backgroundColor: "white" }}><h4> {name} </h4></CardHeader>
                     <CardTitle style={{ color: "#3F729B" }}></CardTitle>
                     <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
-                    {parks}
+                    { address }
                     </CardText>
-                    <CardText>
-                    {description}
+                    <CardText><h5>Parks available:</h5> 
+                    { parks }
                     </CardText>
-                    <CardText>
-                    
+                    <CardText><h5>Description:</h5> 
+                    { description }
                     </CardText>
+                   
                     <CardText>
                 
                     </CardText>
@@ -58,56 +59,7 @@ class Cards extends React.Component {
                 </CardBody>
                 </Card>
             </Col>
-            <Col md="3">
-                <Card style={{ width: "25rem", marginLeft: "1rem" }}>
-                <CardImage
-                    className="img-fluid"
-                    src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-                    waves
-                />
-                <CardBody>
-                    <CardHeader style={{ backgroundColor: "white" }}><h4> Park Name </h4></CardHeader>
-                    <CardTitle style={{ color: "#3F729B" }}>County</CardTitle>
-                    <CardText><MDBIcon icon="map-marker" />
-                    address
-                    </CardText>
-                    <CardText>
-                    descriptoin
-                    </CardText>
-                    <CardText>
-                    activities
-                    </CardText>
-                    <CardText>
-                    amenities
-                    </CardText>
-                </CardBody>
-                </Card>
-            </Col>
-            <Col md="3">
-                <Card style={{ width: "25rem", marginLeft: "1rem" }}>
-                <CardImage
-                    className="img-fluid"
-                    src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-                    waves
-                />
-                <CardBody>
-                    <CardHeader style={{ backgroundColor: "white" }}><h4> Park Name </h4></CardHeader>
-                    <CardTitle style={{ color: "#3F729B" }}>County</CardTitle>
-                    <CardText><MDBIcon icon="map-marker" />
-                    address
-                    </CardText>
-                    <CardText>
-                    descriptoin
-                    </CardText>
-                    <CardText>
-                    activities
-                    </CardText>
-                    <CardText>
-                    amenities
-                    </CardText>
-                </CardBody>
-                </Card>
-            </Col> */}
+ */}
 
         </Row>
 

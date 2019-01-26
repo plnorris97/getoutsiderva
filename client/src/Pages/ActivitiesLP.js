@@ -1,11 +1,11 @@
+// import './App.css';
+// import { Card, CardImg, CardText, CardBody,
+//     CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 import React, { Component } from 'react';
-// import './App.css';
 import API from '../utils/API';
 import {  Row, Col } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
-// import { Card, CardImg, CardText, CardBody,
-//     CardTitle, CardSubtitle, Button } from 'reactstrap';
 import Cards from '../Components/Cards/Cards';
 
 class ActivitiesLP extends Component {
@@ -30,12 +30,9 @@ class ActivitiesLP extends Component {
 
 
     render() {
-     
-
         return (
             <div>
             <Hero />
-
             {
                 /* 
                     {this.state.activities.length ? (
@@ -62,9 +59,11 @@ class ActivitiesLP extends Component {
                                 <Col md="3">
                                 <Cards 
                                     key={activities._id}
+                                    img={activities.img}
                                     name={activities.name}
-                                    description={activities.description}
                                     parks={activities.parks}
+                                    description={activities.description}
+                                    
                                 /> 
                                 </Col> 
                             ))
