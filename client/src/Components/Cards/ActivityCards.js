@@ -12,16 +12,16 @@ class Cards extends React.Component {
 
 
   render() {
-      const  { name, description, parks, img, address }= this.props
+      const  { name, description, img, address }= this.props
     return (
 
-        <Row className="mt-3">
+        <Row className="mt-6">
             <Col md="3">
-                <Card style={{ width: "15rem", marginLeft: "4rem", marginRight: "4rem", padding: "1rem" }}>
+                <Card style={{ margin: "5rem", padding: "1rem", width:"50rem" }}>
                 
                 <CardImage
-                    className="img-fluid"
-                    src= {img}
+                    className="img-fluid, no-margin"
+                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
                     waves
                 />
 
@@ -31,9 +31,9 @@ class Cards extends React.Component {
                     <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
                     { address }
                     </CardText>
-                    <CardText><h5>Parks available:</h5> 
+                    {/* <CardText><h5>Parks available:</h5> 
                     { parks }
-                    </CardText>
+                    </CardText> */}
                     <CardText><h5>Description:</h5> 
                     { description }
                     </CardText>
