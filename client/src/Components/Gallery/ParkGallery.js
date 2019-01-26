@@ -7,7 +7,7 @@ import testingImg from '../../images/logo.PNG';
 
 class MaskPage extends React.Component {
   render() {
-      const { name, img }= this.props
+      const { name, img, park }= this.props
     return (
 
        <MDBContainer> 
@@ -19,7 +19,7 @@ class MaskPage extends React.Component {
                 alt=""
               />
               <MDBMask overlay="stylish-light" className="flex-center">
-                <h3 className="white-text"> {name} </h3>
+              <a href={"/parks/"+park}><h3 className="white-text"> {name} </h3></a>
               </MDBMask>
             </MDBView>
         </MDBRow>

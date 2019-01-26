@@ -8,7 +8,7 @@ import API from '../utils/API';
 import { MDBMask, MDBRow, MDBCol } from "mdbreact";
 
 import Hero from '../Components/Hero/Hero';
-import ActivityParkGallery from '../Components/Gallery/ActivityParkGallery';
+import ActivityGallery from '../Components/Gallery/ActivityGallery';
 
 class ActivitiesLP extends Component {
     state = {
@@ -39,11 +39,11 @@ class ActivitiesLP extends Component {
                     {this.state.activities.length ? (
                             this.state.activities.map(activities => (
                                 <MDBCol md="3">
-                                <ActivityParkGallery 
+                                <ActivityGallery 
                                     key={activities._id}
                                     img={activities.img}
                                     name={activities.name}
-                                    // parks={activities.parks}
+                                    activities={activities.name.split(" ").join("-")}
                                 /> 
                                 </MDBCol> 
                             ))    
