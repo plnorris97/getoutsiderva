@@ -3,8 +3,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Hero from '../Components/Hero/Hero';
-import { Row, Col} from 'reactstrap';
-import { Card, CardBody, CardTitle, CardText} from 'reactstrap';
+import { Row} from 'reactstrap';
 import Cards from '../Components/Cards/ActivityCards';
 
 const parseStr = (str) => {
@@ -102,40 +101,3 @@ class ActivityDetail extends Component {
 export default ActivityDetail;
 
 
- {/* <Row clssName="mt-6">
- <Col>
-     {this.state.parks.length ? (
-         <Card>
-             {this.state.parks.map(parks => (
-             <CardBody key={parks._id}>
-                 <CardTitle>{parks.Name}</CardTitle>
-                 <CardText>{parks.Description}</CardText>
-                 <CardText>{parks.Activities}</CardText>
-             </CardBody>
-             ))}
-         </Card>
-     ) : (
-         <p>There aren't any current parks for your activity.</p>   
-     )}
-     </Col> 
- </Row> */}
-
-{/* <div>
-<Hero />
-    <Row className="mt-3">  
-        {this.state.activities.length ? (
-                this.state.activities.map(activities => (
-                    <Col md="3">
-                    <Cards 
-                        key={activities._id}
-                        img={activities.img}
-                        name={activities.name}
-                        // parks={activities.parks}
-                    /> 
-                    </Col> 
-                ))    
-        ) : (
-        <p>no data</p>   
-        )}                    
-    </Row>
-</div> */}

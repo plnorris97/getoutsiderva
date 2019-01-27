@@ -1,0 +1,21 @@
+.auth {
+    float: right;
+}
+
+.logo {
+    width: 300px;
+}
+
+.nav {
+    background-color: #D3D3D3;
+}
+
+.item {
+    color: black;
+    vertical-align: middle;
+}
+.itemAuth {
+    color: black;
+    vertical-align: middle;
+    float: right;
+}
