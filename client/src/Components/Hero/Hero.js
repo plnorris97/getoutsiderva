@@ -2,7 +2,25 @@ import React, { Component } from 'react';
 import LazyHero from 'react-lazy-hero';
 // import activitiesImg from '../../images';
 
+// const parseStr = (str) => {
+//     let newStr = str.replace(/-/g, ' ')
+//     let strArr = newStr.split(' ');
+//     let newArr = []
+//     for (let i = 0; i < strArr.length; i++) {
+//       newArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
+//     }
+//     let finishedStr = newArr.join(' ');
+//     return finishedStr;
+//   }
+
 class Hero extends Component {
+    // componentDidMount() {
+    //     const parsedName = parseStr(this.props.match.params.name);
+    //     console.log(parsedName)
+
+    // }
+    
+
     renderSwitch(path) {
         switch(path) {
             case '/activities':
@@ -51,7 +69,7 @@ class Hero extends Component {
             // case '/parks/robious-landing-park':
             //     return require('../../images/robious-landing-park.jpg');
             // case '/parks/rockwood-park':
-            //     return require('../../images/rockwood-park.jpg');
+            //     return require('../../images/rockwoodPark.jpg');
             case '/parks/cheswick-park':
                 return require('../../images/cheswickPark.jpg');
             case '/parks/deep-bottom-park-and-four-mile-creek':
@@ -113,8 +131,8 @@ class Hero extends Component {
             <div>
                 <LazyHero opacity={0.2} minHeight="60vh" isCentered={true} imageSrc={this.renderSwitch(window.location.pathname)} parallaxOffset={3} >
                 <div className="hero-text" headerInfo={this.renderSwitch(window.location.name)}>
-                    {/* <h1>Hi{this.match.path}</h1> */}
-                    {/* <h4>Whether you are into extreme sports and adrenaline rushes or leisure bike ride along the history James River, Richmond has an activity for you.</h4> */}
+                    {/* <h1>{this.props.match.params.name}</h1>
+                    <h4>{this.props.match.params.description}</h4> */}
                 </div>
                 </LazyHero>
             </div>

@@ -80,6 +80,7 @@ class ParkDetail extends Component {
   
     <div>
         <Hero />
+        <Row><h5 style={{position: 'absolute', right: 20}}><a href="/destinations">Select Another Park</a></h5></Row>
         <Row className="mt-6">  
         {this.state.activities.length ? (
                 this.state.activities.map(activities => (
