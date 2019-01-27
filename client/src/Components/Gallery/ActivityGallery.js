@@ -1,13 +1,11 @@
 import React from "react";
 import { MDBMask, MDBContainer, MDBView, MDBRow, } from "mdbreact";
 
-import testingImg from '../../images/logo.PNG';
-
 
 
 class MaskPage extends React.Component {
   render() {
-      const { name, img, activities }= this.props
+      const { name, img }= this.props
     return (
 
        <MDBContainer> 
@@ -19,7 +17,7 @@ class MaskPage extends React.Component {
                 alt=""
               />
               <MDBMask overlay="stylish-light" className="flex-center">
-              <a href={"activities/"+activities}><h3 className="white-text"> {name} </h3></a>
+              <a href={"activities/"+ name}><h3 className="white-text"> {name} </h3></a>
               </MDBMask>
             </MDBView>
         </MDBRow>
