@@ -20,7 +20,8 @@ const parseStr = (str) => {
 class ActivityDetail extends Component {
      state = {
         // Do I need a path(name) state?
-        path: '',
+        activity: '',
+        description: '',
         parks: []
       }
   
@@ -31,6 +32,7 @@ class ActivityDetail extends Component {
         // const path = this.props.match.params.name
         console.log(parsedName);
         this.lookUpParks(parsedName);
+        this.lookUpActivity(parsedName);
     }
 
     
@@ -43,6 +45,17 @@ class ActivityDetail extends Component {
     //   )
     //   .catch(err => console.log(err))
     // }
+
+    // map through activities for descriptions
+    lookUpActivity(description) {
+      API.getActivity(description)
+      .then(res => 
+        this.setState({ activity: res.data.parsedName, description: res.data.description })
+      )
+      .catch(err => console.log(err));
+      console.log(description);
+    };
+    
 
     // Look up parks
     lookUpParks(Activity) {
@@ -72,14 +85,16 @@ class ActivityDetail extends Component {
       )
     }
 
-  render(props) {
+  render() {
     return (
 
       <div>
-        <Hero />
+        <Hero></Hero> 
+        {/* <Row name={this.props.match.params.name} text={this.props.match.params.description} /> */}
+        <Row><h1>{this.props.match.params.name}</h1></Row>
         <Row><h5 style={{position: 'absolute', right: 20}}><a href="/activities">Select Another Activity</a></h5></Row>
+        <Row><h4>{this.props.match.params.description}</h4></Row>
         <Row className="mt-6">
-      
             {this.state.parks.length ? (
                     this.state.parks.map(parks => (
                     <Cards
