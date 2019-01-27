@@ -52,7 +52,7 @@ class ActivitiesLP extends Component {
                                     key={activities._id}
                                     img={activities.img}
                                     name={activities.name}
-                                    activities={activities.name.split(" ").join("-")}
+                                    activities={activities.name.split(" ").join("-").toLowerCase("")}
                                 /> 
                                 </MDBCol> 
                                 
