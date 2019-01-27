@@ -11,6 +11,18 @@ const parseStr = (str) => {
   
 }
 
+  // let newStr = str.replace(/-/g, ' ')
+  // let strArr = newStr.split(' ');
+  // let newArr = []
+  // for (let i = 0; i < strArr.length; i++) {
+  //   newArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
+  // }
+  // let finishedStr = newArr.join(' ');
+  // return finishedStr;
+  // if (str==="belleisle"){
+  //   return "Belle Isle";
+  // }
+
 class ParkDetail extends Component {
      state = {
         // Do I need a path(name) state?
