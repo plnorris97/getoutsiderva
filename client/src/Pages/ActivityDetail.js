@@ -77,7 +77,8 @@ class ActivityDetail extends Component {
 
       <div>
         <Hero />
-        <Row clssName="mt-6">
+        <Row><h5 style={{position: 'absolute', right: 20}}><a href="/activities">Select Another Activity</a></h5></Row>
+        <Row className="mt-6">
       
             {this.state.parks.length ? (
                     this.state.parks.map(parks => (

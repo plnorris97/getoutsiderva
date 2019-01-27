@@ -24,6 +24,14 @@ export default {
   getAuth: function () {
     return axios.get("/auth");
   },
+
+  addActivity: function () {
+    return axios.post("/api/activities");
+  },
+
+  addPark: function () {
+    return axios.post("/api/destinations");
+  }
   // doAdvancedSearch: function() {
   //   return axios.get("")
   // }
