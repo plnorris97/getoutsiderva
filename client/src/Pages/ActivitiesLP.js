@@ -46,6 +46,7 @@ class ActivitiesLP extends Component {
                                     activities={activities.name.split(" ").join("-").toLowerCase("")}
                                 /> 
                                 </MDBCol> 
+                                
                             ))    
                     ) : (
                     <p>no data</p>   

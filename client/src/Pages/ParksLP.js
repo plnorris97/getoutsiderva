@@ -1,13 +1,13 @@
 // import './App.css';
 // import { Link } from 'react-router-dom';
-import { Card, CardText, CardBody,
-    CardTitle, CardSubtitle } from 'reactstrap';
+// import { Card, CardText, CardBody,
+//     CardTitle, CardSubtitle } from 'reactstrap';
 
 import React, { Component } from 'react';
 import API from '../utils/API';
 import Hero from '../Components/Hero/Hero';
-import { Row, Col } from 'reactstrap';
-import { MDBMask, MDBRow, MDBCol } from "mdbreact";
+// import { Row, Col } from 'reactstrap';
+import { MDBRow, MDBCol } from "mdbreact";
 import ParkGallery from '../Components/Gallery/ParkGallery';
 
 
@@ -63,7 +63,7 @@ class ParksLP extends Component {
                             <MDBCol md="3">
                                 <ParkGallery 
                                 key={park._id}
-                                img={park.img}
+                                img={park.Image}
                                 name={park.Name}
                                 park={park.Name.split(" ").join("-")}
                                 />

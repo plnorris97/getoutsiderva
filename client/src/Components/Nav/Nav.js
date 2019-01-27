@@ -22,7 +22,7 @@ class FixedNavbar extends React.Component {
     return (
       <div>
         <header>
-          <Router>
+          
             <MDBNavbar color="bg-warning" fixed="top" dark expand="md" >
               <MDBNavbarBrand href="/">
                 <strong>Get Outside RVA</strong>
@@ -34,30 +34,27 @@ class FixedNavbar extends React.Component {
                     {/* <MDBNavLink to="/"><MDBIcon icon="home" />Home</MDBNavLink> */}
                   </MDBNavItem>
                   <MDBNavItem>
-                    <Link to="/activities/"><MDBIcon icon="bicycle" />Activities</Link>
+                    <Link to="/activities/">Activities</Link>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <Link to="/destinations">Parks</Link>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <Link to="/advanced-search">Search</Link>
                   </MDBNavItem>
                   <NavItem>
-                <Dropdown>
-                  <DropdownToggle nav caret>
-                    <div className="d-none d-md-inline"><MDBIcon icon="tree" />Destinations</div>
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem href="/destinations/parks/county">Parks</DropdownItem>
-                    <DropdownItem href="/destinations/parks/state">Attractions</DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
               </NavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
                   <NavItem>
                     <MDBNavItem active>
-                        {/* <MDBNavLink to="/advanced-search">Search</MDBNavLink> */}
+                        <MDBNavLink to="/auth">Log-In/Sign-Up</MDBNavLink>
                     </MDBNavItem>
                   </NavItem>
                 </MDBNavbarNav>
               </MDBCollapse>
             </MDBNavbar>
-          </Router>
+      
 
 {/* 
           <MDBView src="https://mdbootstrap.com/img/Photos/Others/img%20(40).jpg">

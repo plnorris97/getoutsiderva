@@ -19,10 +19,11 @@ class LoginForm extends Component {
 
     }
 
-    handleChange(event) {
+    handleChange = event => {
         this.setState({
-            [event.target.name]: event.target.value
+            [event.target.id]: event.target.value,
         })
+        console.log(event.target.id)
     }
 
     handleSubmit = event => {
@@ -99,7 +100,7 @@ class LoginForm extends Component {
                                 validate
                                 error="wrong"
                                 success="right"
-                                value={this.state.userName}
+                                value={this.state.userName1}
                                 onChange={this.handleChange}
                             />
                             <MDBInput
@@ -120,48 +121,6 @@ class LoginForm extends Component {
                     </MDBCol>
                 </MDBRow>
                 </MDBContainer>
-                
-{/*                 
-                
-                <Form className="form-horizontal">
-                    <FormGroup className="form-group">
-                        <Col className="col-1 col-ml-auto">
-                            <Label className="form-label" htmlFor="userName1">User Name: </Label>
-                        </Col>
-                        <Col className="col-3 col-mr-auto">
-                            <Input className="form-input"
-                                type="text"
-                                id="userName1"
-                                name="userName1"
-                                placeholder="User Name"
-                                value={this.state.userName}
-                                onChange={this.handleChange}
-                            />
-                        </Col>
-                    </FormGroup>
-                    <FormGroup className="form-group">
-                        <Col className="col-1 col-ml-auto">
-                            <Label className="form-label" htmlFor="password">Password: </Label>
-                        </Col>
-                        <Col className="col-3 col-mr-auto">
-                            <Input className="form-input"
-                                placeholder="Password"
-                                type="password"
-                                name="password"
-                                value={this.state.password}
-                                onChange={this.handleChange}
-                            />
-                        </Col>
-                    </FormGroup>
-                    <FormGroup className="form-group ">
-                        <Col className="col-7">
-                        <Button
-                            className="btn btn-primary col-1 col-mr-auto"
-                            onClick={this.handleSubmit}
-                            type="submit">Login</Button>
-                            </Col>
-                    </FormGroup>
-                </Form> */}
             </div>
             )
         }

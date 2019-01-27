@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Hero from '../Components/Hero/Hero';
-import { Row, Col} from 'reactstrap';
+import { Row} from 'reactstrap';
 import Cards from '../Components/Cards/ParkCards'
 
 const parseStr = (str) => {
@@ -104,20 +104,3 @@ class ParkDetail extends Component {
     }
 }
 export default ParkDetail;
-
-{/* <Row>
-<Col>
-    {this.state.activities.length ? (
-        <Card>
-            {this.state.activities.map(activity => (
-            <CardBody key={activity._id}>
-                <CardTitle>{activity.name}</CardTitle>
-                <CardText>{activity.parks}</CardText>
-            </CardBody>
-            ))}
-        </Card>
-    ) : (
-        <p>There aren't any current activities available at this park.</p>   
-    )}
-    </Col> 
-</Row> */}
