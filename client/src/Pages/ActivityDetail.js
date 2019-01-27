@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Hero from '../Components/Hero/Hero';
-import { Row, Col} from 'reactstrap';
+import { Row } from 'reactstrap';
 import Cards from '../Components/Cards/ActivityCards';
 
 const parseStr = (str) => {

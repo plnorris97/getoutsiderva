@@ -33,77 +33,77 @@ class Hero extends Component {
             // case '/activities/birding-wildlife':
             //     return require('../../images/birdingWildlife.jpg');
             case '/parks/dutch-gap-conservation-area':
-                return require('../../images/dutch-gap-conservation-area.jpg');
+                return require('../../images/dutchGapConservationArea.jpg');
             // case '/parks/maymont':
                 // return require('../../images/maymont.jpg');
             case '/parks/henricus-historical-park':
-                return require('../../images/henricus-historical-park.jpg');
+                return require('../../images/henricusHistoricalPark.jpg');
             case '/parks/huguenot-park':
-                return require('../../images/huguenot-park.jpg');
+                return require('../../images/huguenotPark.jpg');
             case '/parks/harry-g-daniel-park-at-iron-bridge':
-                return require('../../images/harry-g-daniel-park-at-iron-bridge.jpg');
+                return require('../../images/harryGDanielParkAtIronBridge.jpg');
             case '/parks/pocahontas-state-park':
-                return require('../../images/pocahontas-state-park.jpg');
+                return require('../../images/pocahontasStatePark.jpg');
             case '/parks/r-garland-dodd-park-at-iron-bridge':
-                return require('../../images/r-garland-dodd-park-at-iron-bridge.jpg');
+                return require('../../images/rGarlandDoddParkAtIronBridge.jpg');
             case '/parks/presquile-national-wildlife-refuge':
-                return require('../../images/presquile-national-wildlife-refuge.jpg');
+                return require('../../images/presquileNationalWildlifeRefuge.jpg');
             // case '/parks/robious-landing-park':
             //     return require('../../images/robious-landing-park.jpg');
             // case '/parks/rockwood-park':
             //     return require('../../images/rockwood-park.jpg');
             case '/parks/cheswick-park':
-                return require('../../images/cheswick-park.jpg');
+                return require('../../images/cheswickPark.jpg');
             case '/parks/deep-bottom-park-and-four-mile-creek':
-                return require('../../images/deep-bottom-park-and-four-mile-creek.jpg');
+                return require('../../images/deepBottomParkAndFourMileCreek.jpg');
             case '/parks/deep-run-park-and-recreation-center':
-                return require('../../images/deep-run-park-and-recreation-center.jpg');
+                return require('../../images/deepRunParkAndRecreationCenter.jpg');
             case '/parks/dorey-park-and-recreation-center':
-                return require('../../images/dorey-park-and-recreation-center.jpg');
+                return require('../../images/doreyParkAndRecreationCenter.jpg');
             case '/parks/dunncroft-castle-point-park':
-                return require('../../images/dunncroft-castle-point-park.jpg');
+                return require('../../images/dunncroftCastlePointPark.jpg');
             case '/parks/echo-lake-park':
-                return require('../../images/echo-lake-park.jpg'); 
+                return require('../../images/echoLakePark.jpg'); 
             case '/parks/chimborazo-park':
-                return require('../../images/chimborazo-park.jpg');
+                return require('../../images/chimborazoPark.jpg');
             case '/parks/byrd-park':
-                return require('../../images/byrd-park.jpg');
+                return require('../../images/byrdPark.jpg');
             case '/parks/bryan-park':
-                return require('../../images/bryan-park.jpg');
+                return require('../../images/bryanPark.jpg');
             case '/parks/belle-isle':
-                return require('../../images/belle-isle.jpg');
+                return require('../../images/belleIsle.jpg');
             case '/parks/14th-street-takeout':
-                return require('../../images/14th-street-takeout.jpg');
+                return require('../../images/14thStreetTakeout.jpg');
             case '/parks/hunton-community-center-and-park':
-                return require('../../images/hunton-community-center-and-park.jpg');
+                return require('../../images/huntonCommunityCenterandpark.jpg');
             case '/parks/laurel-recreation-area-and-skate-park':
-                return require('../../images/laurel-recreation-area-and-skate-park.jpg');
+                return require('../../images/laurelRecreationareaAndSkatePark.jpg');
             case '/parks/meadow-farm-museum-at-crump-park':
-                return require('../../images/meadow-farm-museum-at-crump-park.jpg');
+                return require('../../images/meadowFarmMuseumAtCrumpPark.jpg');
             case '/parks/northbank-trail-texas-beach':
-                return require('../../images/northbank-trail-texas-beach.jpg');
+                return require('../../images/northbankTrailTexasBeach.jpg');
                 case '/parks/osborne-park-and-boat-landing':
-                return require('../../images/osborne-park-and-boat-landing.jpg');
+                return require('../../images/osborneParkAndBoatLanding.jpg');
                 case '/parks/rf-and-p-park':
-                return require('../../images/rf-and-p-park.jpg');
+                return require('../../images/rfAndPPark.jpg');
                 case '/parks/shiplock-park':
-                return require('../../images/shiplock-park.jpg');
+                return require('../../images/shiplockPark.jpg');
                 case '/parks/short-pump-park':
-                return require('../../images/short-pump-park.jpg');
+                return require('../../images/shortPumpPark.jpg');
                 case '/parks/springfield-park':
-                return require('../../images/springfield-park.jpg');
+                return require('../../images/springfieldPark.jpg');
                 case '/parks/three-lakes-park-and-nature-center':
-                return require('../../images/three-lakes-park-and-nature-center.jpg');
+                return require('../../images/threeLakesParkAndNatureCenter.jpg');
                 case '/parks/tredegar-street-put-in.jpg':
-                return require('../../images/tredegar-street-put-in.jpg');
+                return require('../../images/tredegarStreetPutIn.jpg');
                 case '/parks/tuckahoe-creek-park':
-                return require('../../images/tuckahoe-creek-park.jpg');
+                return require('../../images/tuckahoeCreekPark.jpg');
                 case '/parks/twin-hickory-park-and-recreation-center':
-                return require('../../images/twin-hickory-park-and-recreation-center.jpg');
+                return require('../../images/twinHickoryParkAndRecreationCenter.jpg');
                 case '/parks/varina-recreation-area':
-                return require('../../images/varina-recreation-area.jpg');
+                return require('../../images/varinaRecreationArea.jpg');
                 case '/parks/virginia-randolph-recreation-area':
-                return require('../../images/virginia-randolph-recreation-area.jpg');   
+                return require('../../images/virginiaRandolphRecreationArea.jpg');   
             default: return 'image.jpg';
         }
     }
