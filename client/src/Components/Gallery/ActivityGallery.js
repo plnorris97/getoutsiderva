@@ -3,6 +3,7 @@ import { MDBMask, MDBContainer, MDBView, MDBRow, } from "mdbreact";
 
 
 
+
 class MaskPage extends React.Component {
   render() {
       const { name, img }= this.props

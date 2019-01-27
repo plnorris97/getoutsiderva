@@ -1,0 +1,23 @@
+.form-group {
+    /* text-align: center; */
+    width: 250px;
+}
+
+.leftCol {
+    background-color: lightgray;
+    margin: 30px 0 0 30px;
+    margin-left: 100px;
+}
+
+.middleCol {
+    background-color: lightgray;
+    margin: 30px 0 0 30px;
+    text-align: center;
+}
+
+.rightCol {
+    background-color: lightgray;
+    margin: 30px 0 0 30px;
+    text-align: left
+}
+

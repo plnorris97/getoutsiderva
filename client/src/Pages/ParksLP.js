@@ -63,7 +63,7 @@ class ParksLP extends Component {
                             <MDBCol md="3">
                                 <ParkGallery 
                                 key={park._id}
-                                img={park.img}
+                                img={park.Image}
                                 name={park.Name}
                                 park={park.Name.split(" ").join("-")}
                                 />
