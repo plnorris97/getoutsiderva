@@ -62,7 +62,7 @@ class ActivitiesLP extends Component {
                     )}                    
                 </MDBRow>
                 <MDBRow>
-                    <MDBCol md="6">
+                    <MDBCol md="12" style={{ textAlign: "center" }}>
                         <h5>Don't see an activity listed here? Add it now.</h5>
                         <MDBBtn color="deep-orange">Add Activity</MDBBtn>
                     </MDBCol>

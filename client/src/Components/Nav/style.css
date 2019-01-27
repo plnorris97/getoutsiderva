@@ -12,10 +12,5 @@
 
 .item {
     color: black;
-    vertical-align: middle;
-}
-.itemAuth {
-    color: black;
-    vertical-align: middle;
-    float: right;
+    margin: 10px;
 }
