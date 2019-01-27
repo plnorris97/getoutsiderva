@@ -5,7 +5,7 @@
 
 import React, { Component } from 'react';
 import API from '../utils/API';
-import { MDBMask, MDBRow, MDBCol } from "mdbreact";
+import { MDBRow, MDBCol, MDBBtn } from "mdbreact";
 
 import Hero from '../Components/Hero/Hero';
 import ActivityGallery from '../Components/Gallery/ActivityGallery';
@@ -30,6 +30,15 @@ class ActivitiesLP extends Component {
             .catch(err => console.log(err))
     }
 
+    // addActivity = () => {
+    //     API.addActivity()
+    //         .then(res=>{
+    //             console.log(res)
+    //             this.setState({ activities: res.data})
+    //         }) 
+    //         .catch(err => console.log(err))
+    // }
+
 
     render() {
         return (
@@ -49,8 +58,14 @@ class ActivitiesLP extends Component {
                                 
                             ))    
                     ) : (
-                    <p>no data</p>   
+                    <p>Oops we don't have data! </p>   
                     )}                    
+                </MDBRow>
+                <MDBRow>
+                    <MDBCol md="6">
+                        <h5>Don't see an activity listed here? Add it now.</h5>
+                        <MDBBtn color="deep-orange">Add Activity</MDBBtn>
+                    </MDBCol>
                 </MDBRow>
             </div>
         )

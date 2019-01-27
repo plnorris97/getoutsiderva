@@ -3,16 +3,8 @@ import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Co
 // import './style..css';
 
 class Cards extends React.Component {
-    // renderSwitch(path) {
-    //     switch(path) {
-    //         case '/activities/paddle-sports': return 'paddle-sports.jpg';
-    //         default: return 'image.jpg';
-    //     }
-    // }
-
-
   render() {
-      const  { name, description, img, address }= this.props
+      const  { name, description, image, address }= this.props
     return (
 
         <Row className="mt-6">
@@ -21,20 +13,19 @@ class Cards extends React.Component {
                 
                 <CardImage
                     className="img-fluid, no-margin"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
+                    // Image="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
+                    src={Image}
                     waves
                 />
 
                 <CardBody>
-                    <CardHeader style={{ backgroundColor: "white" }}><h4> {name} </h4></CardHeader>
+                    <CardImage src={image}></CardImage>
+                    <CardHeader style={{ backgroundColor: "white", textAlign: "left" }}><a href={"activities/"+ name}><h4> {name} </h4></a></CardHeader>
                     <CardTitle style={{ color: "#3F729B" }}></CardTitle>
                     <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
                     { address }
                     </CardText>
-                    {/* <CardText><h5>Parks available:</h5> 
-                    { parks }
-                    </CardText> */}
-                    <CardText><h5>Description:</h5> 
+                    <CardText style={{ marginLeft: "1.5rem", textAlign: "left" }}><h5>Description</h5> 
                     { description }
                     </CardText>
                    
