@@ -1,8 +1,38 @@
-#login-col {
-    /* width: 200px; */
- 
-    /* padding-right: 10px; */
+
+#signInPage{
+    background-image: url("../../images/signIn2.jpg");
+    background-size: 100%;
 }
+.header {
+    padding: 3rem;
+    color: white;
+    text-shadow: 0 0 2px #f39657;
+    text-align: center;
+}
+
+.signInDetail p {
+    text-align: center !important;
+    color: white;
+    text-shadow: 0 0 2px #f39657;
+}
+
+.SignupForm, .signinForm {
+    padding: 3rem;
+    margin-top: 5rem;
+    background-image: linear-gradient(to bottom, #c4af922f 0%, #00076d6c 100%);
+   
+}
+
+.SignupForm, .signinForm h4 {
+    color: white !important;
+    text-shadow: 0 0 2px #f39657 !important;
+}
+
+.md-form label {
+    color: white !important;
+}
+
+
 
 #signup-col {
     width: 100px;

@@ -13,7 +13,7 @@ class MaskPage extends React.Component {
         <MDBRow className="mt-4" style={{ width: "15rem", height: "15rem", padding:"1rem", margin:"0.5rem"}}>
             <MDBView>
               <img
-                src= "https://mdbootstrap.com/img/Others/documentation/img%20(7)-mini.jpg"
+                src= "http://lorempixel.com/400/400/sports/grey"
                 className="img-fluid"
                 alt=""
               />

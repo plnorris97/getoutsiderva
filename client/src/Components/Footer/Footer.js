@@ -1,55 +1,46 @@
 import React from "react";
+import './style.css';
+import { Col, MDBCard, MDBCardImage, MDBCardBody, MDBCardText, MDBCardTitle, MDBContainer, Container, Row, Footer, MDBRow, MDBCol } from "mdbreact";
+import coder from '../../images/coder.png';
+import jenny from '../../images/Jenny.jpg';
 
-import { Col, Container, Row, Footer } from "mdbreact";
 
 class FooterPage extends React.Component {
 render() {
 return (
-<Footer color="unique-color" fixed="bottom" className="font-small pt-4 mt-4">
-  <Container fluid className="text-center text-md-left">
-    <Row>
-      <Col md="4">
-      <h5 className="title">Get Outside RVA</h5>
-      <p>
-      Get Outside RVA is a movement focused on getting RVA and visitors OUTSIDE. The river city is full of outdoor opportunities and we want to connect everyone to these opportunities.
-      </p>
-      </Col>
-      <Col md="2">
-      </Col>
-      <Col md="3">
-      <ul>
-        <h6 className="list-unstyled">
-          <a href="#!">Activities</a>
-        </h6>
-        <h6 className="list-unstyled">
-          <a href="#!">Parks</a>
-        </h6>
-        <h6 className="list-unstyled">
-          <a href="#!">Search</a>
-        </h6>
-        <h6 className="list-unstyled">
-          <a href="#!">Log In/Sign Up</a>
-        </h6>
-      </ul>
-      </Col>
-      <Col md="3">
-      <ul>
-        <h6 className="list-unstyled">
-          <a href="#!">About</a>
-        </h6>
-        <h6 className="list-unstyled">
-          <a href="#!">Partners</a>
-        </h6>
-        <h6 className="list-unstyled">
-          <a href="#!">Resources</a>
-        </h6>
-        <h6 className="list-unstyled">
-          <a href="#!">Contact</a>
-        </h6>
-      </ul>
-      </Col>
-    </Row>
-  </Container>
+<Footer fixed="bottom" className="font-small pt-4 mt-4">
+  <MDBContainer fluid className="text-center text-md-left">
+  <Row>
+    <Col>
+    <h3 className="FooterHeader">Meet the Developers!<img alt="icon" src= {coder}/></h3>
+    </Col>
+  </Row>
+  <MDBRow center style={{marginTop:"2rem"}} >
+        <MDBCol size="3"> 
+        <MDBCard style={{ width: "25rem"}}>
+        <MDBCardImage className="img-fluid rounded-circle" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+        <MDBCardBody>
+          <MDBCardTitle style={{color:"coral"}}>Tricia Norris</MDBCardTitle>
+          <MDBCardText>
+          Full Stack Developer
+          </MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
+        </MDBCol>
+        <MDBCol size="3">
+        <MDBCard style={{ width: "25rem" }}>
+        <MDBCardImage className="img-fluid rounded-circle" src={jenny} waves />
+        <MDBCardBody>
+          <MDBCardTitle style={{color:"coral"}}>Jenny Liang 
+          </MDBCardTitle>
+          <MDBCardText>
+            Frontend Developer
+          </MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
+        </MDBCol>
+      </MDBRow>
+  </MDBContainer>
   <div className="footer-copyright text-center py-3">
     <Container fluid>
       &copy; {new Date().getFullYear()} Copyright:{" "}

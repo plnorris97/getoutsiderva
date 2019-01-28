@@ -12,7 +12,7 @@ class Cards extends React.Component {
 
 
   render() {
-      const  { name, description, img, address }= this.props
+      const  { name, description, img, address, city }= this.props
     return (
 
         <Row className="mt-6">
@@ -31,9 +31,9 @@ class Cards extends React.Component {
                     <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
                     { address }
                     </CardText>
-                    {/* <CardText><h5>Parks available:</h5> 
-                    { parks }
-                    </CardText> */}
+                    <CardText>
+                    { city }
+                    </CardText>
                     <CardText><h5>Description:</h5> 
                     { description }
                     </CardText>

@@ -16,3 +16,4 @@ const Checkbox = ({ label, isSelected, onCheckboxChange }) => (
 );
 
 export default Checkbox;
+

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import { Row, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Row, Col, Form, FormGroup, Label, Input, Button, Container } from 'reactstrap';
 import Hero from '../Components/Hero/Hero';
 import '../Components/Form/style.css';
 
@@ -55,25 +55,29 @@ class Search extends Component {
 
     }
 
+
+    
     render() {
         return (
-            <div>
+            <div style={{background:"#f5f5f5", height:"80rem"}}>
             <Hero />
+            <Container className="formContainer z-depth-2" >
             <Form>
+            
                 <Row>
-                <Col md="3" className="leftCol">
+                <Col md="4" className="leftCol">
                 <FormGroup on submit={this.handleFormSubmit}>
                     <Label className="label"><h4>Where do you want to go?</h4></Label>
-                    <Input type="select" name="selectWhere" value1={this.state.value} onChange={this.handleChange} multiple>
+                    <Input style={{height:"5rem", overflow:"hidden"}} type="select" name="select" value1={this.state.value} onChange={this.handleChange} multiple>
                         <option value="parks">Parks</option>
                         <option value="attractions">Attractions</option>
                     </Input>
                 </FormGroup>
                 </Col>
-                <Col md="3" className="middleCol">
+                <Col md="4" className="middleCol">
                 <FormGroup on submit={this.handleSelectorSubmit}>
                     <Label className="label"><h4>What do you want to do?</h4></Label>
-                        <Input type="select" name="selectWhat" multiple={true} value2={this.state.value} onChange={this.handleChange}>
+                        <Input style={{height:"18rem"}} type="select" name="selectWhat" multiple={true} value2={this.state.value} onChange={this.handleChange}>
                             <option value="biking">Biking</option>
                             <option value="birding-wildlife">Birding/Wildlife</option>
                             <option value="camping">Camping</option>
@@ -90,9 +94,10 @@ class Search extends Component {
                         <p>Select multiple activities using the Ctrl key.</p>
                 </FormGroup>
                 </Col>
-                <Col md="3" className="rightCol">
+                <Col md="4" className="rightCol">
                 <FormGroup on Submit={this.handleCheckedSubmit}>
                     <Label className="label"><h4>What amenities do you need?</h4></Label>
+                        
                         <Input
                             name="amphitheatre"
                             type="checkbox"
@@ -170,13 +175,17 @@ class Search extends Component {
                             onChange={this.handleInputChange} />
                             Swimming Pool
                         <br />
+                        
                 </FormGroup>
                 </Col>
                 </Row>
+                </Form>
                 <Row>
                     <Button>Search</Button>
                 </Row>
-            </Form>
+            
+           
+            </Container>
             </div>
         );
     }

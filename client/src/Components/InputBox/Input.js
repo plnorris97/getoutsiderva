@@ -34,7 +34,7 @@ class SearchPage extends React.Component {
       <MDBCol md="8" className="ml-md-auto">
         <FormInline className="md-form">
           <input
-           style={{width: "15rem"}}
+           style={{width: "15rem", BorderBottom: "1px solid #972a05"}}
             className="form-control"
             type="text"
             placeholder="How do YOU do RVA?!"

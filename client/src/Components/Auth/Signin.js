@@ -83,7 +83,8 @@ class LoginForm extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
-            <div>
+            <div className="signinForm">
+            <h4>Login to your account and start sharing!</h4>
                 <MDBContainer>
                     <MDBRow>
                         <MDBCol md="6">
@@ -120,6 +121,7 @@ class LoginForm extends Component {
                     </form>
                     </MDBCol>
                 </MDBRow>
+                
                 </MDBContainer>
             </div>
             )

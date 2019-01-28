@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink, } from 'reactstrap';
 import Logo from '../../images/logo-nav.png';
+import speed from '../../images/speed.png';
 import './style.css';
 
 export default class Nav2 extends React.Component {

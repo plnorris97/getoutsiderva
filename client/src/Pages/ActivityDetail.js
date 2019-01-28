@@ -100,6 +100,8 @@ class ActivityDetail extends Component {
                     <Cards
                       key={parks._id}
                       name={parks.Name}
+                      address={parks.Address}
+                      city={parks.City}
                       description={parks.Description}
                   />
                     ))
