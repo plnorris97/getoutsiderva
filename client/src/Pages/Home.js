@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 // import './App.css';
 import Carousel from '../Components/Carousel/Carousel';
-import Input from '../Components/InputBox/Input';
+// import Input from '../Components/InputBox/Input';
 import Gallery from '../Components/Gallery/Gallery';
 // import Jumbotron from '../Components/Jumbotron/Jumbotron';
 import Video from '../Components/Video/Video';
+import Input from '../Components/InputBox/Input';
 
 
 class Home extends Component {
@@ -23,13 +24,13 @@ class Home extends Component {
         <div>
             <Carousel />
             <br />
+            {/* <Input /> */}
             <Input />
             <br />
             <Gallery />
             <br />
             <Video />
             <br />
-            {/* <Jumbotron /> */}
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
         )

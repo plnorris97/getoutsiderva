@@ -1,10 +1,11 @@
 import React from "react";
-import { Jumbotron, MDBContainer, View, Mask } from "mdbreact";
+import { Jumbotron } from "mdbreact";
 
 const JumbotronPage = () => {
   return (
-            <img className="w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg" alt="First slide" />
-
+    <Jumbotron>
+      <img className="w-100" src="http://hd.wallpaperswide.com/thumbs/coniferous_forest-t2.jpg" alt="Oops this page isn't available." />
+    </Jumbotron>
 
   )
 }
