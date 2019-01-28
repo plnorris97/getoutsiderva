@@ -1,5 +1,7 @@
 
 import React, { Component } from 'react';
+import { MDBRow } from "mdbreact";
+
 // import './App.css';
 import Carousel from '../Components/Carousel/Carousel';
 // import Input from '../Components/InputBox/Input';
@@ -7,6 +9,7 @@ import Gallery from '../Components/Gallery/Gallery';
 // import Jumbotron from '../Components/Jumbotron/Jumbotron';
 import Video from '../Components/Video/Video';
 import Input from '../Components/InputBox/Input';
+import Developer from '../Components/Developers/Developers';
 
 
 class Home extends Component {
@@ -23,15 +26,19 @@ class Home extends Component {
         return (
         <div>
             <Carousel />
-            <br />
-            {/* <Input /> */}
+          
+          <MDBRow>
             <Input />
-            <br />
+          </MDBRow>
+          <MDBRow>
             <Gallery />
-            <br />
+          </MDBRow> 
+          <MDBRow>
             <Video />
-            <br />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </MDBRow>   
+          <MDBRow>
+              <Developer />
+          </MDBRow>
             </div>
         )
     }

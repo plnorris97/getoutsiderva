@@ -2,6 +2,7 @@ import React from "react";
 import { MDBCol, Container, MDBView } from "mdbreact";
 import doYou from '../../images/doYou.png';
 
+
 class Input extends React.Component {
 //   constructor() {
 //     super()
@@ -31,11 +32,12 @@ class Input extends React.Component {
   render() {
     return (
       <Container style={{ height: "15rem" }}>
-      <MDBCol md="12" className="ml-md" style={{ height: "auto" }}>
+      <MDBCol md="12" style={{ marginRight: "0 !important"}} className="ml-md">
         <MDBView>
           <img 
           src={doYou} 
-          className="img-fluid"
+          style={{ margin:"auto 0" }}
+          className="img-fluid2"
           alt="How do you do RVA?"></img>
         </MDBView>
         {/* <FormInline className="md-form">
