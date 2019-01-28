@@ -3,29 +3,19 @@
 }
 
 .logoRow > div {
-    padding: 0 !important;
-}
-
-.item {
-    float: left;
-    color: #972a05;
-    font-weight: bold;
-}
-
-.itemAuth {
-    float: right;
+    padding: 2px !important;
 }
 
 
 .item {
     transition: transform .2s;
-   
-    margin: 0 auto;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 .item:hover {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2); 
-    color: grey;
+    color: orangered;
 }

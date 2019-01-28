@@ -2,6 +2,7 @@ import React from 'react';
 import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Col, Row, } from 'mdbreact';
 // import './style..css';
 
+
 class Cards extends React.Component {
   render() {
       const  { name, description, image, address }= this.props

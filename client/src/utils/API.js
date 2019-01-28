@@ -25,12 +25,12 @@ export default {
     return axios.get("/auth");
   },
 
-  addActivity: function () {
-    return axios.post("/api/activities");
+  addActivity: function (activityData) {
+    return axios.post("/api/activities", activityData);
   },
 
-  addPark: function () {
-    return axios.post("/api/destinations");
+  addPark: function (parkData) {
+    return axios.post("/api/destinations", parkData);
   }
   // doAdvancedSearch: function() {
   //   return axios.get("")
