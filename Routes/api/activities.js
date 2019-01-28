@@ -9,8 +9,8 @@ router.route("/")
 // Matches with "/api/activities/:name"
 router
   .route("/:name")
-  .put(activityController.update)
   .get(activityController.findByName)
+  .put(activityController.update)
 
 router
   .route("/activities")
