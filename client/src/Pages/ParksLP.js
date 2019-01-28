@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import API from '../utils/API';
 import Hero from '../Components/Hero/Hero';
 // import { Row, Col } from 'reactstrap';
-import { MDBRow, MDBCol } from "mdbreact";
+import { MDBRow, MDBCol, MDBBtn } from "mdbreact";
 import ParkGallery from '../Components/Gallery/ParkGallery';
 
 
@@ -70,9 +70,13 @@ class ParksLP extends Component {
                                 </MDBCol>
                         ))
                     ) : (     
-                        <p>no data</p>
+                        <p>Oops we don't have data!</p>
                     )}
                 </MDBRow>
+                <MDBCol md="6">
+                    <h5>Don't see a park listed here? Add it now.</h5>
+                    <MDBBtn color="deep-orange">Add Park</MDBBtn>
+                </MDBCol>
             </div>
         )
     };
