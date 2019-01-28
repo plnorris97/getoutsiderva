@@ -1,48 +1,8 @@
 import React, {Component} from 'react';
-import API from '../../utils/Auth/API';
 import { MDBContainer, MDBRow, MDBCol, Form, FormGroup, MDBInput, MDBBtn } from 'mdbreact';
 
 class AddParkForm extends Component {
-    constructor() {
-        super()
-        this.state = {
-            name: '',
-            address: '',
-            city: '',
-            state: '',
-            description: '',
-            activities: [],
-            amenities: []
-        }
-        // this.handleSubmit = this.handleSubmit.bind(this)
-        // this.handleChange = this.handleChange.bind(this)
-
-    }
-
-    handleChange = event => {
-        this.setState({
-            [event.target.id]: event.target.value,
-        })
-        console.log(event.target.id)
-    }
-
-    handleSubmit = event => {
-        event.preventDefault()
-        console.log('handleSubmit')
-        if (this.state.name && this.state.address && this.state.city && this.state.state && this.state.description && this.state.amenities && this.state.activities) {
-            API.addPark({
-                name: this.state.name,
-                address: this.state.address,
-                city: this.state.city,
-                state: this.state.state,
-                description: this.state.description,
-                amenities: this.state.amenities,
-                activities: this.state.activities
-            })
-            .then (res => this.addPark())
-            .catch(err => console.log(err))
-        }
-    };
+    
     //     axios
     //         .post('/api/signin', {
     //             userName: this.state.userName,
@@ -70,18 +30,15 @@ class AddParkForm extends Component {
     // }
 
     render() {
-        // if (this.state.redirectTo) {
-        //     return <Redirect to={{ pathname: this.state.redirectTo }} />
-        // } else {
-            return (
-            <div>
-                <MDBContainer>
-                    <MDBRow>
-                        <MDBCol md="6">
-                        <form>
-                        {/* <p className="h5 text-center mb-4">Sign In</p> */}
+        return (
+        <div>
+            <MDBContainer>
+                <MDBRow>
+                    <MDBCol md="6">
+                    <Form>
+                        <FormGroup>
+                        <p className="h5 text-center mb-4">Add a Park</p>
                         <div className="grey-text">
-                        {/* <MDBIcon icon="user" /> */}
                             <MDBInput
                                 label="Park Name"
                                 icon="user"
@@ -125,6 +82,16 @@ class AddParkForm extends Component {
                                 onChange={this.handleChange}
                             />
                             <MDBInput
+                                label="Zip"
+                                icon="lock"
+                                id="zip"
+                                group
+                                type="text"
+                                validate
+                                value={this.state.zip}
+                                onChange={this.handleChange}
+                            />
+                            <MDBInput
                                 label="Description"
                                 icon="lock"
                                 id="description"
@@ -158,13 +125,14 @@ class AddParkForm extends Component {
                         <div className="text-center">
                         <MDBBtn color="primary" onClick={this.handleSubmit}>Submit</MDBBtn>
                         </div>
-                    </form>
-                    </MDBCol>
-                </MDBRow>
-                </MDBContainer>
-            </div>
-            )
-        }
+                        </FormGroup>
+                    </Form>
+                </MDBCol>
+            </MDBRow>
+            </MDBContainer>
+        </div>
+        )
     }
+}
 
 export default AddParkForm;

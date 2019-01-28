@@ -6,18 +6,30 @@
 import React, { Component } from 'react';
 import API from '../utils/API';
 import { MDBRow, MDBCol, MDBBtn } from "mdbreact";
-import AddParkForm from '../Components/AddItems/AddPark';
-
+import AddActivityForm from '../Components/AddItems/AddActivity';
 import Hero from '../Components/Hero/Hero';
 import ActivityGallery from '../Components/Gallery/ActivityGallery';
 
 class ActivitiesLP extends Component {
-    state = {
-        // Search button holds the query parameters
-        activities: [],
-        viewForm: false
+    constructor() {
+        super() 
+        this.state = {
+            // Search button holds the query parameters
+            activities: [],
+            viewForm: false,
+            name: '',
+            address: '',
+            city: '',
+            state: '',
+            zip: '',
+            description: '',
+            // activities array
+            amenities: []
+        };
+            this.handleSubmit = this.handleSubmit.bind(this)
+            this.handleChange = this.handleChange.bind(this)
+    };
 
-    }
     componentDidMount() {
         // look up activities when the page loads
         this.loadActivities();
@@ -30,22 +42,43 @@ class ActivitiesLP extends Component {
                 this.setState({ activities: res.data })
             })
             .catch(err => console.log(err))
-    }
+    };
+
+    handleChange = event => {
+        this.setState({
+            [event.target.id]: event.target.value,
+        })
+        console.log(event.target.id)
+    };
+
+    handleSubmit = event => {
+        event.preventDefault()
+        console.log('handleSubmit')
+        if (this.state.name && this.state.description && this.state.parks) {
+            API.addPark({
+                name: this.state.name,
+                description: this.state.description,
+                parks: this.state.parks
+            })
+            .then (res => this.addPark())
+            .catch(err => console.log(err))
+        }
+    };
 
     showForm = () => {
         this.setState({
-            
             viewForm: true
         })
+    };
+
+    addActivity = () => {
+        API.addActivity()
+            .then(res=>{
+                console.log(res)
+                this.setState({ activities: res.data})
+            }) 
+            .catch(err => console.log(err))
     }
-    // addActivity = () => {
-    //     API.addActivity()
-    //         .then(res=>{
-    //             console.log(res)
-    //             this.setState({ activities: res.data})
-    //         }) 
-    //         .catch(err => console.log(err))
-    // }
 
 
     render() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBMask, MDBContainer, MDBView, MDBRow, } from "mdbreact";
-
+import ActivityCard from '../../images/activityCard.jpg';
 
 
 
@@ -13,7 +13,7 @@ class MaskPage extends React.Component {
         <MDBRow className="mt-4" style={{ width: "15rem", height: "15rem", padding:"1rem", margin:"0.5rem"}}>
             <MDBView>
               <img
-                src= "http://lorempixel.com/400/400/sports/grey"
+                src= {ActivityCard}
                 className="img-fluid"
                 alt=""
               />
