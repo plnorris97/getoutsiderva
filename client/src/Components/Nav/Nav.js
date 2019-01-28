@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBNavbar, MDBIcon, Dropdown, NavItem, DropdownToggle, DropdownMenu, DropdownItem, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, } from 'mdbreact';
+import { MDBNavbar, NavItem, DropdownToggle, DropdownMenu, DropdownItem, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, } from 'mdbreact';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 class FixedNavbar extends React.Component {
@@ -33,8 +33,9 @@ class FixedNavbar extends React.Component {
                   <MDBNavItem active>
                     {/* <MDBNavLink to="/"><MDBIcon icon="home" />Home</MDBNavLink> */}
                   </MDBNavItem>
+                  
                   <MDBNavItem>
-                    <Link to="/activities/">Activities</Link>
+                    <Link to="/activities/"><span className="align-text-bottom">Activities</span></Link>
                   </MDBNavItem>
                   <MDBNavItem>
                     <Link to="/destinations">Parks</Link>

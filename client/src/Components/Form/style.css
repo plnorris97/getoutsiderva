@@ -1,8 +1,25 @@
-.form-group {
-    /* text-align: center; */
-    width: 250px;
+.formContainer {
+    margin-top: 5rem;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 2rem;
 }
 
+.form-group, select.form-control {
+    align-items: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.form-group, .Label, .input :checked {
+    text-align: left;
+    line-height: 2rem;
+}
+
+
+
+/* 
 .leftCol {
     background-color: lightgray;
     margin: 30px 0 0 30px;
@@ -20,4 +37,4 @@
     margin: 30px 0 0 30px;
     text-align: left
 }
-
+ */

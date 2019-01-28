@@ -7,16 +7,16 @@ class SearchForm extends React.Component {
         return(
         <Form>
             <Row>
-            <Col md="3" className="leftCol">
+            <Col md="4" className="leftCol">
             <FormGroup on submit={this.handleFormSubmit}>
                 <Label className="label"><h4>Where do you want to go?</h4></Label>
-                <Input type="select" name="selectWhere" value1={this.state.value} onChange={this.handleChange} multiple>
+                <Input type="select" name="selectWhere" value1={this.state.value} onChange={this.handleChange}>
                     <option value="parks">Parks</option>
                     <option value="attractions">Attractions</option>
                 </Input>
             </FormGroup>
             </Col>
-            <Col md="3" className="middleCol">
+            <Col md="4" className="middleCol">
             <FormGroup on submit={this.handleSelectorSubmit}>
                 <Label className="label"><h4>What do you want to do?</h4></Label>
                     <Input type="select" name="selectWhat" multiple={true} value2={this.state.value} onChange={this.handleChange}>
@@ -36,7 +36,7 @@ class SearchForm extends React.Component {
                     <p>Select multiple activities using the Ctrl key.</p>
             </FormGroup>
             </Col>
-            <Col md="3" className="rightCol">
+            <Col md="4" className="rightCol">
             <FormGroup on Submit={this.handleCheckedSubmit}>
                 <Label className="label"><h4>What amenities do you need?</h4></Label>
                     <Input

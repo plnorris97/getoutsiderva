@@ -6,15 +6,17 @@ class Hero extends Component {
     renderSwitch(path) {
         switch(path) {
             case '/activities':
-                return require('../../images/activities.jpg');
+                return require('../../images/activityLP.jpg');
             case '/destinations':
-                return require('../../images/virginia13.jpg');
+                return require('../../images/parksLP.jpg');
             case '/advanced-search':
                 return require('../../images/search.jpg');
             case '/auth':
                 return require('../../images/login.jpg');
             case '/activities/biking':
                 return require('../../images/biking.jpg');
+            case '/activities/paddle-sports':
+                return require('../../images/paddleSports.jpeg');
             case '/activities/hiking':
                 return require('../../images/hiking.jpg');
             case '/activities/disc-golf':
@@ -70,7 +72,7 @@ class Hero extends Component {
             case '/parks/bryan-park':
                 return require('../../images/bryanPark.jpg');
             case '/parks/belle-isle':
-                return require('../../images/belleIsle.jpg');
+                return require('../../images/belleIsle3.jpg');
             case '/parks/14th-street-takeout':
                 return require('../../images/14thStreetTakeout.jpg');
             case '/parks/hunton-community-center-and-park':
@@ -112,8 +114,8 @@ class Hero extends Component {
             <div>
                 <LazyHero opacity={0.2} minHeight="60vh" isCentered={true} imageSrc={this.renderSwitch(window.location.pathname)} parallaxOffset={3} >
                 <div className="hero-text" headerInfo={this.renderSwitch(window.location.name)}>
-                    <h1>RVA {this.pathname} </h1>
-                    <h4>Whether you are into extreme sports and adrenaline rushes or leisure bike ride along the history James River, Richmond has an activity for you.</h4>
+                    <h1 style={{color:"white", textShadow:"0 0 2px #f39657"}}>RVA {this.pathname} </h1>
+                    <h4 style={{color:"white", textShadow:"0 0 2px #f39657"}}>Whether you are into extreme sports and adrenaline rushes or leisure bike ride along the history James River, Richmond has an activity for you.</h4>
                 </div>
                 </LazyHero>
             </div>

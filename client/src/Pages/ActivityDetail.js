@@ -77,13 +77,15 @@ class ActivityDetail extends Component {
 
       <div>
         <Hero />
-        <Row clssName="mt-6">
+        <Row clssName="mt-4">
       
             {this.state.parks.length ? (
                     this.state.parks.map(parks => (
                     <Cards
                       key={parks._id}
                       name={parks.Name}
+                      address={parks.Address}
+                      city={parks.City}
                       description={parks.Description}
                   />
                     ))

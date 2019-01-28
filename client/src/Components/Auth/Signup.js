@@ -4,6 +4,8 @@ import { Redirect } from 'react-router-dom';
 // import { Col } from 'reactstrap';
 import API from '../../utils/Auth/API';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
+import './style.css';
+
 
 
 class Signup extends Component {
@@ -65,14 +67,17 @@ render() {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
 			return (
-				<div className="SignupForm">
+				<div className="SignupForm z-depth-5">
+                <h4>Don't have an account? Create one!</h4>
 					<h4>Sign up and GET OUTSIDE!</h4>
 					<MDBContainer>
                     <MDBRow>
                         <MDBCol md="6">
                         <form>
                         {/* <p className="h5 text-center mb-4">Sign In</p> */}
-                        <div className="grey-text">
+                        <div className="black-text">
+                        <MDBRow>
+                            <MDBCol>
 							<MDBInput
                                 label="First Name"
 								icon="user"
@@ -97,6 +102,8 @@ render() {
                                 value={this.state.lastName}
                                 onChange={this.handleChange}
                             />
+                            </MDBCol>
+                            </MDBRow>
 							<MDBInput
                                 label="User Name"
 								icon="user"

@@ -1,21 +1,31 @@
-.auth {
-    float: right;
+.backGround {
+    background-image: linear-gradient(to top, #e9941d 0%, #972a05 100%);
 }
 
-.logo {
-    width: 300px;
-}
-
-.nav {
-    background-color: #D3D3D3;
+.logoRow > div {
+    padding: 0 !important;
 }
 
 .item {
-    color: black;
-    vertical-align: middle;
+    float: left;
+    color: #972a05;
+    font-weight: bold;
 }
+
 .itemAuth {
-    color: black;
-    vertical-align: middle;
     float: right;
+}
+
+
+.item {
+    transition: transform .2s;
+   
+    margin: 0 auto;
+}
+
+.item:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+    color: grey;
 }
