@@ -132,8 +132,8 @@ class Hero extends Component {
             <div>
                 <LazyHero opacity={0.2} minHeight="60vh" isCentered={true} imageSrc={this.renderSwitch(window.location.pathname)} parallaxOffset={3} >
                 <div className="hero-text" headerInfo={this.renderSwitch(window.location.name)}>
-                    <h1 style={{color:"white", textShadow:"0 0 2px #f39657"}}>RVA {this.pathname} </h1>
-                    <h4 style={{color:"white", textShadow:"0 0 2px #f39657"}}>Whether you are into extreme sports and adrenaline rushes or leisure bike ride along the history James River, Richmond has an activity for you.</h4>
+                    {/* <h1 style={{color:"white", textShadow:"0 0 2px #f39657"}}>RVA {this.pathname} </h1>
+                    <h4 style={{color:"white", textShadow:"0 0 2px #f39657"}}>Whether you are into extreme sports and adrenaline rushes or leisure bike ride along the history James River, Richmond has an activity for you.</h4> */}
                 </div>
                 </LazyHero>
             </div>

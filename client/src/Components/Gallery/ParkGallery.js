@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBMask, MDBContainer, MDBView, MDBRow, } from "mdbreact";
-
+import parkLP from '../../images/parkLP.png';
 import testingImg from '../../images/logo.PNG';
 
 
@@ -14,7 +14,7 @@ class MaskPage extends React.Component {
         <MDBRow className="mt-4" style={{ width: "15rem", height: "15rem", padding:"1rem", margin:"0.25rem" }}>
             <MDBView>
               <img
-                src= "https://mdbootstrap.com/img/Others/documentation/img%20(7)-mini.jpg"
+                src= {parkLP}
                 className="img-fluid"
                 alt=""
               />
