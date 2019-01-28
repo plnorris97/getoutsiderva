@@ -1,76 +1,25 @@
-import React, {Component} from 'react';
-import API from '../../utils/Auth/API';
-import { MDBContainer, MDBRow, MDBCol, Form, FormGroup, MDBInput, MDBBtn } from 'mdbreact';
+import React from 'react';
 
-class AddActivityForm extends Component {
-    //     axios
-    //         .post('/api/signin', {
-    //             userName: this.state.userName,
-    //             password: this.state.password
-    //         })
-    //         .then(response => {
-    //             console.log('login response: ')
-    //             console.log(response)
-    //             if (response.status === 200) {
-    //                 // update App.js state
-    //                 this.props.updateUser({
-    //                     loggedIn: true,
-    //                     userName: response.data.userName
-    //                 })
-    //                 // update the state to redirect to home
-    //                 this.setState({
-    //                     redirectTo: '/'
-    //                 })
-    //             }
-    //         }).catch(error => {
-    //             console.log('login error: ')
-    //             console.log(error);
-
-    //         })
-    // }
-
-    render() {
-        return (
-        <div>
-            <MDBContainer>
-                <MDBRow>
-                    <MDBCol md="6">
-                    <form>
-                    <p className="h5 text-center mb-4">Add an Activity</p>
-                    <div className="grey-text">
-                        <MDBInput
-                            label="Activity"
-                            icon="user"
-                            id="activity"
-                            group
-                            type="text"
-                            validate
-                            error="wrong"
-                            success="right"
-                            value={this.state.activity}
-                            onChange={this.handleChange}
-                        />
-                        <MDBInput
-                            label="Description"
-                            icon="lock"
-                            id="description"
-                            group
-                            type="text"
-                            validate
-                            value={this.state.description}
-                            onChange={this.handleChange}
-                        />
-                    </div>
-                    <div className="text-center">
-                    <MDBBtn color="primary" onClick={this.handleSubmit}>Submit</MDBBtn>
-                    </div>
-                </form>
-                </MDBCol>
-            </MDBRow>
-            </MDBContainer>
-        </div>
-        )
-    }
+export function Input(props) {
+  return (
+    <div className="form-group">
+      <input className="form-control" {...props} style={{ width: "400px" }} />
+    </div>
+  );
 }
 
-export default AddActivityForm;
+export function TextArea(props) {
+  return (
+    <div className="form-group">
+      <textarea className="form-control" rows="10" {...props} style={{ width: "400px" }} />
+    </div>
+  );
+}
+
+export function FormBtn(props) {
+  return (
+    <button {...props} style={{ marginBottom: 10 }} className="btn btn-success">
+      {props.children}
+    </button>
+  );
+}

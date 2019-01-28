@@ -16,7 +16,7 @@ class CarouselPage extends Component {
                 <Mask overlay="black-light" />
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">Welcome to Richmond VA!</h3>
+                <h3 className="h3-responsive">Introducing Get Outside RVA</h3>
                 <p>
                   Get Outside RVA is a movement focused on getting RVA and visitors OUTSIDE. The river city is full of outdoor opportunities and we want to connect everyone to these opportunities.
                 </p>
@@ -28,8 +28,8 @@ class CarouselPage extends Component {
                 <Mask overlay="black-light" />
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">Let's Explore!</h3>
-                <p>First text</p>
+                <h3 className="h3-responsive">Activities</h3>
+                <p>Whether you are into extreme sports and adrenaline rushes or leisure bike ride along the history James River, Richmond has an activity for you.</p>
               </CarouselCaption>
             </CarouselItem> 
             <CarouselItem itemId="3">
@@ -38,8 +38,8 @@ class CarouselPage extends Component {
                 <Mask overlay="black-light" />
               </View>
               <CarouselCaption>
-                <h3 className="h3-responsive">Welcome to Richmond RVA</h3>
-                <p>First text</p>
+                <h3 className="h3-responsive">Richmond is an outdoor lover's dream</h3>
+                <p>Voted Best River Town by Blue Ridge Outdoors Magazine and Best Town by Outside Magazine</p>
               </CarouselCaption>
             </CarouselItem>  
           </CarouselInner>
