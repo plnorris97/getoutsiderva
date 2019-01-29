@@ -12,10 +12,14 @@
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "cd client && npm run start",
-    "seed": "node Seeds/activitiesSeed.js && node Seeds/parksSeed.js",
+    "seed": "node Seeds/parksSeed.js && node Seeds/activitiesSeed.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
+<<<<<<< HEAD
     "heroku-postbuild": "npm run build && node Seeds/parksSeed.js"
+=======
+    "heroku-postbuild": "npm run build & node Seeds/parksSeed.js"
+>>>>>>> 9ee0e081db9f37dd5244e6f5d00c4865c45b497f
   },
   "repository": {
     "type": "git",
