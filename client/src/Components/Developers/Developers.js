@@ -27,8 +27,8 @@ return (
           <MDBCardText>
           Full Stack Developer
           </MDBCardText>
-            <a href="https://github.com/plnorris97"><img className="d-inline-block" src={github} alt="github" /></a>
-            <a href="https://www.linkedin.com/in/tricianorris/"><img className="d-inline-block" src={linkedin} alt="linkedin" /></a>
+            <a href="https://github.com/plnorris97"><img style={{ padding:"1.5rem"}} className="d-inline-block" src={github} alt="github" /></a>
+            <a href="https://www.linkedin.com/in/tricianorris/"><img style={{ padding:"1.5rem"}} className="d-inline-block" src={linkedin} alt="linkedin" /></a>
         </MDBCardBody>
       </MDBCard>
         </MDBCol>
@@ -41,8 +41,8 @@ return (
           <MDBCardText>
             Frontend Developer
           </MDBCardText>
-          <a href="https://github.com/JennyLiang804"><img className="d-inline-block" src={github} alt="github" /></a>
-          <a href="https://www.linkedin.com/in/jennyliang804/"><img className="d-inline-block" src={linkedin} alt="linkedin" /></a>
+          <a href="https://github.com/JennyLiang804"><img style={{ padding:"1.5rem"}} className="d-inline-block" src={github} alt="github" /></a>
+          <a href="https://www.linkedin.com/in/jennyliang804/"><img style={{ padding:"1.5rem"}} className="d-inline-block" src={linkedin} alt="linkedin" /></a>
 
         </MDBCardBody>
       </MDBCard>
