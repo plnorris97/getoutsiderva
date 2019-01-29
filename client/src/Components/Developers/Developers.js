@@ -19,7 +19,7 @@ return (
     </Col>
   </Row>
   <MDBRow center style={{marginTop:"2rem"}} className="mt-3">
-        <MDBCol size="4"  md="3"> 
+        <MDBCol size="4"  md="3" lg="4"> 
         <MDBCard style={{maxHeight:"25rem"}}>
         <MDBCardImage className="img-fluid rounded-circle" src={tricia} waves />
         <MDBCardBody>
@@ -32,7 +32,7 @@ return (
         </MDBCardBody>
       </MDBCard>
         </MDBCol>
-        <MDBCol size="4" md="3">
+        <MDBCol size="4" md="3" lg="4">
         <MDBCard style={{maxHeight:"25rem"}}>
         <MDBCardImage className="img-fluid" style={{ padding:"2.5rem"}} src={jenny} waves />
         <MDBCardBody>
