@@ -36,7 +36,7 @@ class Input extends React.Component {
         <MDBView>
           <img 
           src={doYou} 
-          style={{ margin: "20px", marginRight: "100px" }}
+          style={{ margin: "20px", marginRight: "100px", padding: "10px" }}
           className="img-fluid2"
           alt="How do you do RVA?"></img>
         </MDBView>
