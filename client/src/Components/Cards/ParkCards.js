@@ -3,19 +3,25 @@ import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Co
 // import './style..css';
 
 class Cards extends React.Component {
-    // renderSwitch(path) {
-    //     switch(path) {
-    //         case '/activities/paddle-sports': return 'paddle-sports.jpg';
-    //         default: return 'image.jpg';
-    //     }
-    // }
-
-
+   
   render() {
-      const  { name, description, address, city }= this.props
+    const parseStr = (str) => {
+        let newStr = str.replace(/-/g,' ')
+         let strArr = newStr.split(' ');
+         let newArr = []
+        for (let i = 0; i < strArr.length; i++) {
+          newArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
+        }
+        let finishedStr = newArr.join(' ');
+        return finishedStr;
+      }
+
+    //const parsedName = parseStr(this.props.match.params.name)
+    const parsedName = parseStr(this.props.name)
+    const  { name, description, address, city }= this.props
     return (
 
-        <Row className="mt-6">
+        <Row className="mt-6">  
             <Col md="3">
                 <Card style={{ margin: "5rem", padding: "1rem", width:"50rem" }}>
                 
@@ -26,7 +32,7 @@ class Cards extends React.Component {
                 />
 
                 <CardBody>
-                    <CardHeader style={{ backgroundColor: "white" }}><h4> {name} </h4></CardHeader>
+                    <CardHeader style={{ backgroundColor: "white" }}><a href={"../activities/" + this.props.name}><h4> {parsedName} </h4></a></CardHeader>
                     <CardTitle style={{ color: "#3F729B" }}></CardTitle>
                     <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
                     { address }

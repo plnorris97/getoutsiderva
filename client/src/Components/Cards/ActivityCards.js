@@ -1,11 +1,25 @@
 import React from 'react';
 import { CardHeader, MDBIcon, Card, CardBody, CardImage, CardTitle, CardText, Col, Row, } from 'mdbreact';
 // import './style..css';
-
+//*******This code handles the park cards on the Activity Detail page******
+const parseStr = (str) => {
+    // let newStr=str.split("-").join(" ");
+    // return newStr;
+    let newStr = str.replace(/-/g, ' ')
+    let strArr = newStr.split(' ');
+    let newArr = []
+    for (let i = 0; i < strArr.length; i++) {
+      newArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
+    }
+     let finishedStr = newArr.join(' ');
+     return finishedStr;
+  }
 
 class Cards extends React.Component {
   render() {
-      const  { name, description, image, address }= this.props
+      const  { description, image, address }= this.props
+      const parsedName = parseStr(this.props.name)
+
     return (
 
         <Row className="mt-6">
@@ -21,7 +35,7 @@ class Cards extends React.Component {
 
                 <CardBody>
                     <CardImage src={image}></CardImage>
-                    <CardHeader style={{ backgroundColor: "white", textAlign: "left" }}><a href={"activities/"+ name}><h4> {name} </h4></a></CardHeader>
+                    <CardHeader style={{ backgroundColor: "white" }}><a href={"../parks/" + this.props.name}><h4> {parsedName} </h4></a></CardHeader>
                     <CardTitle style={{ color: "#3F729B" }}></CardTitle>
                     <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
                     { address }

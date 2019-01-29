@@ -30,9 +30,8 @@ class ActivityDetail extends Component {
         // this.showName();
         const parsedName = parseStr(this.props.match.params.name)
         // const path = this.props.match.params.name
-        console.log(parsedName);
         this.lookUpParks(parsedName);
-        this.lookUpActivity(parsedName);
+        // this.lookUpActivity(parsedName);
     }
 
     
