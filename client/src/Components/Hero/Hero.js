@@ -45,11 +45,13 @@ class Hero extends Component {
                 return require('../../images/running.jpg');
             case '/activities/swimming':
                 return require('../../images/swimming.jpg');
+            case '/activities/geocaching':
+                return require('../../images/geocaching.jpg');
             case '/activities/exercise-trail':
                 return require('../../images/exerciseTrail.jpg');
             case '/activities/camping':
                 return require('../../images/camping.jpg');
-            case '/activities/birding-wildlife':
+            case '/activities/birding-and-wildlife':
                 return require('../../images/birdingWildlife.png');
             case '/parks/dutch-gap-conservation-area':
                 return require('../../images/dutchGapConservationArea.jpg');
@@ -67,10 +69,10 @@ class Hero extends Component {
                 return require('../../images/rGarlandDoddParkAtIronBridge.jpg');
             case '/parks/presquile-national-wildlife-refuge':
                 return require('../../images/presquileNationalWildlifeRefuge.jpg');
-            // case '/parks/robious-landing-park':
-            //     return require('../../images/robious-landing-park.jpg');
-            // case '/parks/rockwood-park':
-            //     return require('../../images/rockwoodPark.jpg');
+            case '/parks/robious-landing-park':
+                return require('../../images/robiousLandingPark.jpg');
+            case '/parks/rockwood-park':
+                return require('../../images/rockwoodPark.jpg');
             case '/parks/cheswick-park':
                 return require('../../images/cheswickPark.jpg');
             case '/parks/deep-bottom-park-and-four-mile-creek':
@@ -113,7 +115,7 @@ class Hero extends Component {
                 return require('../../images/springfieldPark.jpg');
                 case '/parks/three-lakes-park-and-nature-center':
                 return require('../../images/threeLakesParkAndNatureCenter.jpg');
-                case '/parks/tredegar-street-put-in.jpg':
+                case '/parks/tredegar-street-put-in':
                 return require('../../images/tredegarStreetPutIn.jpg');
                 case '/parks/tuckahoe-creek-park':
                 return require('../../images/tuckahoeCreekPark.jpg');
@@ -142,7 +144,6 @@ class Hero extends Component {
             <div>
                 <LazyHero opacity={0.2} minHeight="60vh" isCentered={true} imageSrc={this.renderSwitch(window.location.pathname)} parallaxOffset={3} >
                 <div className="hero-text" headerInfo={this.renderSwitch(window.location.name)}>
-                    {/* the pathname goes here and appears on the image this.pathname doesn't seem to be working */}
                     <h1 style={{color:"white", textShadow:"0 0 2px #f39657"}}>{lbl}</h1>
                 </div>
                 </LazyHero>

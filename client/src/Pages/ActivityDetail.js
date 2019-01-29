@@ -46,14 +46,16 @@ class ActivityDetail extends Component {
     // }
 
     // map through activities for descriptions
-    lookUpActivity(description) {
-      API.getActivity(description)
-      .then(res => 
-        this.setState({ activity: res.data.parsedName, description: res.data.description })
-      )
-      .catch(err => console.log(err));
-      console.log(description);
-    };
+    // lookUpActivity() {
+    //   API.getActivity()
+    //   .then(res => {
+    //     console.log(this.props.description)
+    //   }
+    //     // this.setState({ activity: this.parsedName, description: this.Description })
+    //   )
+    //   .catch(err => console.log(err));
+
+    // };
     
 
     // Look up parks
@@ -89,9 +91,8 @@ class ActivityDetail extends Component {
 
       <div>
         <Hero></Hero> 
-        {/* <Row name={this.props.match.params.name} text={this.props.match.params.description} /> */}
         <Row><h5 style={{position: 'absolute', right: 20}}><a href="/activities">Select Another Activity</a></h5></Row>
-        <Row><h4>{this.props.match.params.description}</h4></Row>
+        <Row><h4>{this.props.match.params.Description}</h4></Row>
         <Row className="mt-6">
             {this.state.parks.length ? (
                     this.state.parks.map(parks => (

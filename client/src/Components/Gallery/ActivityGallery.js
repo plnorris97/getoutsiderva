@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBMask, MDBContainer, MDBView, MDBRow, Mask } from "mdbreact";
-import ActivityCard from '../../images/activityCard.jpg';
+import ActivityCard from '../../images/lpCard.png';
 
 const parseStr = (str) => {
   let newStr = str.replace(/-/g,' ')
@@ -15,7 +15,7 @@ const parseStr = (str) => {
 
 class MaskPage extends React.Component {
   render() {
-      const { name, img, activities }= this.props
+      const { activities }= this.props
       const parsedName = parseStr(this.props.name)
     return (
 
@@ -24,13 +24,13 @@ class MaskPage extends React.Component {
             <MDBView>
               <img
                 src= {ActivityCard}
-                className="img-fluid"
+                // className="img-fluid"
                 alt=""
-                style={{backgroundSize:"50%"}}
+                style={{backgroundSize:"25%"}}
               />
                <Mask overlay="black-light" />
               <MDBMask className="flex-center">
-              <a href={"activities/"+ activities}><h3 className="white-text"> {parsedName} </h3></a>
+              <a href={"/activities/"+ activities}><h3 className="white-text"> {parsedName} </h3></a>
              
               </MDBMask>
             </MDBView>
