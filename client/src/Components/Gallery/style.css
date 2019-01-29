@@ -410,3 +410,8 @@
   .img-fluid {
     min-height: 25rem;
     }
+
+  .white-text {
+    text-shadow: 0 0 20px #fdf9f6 !important;
+  }
+  

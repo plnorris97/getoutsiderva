@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBMask, MDBContainer, MDBView, MDBRow, } from "mdbreact";
+import { MDBMask, MDBContainer, MDBView, MDBRow, Mask } from "mdbreact";
 import parkLP from '../../images/parkLP.png';
 
 const parseStr = (str) => {
@@ -20,14 +20,15 @@ class MaskPage extends React.Component {
     return (
 
        <MDBContainer> 
-        <MDBRow className="mt-4" style={{ width: "15rem", height: "15rem", padding:"1rem", margin:"0.25rem" }}>
-            <MDBView>
+        <MDBRow className="mt-4 thumb-nail" >
+            <MDBView waves>
               <img
                 src= {parkLP}
-                className="img-fluid"
+                className="img-fluid thumb-nail"
                 alt=""
               />
-              <MDBMask overlay="stylish-light" className="flex-center">
+              <Mask overlay="black-light" />
+              <MDBMask className="flex-center">
               <a href={"/parks/"+ park}><h3 className="white-text"> {parsedName} </h3></a>
               </MDBMask>
             </MDBView>
