@@ -23,12 +23,12 @@ class Cards extends React.Component {
 
         <Row className="mt-6">  
             <Col md="3">
-                <Card style={{ margin: "5rem", padding: "1rem", width:"50rem" }}>
+                <Card style={{ margin: "2rem", padding: "0.5rem", width:"50rem" }}>
                 
                 <CardImage
                     className="img-fluid, no-margin"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg"
-                    waves
+                    // src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg"
+                    // waves
                 />
 
                 <CardBody>

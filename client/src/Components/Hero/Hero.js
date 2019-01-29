@@ -142,7 +142,7 @@ class Hero extends Component {
         let lbl = this.getLabel(window.location.pathname); 
         return (
             <div>
-                <LazyHero opacity={0.2} minHeight="60vh" isCentered={true} imageSrc={this.renderSwitch(window.location.pathname)} parallaxOffset={3} >
+                <LazyHero opacity={0.1} color="lightgray" minHeight="65vh" isCentered={true} imageSrc={this.renderSwitch(window.location.pathname)} parallaxOffset={3} >
                 <div className="hero-text" headerInfo={this.renderSwitch(window.location.name)}>
                     <h1 style={{color:"white", textShadow:"0 0 2px #f39657"}}>{lbl}</h1>
                 </div>
