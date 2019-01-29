@@ -9,28 +9,27 @@ export default {
   getActivities: function() {
     return axios.get("/api/activities");
   },
-  getCountyParks: function() {
-      return axios.get("/api/destinations/county-parks");
-  },
-  getStateParks: function() {
-    return axios.get("/api/destinations/state-parks")
-  },
+  // getCountyParks: function() {
+  //     return axios.get("/api/parks/county-parks");
+  // },
+  // getStateParks: function() {
+  //   return axios.get("/api/destinations/state-parks")
+  // },
   getParks: function() {
-    return axios.get("/api/destinations/")
+    return axios.get("/api/parks")
   },
-  getSearch: function () {
-    return axios.get("/advanced-search");
-  },
+  // getSearch: function () {
+  //   return axios.get("/activities");
+  // },
   getAuth: function () {
     return axios.get("/auth");
   },
-
   addActivity: function (activityData) {
     return axios.post("/api/activities", activityData);
   },
 
   addPark: function (parkData) {
-    return axios.post("/api/destinations", parkData);
+    return axios.post("/api/parks", parkData);
   }
   // doAdvancedSearch: function() {
   //   return axios.get("")
