@@ -25,7 +25,7 @@ class Hero extends Component {
         switch(path) {
             case '/activities':
                 return require('../../images/activityLP.jpg');
-            case '/destinations':
+            case '/parks':
                 return require('../../images/parksLP.jpg');
             case '/advanced-search':
                 return require('../../images/search.jpg');
@@ -49,12 +49,12 @@ class Hero extends Component {
                 return require('../../images/exerciseTrail.jpg');
             case '/activities/camping':
                 return require('../../images/camping.jpg');
-            // case '/activities/birding-wildlife':
-            //     return require('../../images/birdingWildlife.jpg');
+            case '/activities/birding-wildlife':
+                return require('../../images/birdingWildlife.png');
             case '/parks/dutch-gap-conservation-area':
                 return require('../../images/dutchGapConservationArea.jpg');
-            // case '/parks/maymont':
-                // return require('../../images/maymont.jpg');
+            case '/parks/maymont':
+                return require('../../images/maymont.jpg');
             case '/parks/henricus-historical-park':
                 return require('../../images/henricusHistoricalPark.jpg');
             case '/parks/huguenot-park':
@@ -127,13 +127,23 @@ class Hero extends Component {
         }
     }
 
+    getLabel(path) {
+        // str.replace(/-/g, ' ')
+        const strt = path.lastIndexOf("/") +1;
+        let lblParts = path.substr(strt).split("-");
+
+        const lbl = lblParts.map(lblPart => lblPart.charAt(0).toUpperCase() + lblPart.substr(1)).join(" ")
+        return lbl;
+    }
+
     render() {
+        let lbl = this.getLabel(window.location.pathname); 
         return (
             <div>
                 <LazyHero opacity={0.2} minHeight="60vh" isCentered={true} imageSrc={this.renderSwitch(window.location.pathname)} parallaxOffset={3} >
                 <div className="hero-text" headerInfo={this.renderSwitch(window.location.name)}>
                     {/* the pathname goes here and appears on the image this.pathname doesn't seem to be working */}
-                    <h1 style={{color:"white", textShadow:"0 0 2px #f39657"}}>{this.pathname} </h1>
+                    <h1 style={{color:"white", textShadow:"0 0 2px #f39657"}}>{lbl}</h1>
                 </div>
                 </LazyHero>
             </div>

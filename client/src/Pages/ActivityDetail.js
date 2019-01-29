@@ -91,7 +91,6 @@ class ActivityDetail extends Component {
       <div>
         <Hero></Hero> 
         {/* <Row name={this.props.match.params.name} text={this.props.match.params.description} /> */}
-        <Row><h1>{this.props.match.params.name}</h1></Row>
         <Row><h5 style={{position: 'absolute', right: 20}}><a href="/activities">Select Another Activity</a></h5></Row>
         <Row><h4>{this.props.match.params.description}</h4></Row>
         <Row className="mt-6">

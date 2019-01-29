@@ -12,7 +12,7 @@ class Cards extends React.Component {
 
 
   render() {
-      const  { name, description, img, address, city }= this.props
+      const  { name, description, address, city }= this.props
     return (
 
         <Row className="mt-6">

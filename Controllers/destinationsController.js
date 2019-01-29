@@ -17,7 +17,6 @@ const parseStr = (str) => {
 // Defining methods for the parksController
 module.exports = {
   findAll: (req, res) => {
-    console.log('destination find all')
     db.Parks
       .find({})
       .then(dbModel => res.json(dbModel))
@@ -25,7 +24,6 @@ module.exports = {
   },
 
   findName: (req, res) => {
-    console.log(req.params.name)
     const parsedName = parseStr(req.params.name)
     db.Parks
       .find({name:parsedName})

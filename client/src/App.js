@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/activities" component={ActivitiesLP} />
             <Route exact path="/activities/:name" component={ActivityDetail} />
-            <Route exact path="/destinations" component={ParksLP} />
+            <Route exact path="/parks" component={ParksLP} />
             <Route exact path="/parks/:name" component={ParkDetail} />
             <Route exact path="/advanced-search" component={Search} />
             <Route exact path="/auth" component={HomeAuth} />

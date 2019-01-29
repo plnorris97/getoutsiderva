@@ -8,8 +8,7 @@ import {
   NavItem,
   NavLink, } from 'reactstrap';
 import Logo from '../../images/logo-nav.png';
-import speed from '../../images/speed.png';
-import './style.css';
+import './style.css'; 
 
 export default class Nav2 extends React.Component {
   constructor(props) {
@@ -41,7 +40,7 @@ export default class Nav2 extends React.Component {
                 <NavLink className="item" href="/activities">Activities</NavLink> 
               </NavItem>
               <NavItem>
-                <NavLink className="item" href="/destinations">Parks</NavLink> 
+                <NavLink className="item" href="/parks">Parks</NavLink> 
               </NavItem>
               <NavItem>
                 <NavLink className="item" href="/advanced-search">Search</NavLink>  
