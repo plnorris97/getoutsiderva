@@ -12,15 +12,15 @@ class DeveloperPage extends React.Component {
 render() {
 return (
 
-  <MDBContainer fluid className="text-center text-md-left">
+  <MDBContainer>
   <Row>
     <Col>
     <h3 className="FooterHeader">Say Hello to the Developers<img style={{marginLeft:"3rem"}} alt="icon" src= {coder}/></h3>
     </Col>
   </Row>
-  <MDBRow center style={{marginTop:"2rem"}} >
-        <MDBCol size="3"> 
-        <MDBCard style={{ width: "25rem"}}>
+  <MDBRow center style={{marginTop:"2rem"}} className="mt-3">
+        <MDBCol size="4"  md="3"> 
+        <MDBCard style={{maxHeight:"25rem"}}>
         <MDBCardImage className="img-fluid rounded-circle" src={tricia} waves />
         <MDBCardBody>
           <MDBCardTitle style={{color:"coral"}}>Tricia Norris</MDBCardTitle>
@@ -32,8 +32,8 @@ return (
         </MDBCardBody>
       </MDBCard>
         </MDBCol>
-        <MDBCol size="3">
-        <MDBCard style={{ width: "25rem" }}>
+        <MDBCol size="4" md="3">
+        <MDBCard style={{maxHeight:"25rem"}}>
         <MDBCardImage className="img-fluid" style={{ padding:"2.5rem"}} src={jenny} waves />
         <MDBCardBody>
           <MDBCardTitle style={{color:"coral"}}>Jenny Liang 

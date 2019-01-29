@@ -26,7 +26,7 @@ class MaskPage extends React.Component {
                 src= {ActivityCard}
                 className="img-fluid"
                 alt=""
-                style={{backgroundSize:"50%"}}
+              
               />
                <Mask overlay="black-light" />
               <MDBMask className="flex-center">

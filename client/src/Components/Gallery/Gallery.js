@@ -16,7 +16,7 @@ class HoverPage extends React.Component {
             <MDBView hover zoom>
               <img
                 src= {BikeImg}
-                className="img-fluid"
+                className="img-fluid gallery-img"
                 alt=""
               />
               <MDBMask className="flex-center">
@@ -28,7 +28,7 @@ class HoverPage extends React.Component {
             <MDBView hover zoom>
               <img
                 src = {RunImg}
-                className="img-fluid"
+                className="img-fluid gallery-img"
                 alt=""
               />
               <MDBMask className="flex-center">
@@ -40,7 +40,7 @@ class HoverPage extends React.Component {
             <MDBView hover zoom>
               <img
                 src= {KayakImg}
-                className="img-fluid"
+                className="img-fluid gallery-img"
                 alt=""
               />
               <MDBMask className="flex-center">
@@ -52,7 +52,7 @@ class HoverPage extends React.Component {
             <MDBView hover zoom>
               <img
                 src= {HikingImg}
-                className="img-fluid"
+                className="img-fluid gallery-img"
                 alt=""
               />
               <MDBMask className="flex-center">

@@ -20,7 +20,7 @@ class MaskPage extends React.Component {
     return (
 
        <MDBContainer> 
-        <MDBRow className="mt-4 thumb-nail" >
+        <MDBRow className="mt-3 thumb-nail" >
             <MDBView waves>
               <img
                 src= {parkLP}
