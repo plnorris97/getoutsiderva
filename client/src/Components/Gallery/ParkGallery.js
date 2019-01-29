@@ -21,7 +21,7 @@ class MaskPage extends React.Component {
 
        <MDBContainer> 
         <MDBRow className="mt-4 thumb-nail" style={{ width: "15rem", height: "15rem"}}>
-            <MDBView waves>
+            <MDBView>
               <img
                 src= {ParkCard}
                 className="img-fluid thumb-nail"
