@@ -39,7 +39,8 @@ class Home extends Component {
           <MDBRow>
               <Developer />
           </MDBRow>
-            </div>
+
+        </div>
         )
     }
 }

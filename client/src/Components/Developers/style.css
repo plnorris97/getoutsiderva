@@ -18,3 +18,7 @@ Footer {
 .card-body {
     text-align: center;
 }
+
+img {
+    padding: 1.5rem;
+}
