@@ -2,11 +2,21 @@ import React from "react";
 import { MDBMask, MDBContainer, MDBView, MDBRow, } from "mdbreact";
 import ActivityCard from '../../images/activityCard.jpg';
 
-
+const parseStr = (str) => {
+  let newStr = str.replace(/-/g,' ')
+  let strArr = newStr.split(' ');
+  let newArr = []
+  for (let i = 0; i < strArr.length; i++) {
+    newArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
+  }
+  let finishedStr = newArr.join(' ');
+  return finishedStr;
+}
 
 class MaskPage extends React.Component {
   render() {
       const { name, img, activities }= this.props
+      const parsedName = parseStr(this.props.name)
     return (
 
        <MDBContainer> 
@@ -18,7 +28,7 @@ class MaskPage extends React.Component {
                 alt=""
               />
               <MDBMask overlay="stylish-light" className="flex-center">
-              <a href={"activities/"+ activities}><h3 className="white-text"> {name} </h3></a>
+              <a href={"activities/"+ activities}><h3 className="white-text"> {parsedName} </h3></a>
               </MDBMask>
             </MDBView>
         </MDBRow>

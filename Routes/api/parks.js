@@ -22,24 +22,24 @@ router
   // .catch(err => res.status(404).json({ success: false}))
 
 // Looks up the parks landing page; displays all counties
-router
-  .route("/parks/:county")
-  .get ((req, res) => {
-    destinationsController.findCounty(req, res)
-});
+// router
+//   .route("/parks/:county")
+//   .get ((req, res) => {
+//     destinationsController.findCounty(req, res)
+// });
 
 // get all county parks using the category data field
-router
-  .route("/county-parks")
-  .get((req, res) => {
-    destinationsController.findCategory(req, res)
-  })
+// router
+//   .route("/county-parks")
+//   .get((req, res) => {
+//     destinationsController.findCategory(req, res)
+//   })
 
 // finds a specific park
-router
-  .route("/parks/county/:name")
-  .get((req, res) => {
-    destinationsController.findName(req, res)
-  });
+// router
+//   .route("/parks/county/:name")
+//   .get((req, res) => {
+//     destinationsController.findName(req, res)
+//   });
 
 module.exports = router;

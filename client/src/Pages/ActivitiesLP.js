@@ -3,7 +3,7 @@ import API from '../utils/API';
 import { MDBRow, MDBCol, MDBContainer } from "mdbreact";
 import Hero from '../Components/Hero/Hero';
 import ActivityGallery from '../Components/Gallery/ActivityGallery';
-import { Input, TextArea, FormBtn } from '../Components/AddItems/AddActivity';
+import { Input, TextArea, FormBtn } from '../Components/AddItems/AddItem';
 
 class ActivitiesLP extends Component {
     state = {
@@ -95,13 +95,13 @@ class ActivitiesLP extends Component {
                         <form>
                             <div className="grey-text">
                             <Input
-                                placeholder="Activity Name (required)"
-                                id="activity"
+                                placeholder="Name (required)"
+                                id="park"
                                 value={this.state.activity}
                                 onChange={this.handleChange}
                             />
                             <TextArea
-                                placeholder="Activity Description (required)"
+                                placeholder="Description (required)"
                                 id="description"
                                 value={this.state.description}
                                 onChange={this.handleChange}

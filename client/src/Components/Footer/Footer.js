@@ -20,16 +20,16 @@ return (
       <Col md="3">
       <ul>
         <h6 className="list-unstyled">
-          <a href="#!">Activities</a>
+          <a href="/activities">Activities</a>
         </h6>
         <h6 className="list-unstyled">
-          <a href="#!">Parks</a>
+          <a href="/parks">Parks</a>
         </h6>
         <h6 className="list-unstyled">
-          <a href="#!">Search</a>
+          <a href="/advanced-search">Search</a>
         </h6>
         <h6 className="list-unstyled">
-          <a href="#!">Log In/Sign Up</a>
+          <a href="/auth">Log In/Sign Up</a>
         </h6>
       </ul>
       </Col>

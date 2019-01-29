@@ -4,13 +4,13 @@ const activityController = require("../../Controllers/activitiesController");
 // Matches with "/api/activities"
 router.route("/")
   .get(activityController.findAll)
-  .post(activityController.create)
+  // .post(activityController.create)
 
 // Matches with "/api/activities/:name"
 router
   .route("/:name")
   .get(activityController.findByName)
-  .put(activityController.update)
+  // .put(activityController.update)
 
 router
   .route("/activities")

@@ -6,16 +6,14 @@ import { Row } from 'reactstrap';
 import Cards from '../Components/Cards/ParkCards'
 
 const parseStr = (str) => {
-  // let newStr=str.split("-").join(" ");
-  // return newStr;
-  let newStr = str.replace(/-/g, ' ')
+  let newStr = str.replace(/-/g,' ')
   let strArr = newStr.split(' ');
   let newArr = []
   for (let i = 0; i < strArr.length; i++) {
     newArr.push(strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1))
   }
-   let finishedStr = newArr.join(' ');
-   return finishedStr;
+  let finishedStr = newArr.join(' ');
+  return finishedStr;
 }
 
   // let finishedStr = newArr.join(' ');
@@ -35,7 +33,6 @@ class ParkDetail extends Component {
     componentDidMount() {
         // this.showName();
         const parsedName = parseStr(this.props.match.params.name)
-        console.log("parsedName" + parsedName);
         this.lookUpActivities(parsedName);
     }
 
@@ -60,8 +57,6 @@ class ParkDetail extends Component {
               myActivities.push(activity)
             }
           });
-          console.log("myActivities");
-          console.log(myActivities);
           this.setState({ activities: myActivities })
       })
       .catch(err => console.log(err))
@@ -80,7 +75,7 @@ class ParkDetail extends Component {
   
     <div>
         <Hero />
-        <Row><h5 style={{position: 'absolute', right: 20}}><a href="/destinations">Select Another Park</a></h5></Row>
+        <Row><h5 style={{position: 'absolute', right: 20}}><a href="/parks">Select Another Park</a></h5></Row>
         <Row className="mt-6">  
         {this.state.activities.length ? (
                 this.state.activities.map(activities => (
