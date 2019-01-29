@@ -90,7 +90,7 @@ class LoginForm extends Component {
                         <MDBCol md="6">
                         <form>
                         {/* <p className="h5 text-center mb-4">Sign In</p> */}
-                        <div className="grey-text">
+                        <div className="white-text">
                         <MDBIcon icon="user" />
                             <MDBInput
                                 label="User Name"

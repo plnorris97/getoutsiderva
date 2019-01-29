@@ -1,25 +1,25 @@
 
 #signInPage{
-    background-image: url("../../images/signIn2.jpg");
+    background-image: url("../../images/signIn3.jpg");
     background-size: 100%;
 }
 .header {
     padding: 3rem;
     color: white;
-    text-shadow: 0 0 2px #f39657;
+    text-shadow: 0 0 1px #f39657;
     text-align: center;
 }
 
 .signInDetail p {
     text-align: center !important;
     color: white;
-    text-shadow: 0 0 2px #f39657;
+    text-shadow: 0 0 1px #f39657;
 }
 
 .SignupForm, .signinForm {
     padding: 3rem;
     margin-top: 5rem;
-    background-image: linear-gradient(to bottom, #c4af922f 0%, #00076d6c 100%);
+    background-image: linear-gradient(to bottom, #c4af9263 0%, #e053016c 100%);
    
 }
 
@@ -32,12 +32,6 @@
     color: white !important;
 }
 
-
-
-#signup-col {
-    width: 100px;
-    background-color: lightgray;
-}
 
 .form-group {
     width: 200px;

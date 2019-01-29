@@ -75,7 +75,7 @@ render() {
                         <MDBCol md="6">
                         <form>
                         {/* <p className="h5 text-center mb-4">Sign In</p> */}
-                        <div className="black-text">
+                        <div className="white-text">
                         <MDBRow>
                             <MDBCol>
 							<MDBInput

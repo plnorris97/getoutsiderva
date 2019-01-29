@@ -181,7 +181,7 @@ class Search extends Component {
                 </Row>
                 </Form>
                 <Row>
-                    <Button>Search</Button>
+                    <Button className="btn btn-warning">Search</Button>
                 </Row>
             
            

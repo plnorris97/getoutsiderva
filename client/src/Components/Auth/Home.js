@@ -33,7 +33,7 @@ class HomeAuth extends Component {
 
                     </Row>
                 </Container>
-                <Mask overlay="white-light" />
+                <Mask overlay="grey-strong" />
               
             </div>
             </body>
