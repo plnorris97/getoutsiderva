@@ -31,12 +31,12 @@ class Input extends React.Component {
 
   render() {
     return (
-      <Container style={{ height: "15rem" }}>
-      <MDBCol md="12" style={{ marginRight: "0 !important"}} className="ml-md">
+      <Container style={{ height: "15rem"}}>
+      <MDBCol md="12" style={{ margin: "0 !important" }} className="ml-md">
         <MDBView>
           <img 
           src={doYou} 
-          style={{ margin:"auto 0" }}
+          style={{ margin: "20px", marginRight: "100px", padding: "10px" }}
           className="img-fluid2"
           alt="How do you do RVA?"></img>
         </MDBView>
