@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBMask, MDBContainer, MDBView, MDBRow, Mask } from "mdbreact";
-import parkLP from '../../images/parkLP.png';
+import ParkCard from '../../images/lpCard.png';
 
 const parseStr = (str) => {
   let newStr = str.replace(/-/g,' ')
@@ -23,9 +23,9 @@ class MaskPage extends React.Component {
         <MDBRow className="mt-4 thumb-nail" >
             <MDBView waves>
               <img
-                src= {parkLP}
+                src= {ParkCard}
                 className="img-fluid thumb-nail"
-                alt=""
+                alt={parsedName}
               />
               <Mask overlay="black-light" />
               <MDBMask className="flex-center">

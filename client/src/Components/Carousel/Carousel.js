@@ -8,7 +8,7 @@ class CarouselPage extends Component {
   render() {
     return (
      
-        <Carousel style={{height: "60vh"}} activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+        <Carousel style={{height: "75vh"}} activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
           <CarouselInner>
             <CarouselItem itemId="1">
               <View>
