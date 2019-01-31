@@ -18,7 +18,7 @@ class Cards extends React.Component {
 
     //const parsedName = parseStr(this.props.match.params.name)
     const parsedName = parseStr(this.props.name)
-    const  { name, description, address, city }= this.props
+    const  { description }= this.props
     return (
 
         <Row className="mt-6">  
@@ -34,13 +34,7 @@ class Cards extends React.Component {
                 <CardBody>
                     <CardHeader style={{ backgroundColor: "white" }}><a href={"../activities/" + this.props.name}><h4> {parsedName} </h4></a></CardHeader>
                     <CardTitle style={{ color: "#3F729B" }}></CardTitle>
-                    <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
-                    { address }
-                    </CardText>
-                    <CardText>
-                    { city }
-                    </CardText>
-                    <CardText><h5>Description:</h5> 
+                    <CardText  style={{ marginLeft: "1.5rem", textAlign: "left" }}>
                     { description }
                     </CardText>
                    

@@ -34,30 +34,6 @@ class ActivityDetail extends Component {
         // this.lookUpActivity(parsedName);
     }
 
-    
-
-    // showName = () => {
-    //   API.getActivity()
-    //   console.log("hello")
-    //   .then(res =>
-    //     this.setState({results: res.data})
-    //   )
-    //   .catch(err => console.log(err))
-    // }
-
-    // map through activities for descriptions
-    // lookUpActivity() {
-    //   API.getActivity()
-    //   .then(res => {
-    //     console.log(this.props.description)
-    //   }
-    //     // this.setState({ activity: this.parsedName, description: this.Description })
-    //   )
-    //   .catch(err => console.log(err));
-
-    // };
-    
-
     // Look up parks
     lookUpParks(Activity) {
         API.getParks()
@@ -65,7 +41,7 @@ class ActivityDetail extends Component {
           .then(res => {
             const myParks = [];
             res.data.forEach(park => {
-              if(park.Activities.includes(Activity)) {
+              if(park.activities.includes(Activity)) {
                 myParks.push(park)
               } 
             });

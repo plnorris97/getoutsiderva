@@ -55,8 +55,6 @@ class Hero extends Component {
                 return require('../../images/birdingWildlife.png');
             case '/parks/dutch-gap-conservation-area':
                 return require('../../images/dutchGapConservationArea.jpg');
-            case '/parks/maymont':
-                return require('../../images/maymont.jpg');
             case '/parks/henricus-historical-park':
                 return require('../../images/henricusHistoricalPark.jpg');
             case '/parks/huguenot-park':
@@ -65,8 +63,8 @@ class Hero extends Component {
                 return require('../../images/harryGDanielParkAtIronBridge.jpg');
             case '/parks/pocahontas-state-park':
                 return require('../../images/pocahontasStatePark.jpg');
-            case '/parks/r-garland-dodd-park-at-iron-bridge':
-                return require('../../images/rGarlandDoddParkAtIronBridge.jpg');
+            case '/parks/r-garland-dodd-park-at-point-of-rocks':
+                return require('../../images/rGarlandDoddParkAtPointofRocks.jpg');
             case '/parks/presquile-national-wildlife-refuge':
                 return require('../../images/presquileNationalWildlifeRefuge.jpg');
             case '/parks/robious-landing-park':
@@ -85,8 +83,8 @@ class Hero extends Component {
                 return require('../../images/dunncroftCastlePointPark.jpg');
             case '/parks/echo-lake-park':
                 return require('../../images/echoLakePark.jpg'); 
-            case '/parks/chimborazo-park':
-                return require('../../images/chimborazoPark.jpg');
+                case '/parks/browns-island':
+                return require('../../images/brownsIsland.jpg');
             case '/parks/byrd-park':
                 return require('../../images/byrdPark.jpg');
             case '/parks/bryan-park':
@@ -101,8 +99,6 @@ class Hero extends Component {
                 return require('../../images/laurelRecreationareaAndSkatePark.jpg');
             case '/parks/meadow-farm-museum-at-crump-park':
                 return require('../../images/meadowFarmMuseumAtCrumpPark.jpg');
-            case '/parks/northbank-trail-texas-beach':
-                return require('../../images/northbankTrailTexasBeach.jpg');
                 case '/parks/osborne-park-and-boat-landing':
                 return require('../../images/osborneParkAndBoatLanding.jpg');
                 case '/parks/rf-and-p-park':
@@ -124,7 +120,9 @@ class Hero extends Component {
                 case '/parks/varina-recreation-area':
                 return require('../../images/varinaRecreationArea.jpg');
                 case '/parks/virginia-randolph-recreation-area':
-                return require('../../images/virginiaRandolphRecreationArea.jpg');   
+                return require('../../images/virginiaRandolphRecreationArea.jpg');  
+                case '/parks/pouncey-tract-park':
+                return require('../../images/pounceyTractPark.jpg');   
             default: return 'image.jpg';
         }
     }
