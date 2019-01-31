@@ -17,7 +17,7 @@ const parseStr = (str) => {
 
 class Cards extends React.Component {
   render() {
-      const  { description, image, address }= this.props
+      const  { description, image, address, city }= this.props
       const parsedName = parseStr(this.props.name)
 
     return (
@@ -38,14 +38,12 @@ class Cards extends React.Component {
                     <CardHeader style={{ backgroundColor: "white" }}><a href={"../parks/" + this.props.name}><h4> {parsedName} </h4></a></CardHeader>
                     <CardTitle style={{ color: "#3F729B" }}></CardTitle>
                     <CardText><MDBIcon icon="map-marker" style={{ marginReft: "2rem" }} />
-                    { address }
+                    { address } | { city }
                     </CardText>
-                    <CardText style={{ marginLeft: "1.5rem", textAlign: "left" }}><h5>Description</h5> 
+                    <CardText style={{ marginLeft: "1.5rem", textAlign: "left" }}> 
                     { description }
                     </CardText>
-                   
                     <CardText>
-                
                     </CardText>
                     {/* <Button href="#">Button</Button> */}
                 </CardBody>

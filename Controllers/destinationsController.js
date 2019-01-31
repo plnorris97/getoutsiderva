@@ -26,7 +26,7 @@ module.exports = {
   findName: (req, res) => {
     const parsedName = parseStr(req.params.name)
     db.Parks
-      .find({name:parsedName})
+      .find({name: parsedName})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }

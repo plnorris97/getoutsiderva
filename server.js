@@ -15,22 +15,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Database configuration
-// const databaseUrl = "getoutsiderva";
-// const collections = ["activities", "destinations"];
-
-// // Hook mongojs config to db variables
-// const db = mongojs(databaseUrl, collections);
-
-// db.on("error", function(error) {
-//   console.log("Database error:", error);
-// })
 
 // Add routes
 app.use(routes);
-
-//Bodyparser middleware
-// app.use(bodyParser.json());
 
 // Connect to MongoDB
 mongoose
@@ -38,10 +25,7 @@ mongoose
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err));
 
-//Use routes /api/<filename>
-// app.use('/api/', items)
-
-
+    
 const port = process.env.PORT || 3001;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
