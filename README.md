@@ -1,8 +1,6 @@
 # Get Outside RVA
 
-![Get Outside RVA Logo]('/client/src/images/logo.PNG)
-
-View the site live now! http://www.getoutsiderva.herokuapps.com Future enhancements will be live on http://www.getoutsiderva.com.
+View the site live now! http://getoutsiderva.herokuapps.com Future enhancements will be live on http://www.getoutsiderva.com.
 
 ## Summary
 
