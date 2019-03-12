@@ -1,6 +1,6 @@
 # Get Outside RVA
 
-View the site live now! http://getoutsiderva.herokuapps.com Future enhancements will be live on http://www.getoutsiderva.com.
+View the site live now! http://getoutsiderva.herokuapp.com Future enhancements will be live on http://www.getoutsiderva.com.
 
 ## Summary
 
